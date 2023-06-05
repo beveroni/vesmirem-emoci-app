@@ -3,7 +3,7 @@ import React from 'react';
 export const HomePage = () => {
   return (
     <div>
-      <h2>dgfdgfdsgfdhgds</h2>
+      <h2>Úvodní strana hry</h2>
     </div>
   );
 };

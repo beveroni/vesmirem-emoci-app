@@ -1,6 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Link,
+  Outlet,
+} from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { GamePage } from './pages/GamePage';
 import { Game } from './pages/Game';
@@ -19,6 +24,7 @@ const App = () => {
         <Link to="/game/:Id">Game</Link>
         <span> | </span>
       </nav>
+      <Outlet />
     </div>
   );
 };
