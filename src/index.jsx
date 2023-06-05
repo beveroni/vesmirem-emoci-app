@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
-import { MainPage } from './pages/MainPage';
+import { HomePage } from './pages/HomePage';
 import { GamePage } from './pages/GamePage';
 import { Game } from './pages/Game';
 import { ErrorPage } from './pages/ErrorPage';
@@ -12,7 +12,7 @@ const App = () => {
     <div className="container">
       <h1>Vesmírem emocí</h1>
       <nav>
-        <Link to="/">MainPage</Link>
+        <Link to="/">Homepage</Link>
         <span> | </span>
         <Link to="/gamepage">Gamepage</Link>
         <span> | </span>
@@ -29,16 +29,16 @@ const App = () => {
 //     element: <App />,
 //   },
 //   {
-//     path: '/homepage',
-//     element: <HomePage />,
+//     path: '/',
+//     element: ,
 //   },
 //   {
-//     path: '/aboutpage',
-//     element: <AboutPage />,
+//     path: '/',
+//     element: ,
 //   },
 //   {
-//     path: '/contact',
-//     element: <ContactPage />,
+//     path: '/',
+//     element: ,
 //   },
 // ]);
 
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MainPage />,
+        element: <HomePage />,
       },
       {
         path: '/gamepage',
