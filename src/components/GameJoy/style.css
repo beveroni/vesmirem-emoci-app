@@ -1,0 +1,36 @@
+.popup__game {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  gap: 1rem;
+  flex: row;
+}
+
+.game__card {
+  width: 100px;
+  cursor: pointer;
+}
+
+.popup__game--column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.popup__game--column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+/* @media (max-width: 1024px) {
+ }
+
+@media (max-width: 768px) {
+  }
+
+@media (max-width: 320px) {
+  } */

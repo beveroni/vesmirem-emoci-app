@@ -6,4 +6,6 @@
   position: fixed;
   top: 10px;
   left: 10px;
+  gap: 0.7rem;
+  display: flex;
 }
