@@ -1,4 +1,5 @@
 import { GameAnger } from './components/GameAnger';
+import { GameJoy } from './components/GameJoy';
 import { GameLove } from './components/GameLove';
 import { GameSadness } from './components/GameSadness';
 
@@ -16,6 +17,7 @@ export const planets = [
     task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Přiřaď/klikni na správné obrázky.',
     question:
       'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
+    game: GameJoy,
   },
   {
     id: 2,

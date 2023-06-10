@@ -25,14 +25,12 @@ export const PopupGame = ({ text, question, game }) => {
       </button>
       <div className="popup__content">
         <p className="popup__content--task1">{text}</p>
-        <div className="popup__game">
-          <Game />
-        </div>
-        <div className="popup__content2">
-          <img className="stars__group" src="/img/stars_group.svg" alt="" />
-          <p className="popup__content--task2">{question}</p>
-          <HomeArrow />
-        </div>
+        <Game />
+      </div>
+      <div className="popup__content2">
+        <img className="stars__group" src="/img/stars_group.svg" alt="" />
+        <p className="popup__content--task2">{question}</p>
+        <HomeArrow />
       </div>
     </div>
   );

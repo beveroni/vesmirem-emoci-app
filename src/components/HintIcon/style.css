@@ -3,6 +3,7 @@
   background: none;
   transition: transform 0.3s;
   filter: none;
+  gap: 3rem;
 }
 
 .container__icon--hint:hover {
