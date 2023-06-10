@@ -5,12 +5,12 @@ import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
 
-export const PopupGame = ({ text, question, game }) => {
-  const { planetText } = useParams();
-  const planet = planets.find((planet) => planet.task === planetText);
+export const PopupGame = ({ task, question, game }) => {
+  const { planetTask, planetQuestion } = useParams();
+  const planet = planets.find((planet) => planet.task === planetTask);
   console.log(planet);
-  const planetQuestion = planets.find(
-    (planet) => planet.question === planetText,
+  const planetQuestions = planets.find(
+    (planet) => planet.question === planetQuestion,
   );
   const Game = game;
 
@@ -20,7 +20,7 @@ export const PopupGame = ({ text, question, game }) => {
         <img src="/img/cross.svg" alt="cross_button" />
       </button>
       <div className="popup__content">
-        <p className="popup__content--task1">{text}</p>
+        <p className="popup__content--task1">{task}</p>
         <Game />
       </div>
       <div className="popup__content2">
