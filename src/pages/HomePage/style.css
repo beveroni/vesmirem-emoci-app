@@ -1,35 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&display=swap');
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  background-image: url('./img/backround_main.svg');
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url(/public/img/backround_main.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: cover;
   min-height: 100vh;
-  /* max-height: 100vh; */
-  /* padding-bottom: 2rem; */
 }
 
-/* .page-container {
-  overflow: auto;
-  height: 100vh;
-} */
-
-main {
-  position: relative;
-}
-
-/*Styly pro nadpis H1*/
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;

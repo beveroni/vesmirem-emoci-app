@@ -6,8 +6,46 @@ import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 import { PopupExplanationRules } from '../../components/PopupExplanationRules';
 import { PopulExplanationTips } from '../../components/PopupExplanationTips';
+import { useState } from 'react';
 
 export const HomePage = () => {
+  const [showPopupAbout, setShowPopupAbout] = useState(false);
+  const [showPopupEmotions, setShowPopupEmotions] = useState(false);
+  const [showPopupRules, setShowPopupRules] = useState(false);
+  const [showPopupTips, setShowPopupTips] = useState(false);
+
+  const handlePopupAboutOpen = () => {
+    setShowPopupAbout(true);
+  };
+
+  const handlePopupAboutClose = () => {
+    setShowPopupAbout(false);
+  };
+
+  const handlePopupEmotionsOpen = () => {
+    setShowPopupEmotions(true);
+  };
+
+  const handlePopupEmotionsClose = () => {
+    setShowPopupEmotions(false);
+  };
+
+  const handlePopupRulesOpen = () => {
+    setShowPopupRules(true);
+  };
+
+  const handlePopupRulesClose = () => {
+    setShowPopupRules(false);
+  };
+
+  const handlePopupTipsOpen = () => {
+    setShowPopupTips(true);
+  };
+
+  const handlePopupTipsClose = () => {
+    setShowPopupTips(false);
+  };
+
   return (
     <div className="page-container">
       <main>
@@ -20,22 +58,77 @@ export const HomePage = () => {
             alt="tlačítko hrát"
           />
         </Link>
-        <button className="button__project" id="popup__open--about">
+        <button
+          className="button__project"
+          id="popup__open--about"
+          onClick={handlePopupAboutOpen}
+        >
           O projektu
         </button>
-        <button className="button__emotions" id="popup__open--emotions">
+        <button
+          className="button__emotions"
+          id="popup__open--emotions"
+          onClick={handlePopupEmotionsOpen}
+        >
           Seznam emocí
         </button>
-        <button className="button__rules" id="popup__open--rules">
+        <button
+          className="button__rules"
+          id="popup__open--rules"
+          onClick={handlePopupRulesOpen}
+        >
           Pravidla
         </button>
-        <button className="button__tips" id="popup__open--tips">
+        <button
+          className="button__tips"
+          id="popup__open--tips"
+          onClick={handlePopupTipsOpen}
+        >
           Další tipy
         </button>
-        <PopupExplanationAbout />
-        <PopupExplanationEmotions />
-        <PopupExplanationRules />
-        <PopulExplanationTips />
+        {showPopupAbout && (
+          <div className="popup">
+            <div className="popup__content">
+              <button className="popup__close" onClick={handlePopupAboutClose}>
+                X
+              </button>
+              <PopupExplanationAbout />
+            </div>
+          </div>
+        )}
+        {showPopupEmotions && (
+          <div className="popup">
+            <div className="popup__content">
+              <button
+                className="popup__close"
+                onClick={handlePopupEmotionsClose}
+              >
+                X
+              </button>
+              <PopupExplanationEmotions />
+            </div>
+          </div>
+        )}
+        {showPopupRules && (
+          <div className="popup">
+            <div className="popup__content">
+              <button className="popup__close" onClick={handlePopupRulesClose}>
+                X
+              </button>
+              <PopupExplanationRules />
+            </div>
+          </div>
+        )}
+        {showPopupTips && (
+          <div className="popup">
+            <div className="popup__content">
+              <button className="popup__close" onClick={handlePopupTipsClose}>
+                X
+              </button>
+              <PopulExplanationTips />
+            </div>
+          </div>
+        )}
       </main>
       <Footer />
     </div>

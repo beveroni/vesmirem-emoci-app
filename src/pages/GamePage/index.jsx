@@ -14,9 +14,9 @@ import { useState } from 'react';
 export const GamePage = () => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
-  console.log(planet);
-
   const [showPopup, setShowPopup] = useState(false);
+  const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(false);
+  const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(false);
 
   const handleGameStart = () => {
     setShowPopup(true);
@@ -26,17 +26,29 @@ export const GamePage = () => {
     setShowPopup(false);
   };
 
+  const handleRocketClick = () => {
+    setIsRocketBubbleOpen(true);
+  };
+
+  const handlePlanetClick = () => {
+    setIsPlanetBubbleOpen(true);
+  };
+
   return (
     <>
       <Header />
       <div className="conversation">
         <div className="conversation__rocket">
-          <ConversationRocketBubble dialogrocket={planet.rocketDialog} />
-          <Rocket />
+          {isRocketBubbleOpen && (
+            <ConversationRocketBubble dialogrocket={planet.rocketDialog} />
+          )}
+          <Rocket onClick={handleRocketClick} />
         </div>
         <div className="conversation__planet">
-          <ConversationPlanetBubble dialog={planet.planetDialog} />
-          <Planet planet={planet} />
+          {isPlanetBubbleOpen && (
+            <ConversationPlanetBubble dialog={planet.planetDialog} />
+          )}
+          <Planet onClick={handlePlanetClick} planet={planet} />
         </div>
       </div>
       {showPopup && (
