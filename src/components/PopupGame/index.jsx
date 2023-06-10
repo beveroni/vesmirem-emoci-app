@@ -14,6 +14,10 @@ export const PopupGame = ({ text, question, game }) => {
   );
   const Game = game;
 
+  // const backgroundImage = planets.find(
+  //   (planet) => planet.backgroundGame === planetBackground,
+  // );
+
   return (
     <div className="popup">
       <button id="popup__close">
