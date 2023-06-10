@@ -1,4 +1,5 @@
 import { GameAnger } from './components/GameAnger';
+import { GameJoy } from './components/GameJoy';
 import { GameLove } from './components/GameLove';
 import { GameSadness } from './components/GameSadness';
 
