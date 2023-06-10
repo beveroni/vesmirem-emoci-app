@@ -9,11 +9,22 @@ import { Rocket } from '../../components/Rocket';
 import { Planet } from '../../components/Planet';
 import { planets } from '../../planet-database';
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 
 export const GamePage = () => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   console.log(planet);
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleGameStart = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <>
@@ -28,13 +39,16 @@ export const GamePage = () => {
           <Planet planet={planet} />
         </div>
       </div>
-      <PopupGame
-        background={planet.backgroundGame}
-        task={planet.task}
-        game={planet.game}
-        question={planet.question}
-      />
-      <ButtonGameStart />
+      {showPopup && (
+        <PopupGame
+          background={planet.backgroundGame}
+          task={planet.task}
+          game={planet.game}
+          question={planet.question}
+          onClose={handleClosePopup}
+        />
+      )}
+      <ButtonGameStart onButtonClick={handleGameStart} />
     </>
   );
 };
