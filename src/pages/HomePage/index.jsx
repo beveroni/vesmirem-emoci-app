@@ -3,6 +3,7 @@ import './style.css';
 import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
+import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 
 export const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ export const HomePage = () => {
           Pravidla
         </button>
         <PopupExplanationAbout />
+        <PopupExplanationEmotions />
       </main>
       <Footer />
     </div>
