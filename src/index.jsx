@@ -7,8 +7,8 @@ import {
   Outlet,
 } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
+import { PlanetsPage } from './pages/PlanetsPage';
 import { GamePage } from './pages/GamePage';
-import { Game } from './pages/Game';
 import { ErrorPage } from './pages/ErrorPage';
 import './style.css';
 
@@ -40,11 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/games',
-        element: <GamePage />,
+        element: <PlanetsPage />,
       },
       {
         path: '/games/:planetId',
-        element: <Game />,
+        element: <GamePage />,
       },
     ],
   },

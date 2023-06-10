@@ -3,6 +3,7 @@ import './style.css';
 import { HomeArrow } from '../HomeArrow';
 import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
+import { GameAnger } from '../GameAnger';
 
 export const PopupGame = ({ text, question }) => {
   const { planetText } = useParams();
@@ -19,12 +20,14 @@ export const PopupGame = ({ text, question }) => {
       </button>
       <div className="popup__content">
         <p className="popup__content--task1">{text}</p>
-        <div className="popup__game"></div>
-      </div>
-      <div className="popup__content2">
-        <img className="stars__group" src="/img/stars_group.svg" alt="" />
-        <p className="popup__content--task2">{question}</p>
-        <HomeArrow />
+        <div className="popup__game">
+          <GameAnger />
+        </div>
+        <div className="popup__content2">
+          <img className="stars__group" src="/img/stars_group.svg" alt="" />
+          <p className="popup__content--task2">{question}</p>
+          <HomeArrow />
+        </div>
       </div>
     </div>
   );

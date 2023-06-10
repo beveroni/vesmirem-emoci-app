@@ -1,0 +1,33 @@
+/* OBRÁZKY HRY */
+
+.popup__game--grouptrash {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.trashbin {
+  width: 100px;
+  transition: transform 0.3s;
+
+}
+
+.trashbin:hover {
+  transform: scale(1.2);
+}
+
+.popup__game--trash {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.trash {
+  width: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.trash:hover {
+  transform: scale(1.2);
+}
