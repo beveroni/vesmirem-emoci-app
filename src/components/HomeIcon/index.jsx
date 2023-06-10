@@ -6,7 +6,7 @@ export const HomeIcon = () => {
   return (
     <Link to="/">
       <img
-        src="./img/home_icon.svg"
+        src="/img/home_icon.svg"
         className="container__icon--home"
         alt="hint icon"
       />
