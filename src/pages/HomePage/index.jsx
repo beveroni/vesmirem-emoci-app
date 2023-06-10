@@ -4,6 +4,8 @@ import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
+import { PopupExplanationRules } from '../../components/PopupExplanationRules';
+import { PopulExplanationTips } from '../../components/PopupExplanationTips';
 
 export const HomePage = () => {
   return (
@@ -27,8 +29,13 @@ export const HomePage = () => {
         <button className="button__rules" id="popup__open--rules">
           Pravidla
         </button>
+        <button className="button__tips" id="popup__open--tips">
+          Další tipy
+        </button>
         <PopupExplanationAbout />
         <PopupExplanationEmotions />
+        <PopupExplanationRules />
+        <PopulExplanationTips />
       </main>
       <Footer />
     </div>
