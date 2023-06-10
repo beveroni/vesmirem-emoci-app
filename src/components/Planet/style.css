@@ -1,0 +1,15 @@
+.conversation__planet--img {
+  text-align: center;
+  position: absolute;
+  right: 5rem;
+  bottom: 1rem;
+}
+
+.planet-img {
+  width: 40%;
+  transition: transform 0.3s;
+}
+
+.planet-img:hover {
+  transform: scale(1.1);
+}

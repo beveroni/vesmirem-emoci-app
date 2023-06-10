@@ -1,0 +1,26 @@
+/* patička a tlačítko úkolu */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.btn__play-game {
+  color: black;
+  background: linear-gradient(to bottom, #fff200 5%, #f5cb0e 100%);
+  background-color: #f5cb0e;
+  border-radius: 40px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1vh 3vw;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn__play-game:hover {
+  background: linear-gradient(to bottom, #f5cb0e 5%, #fff200 100%);
+  background-color: #f5cb0e;
+  transform: scale(1.05);
+}
