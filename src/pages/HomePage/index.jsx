@@ -8,7 +8,7 @@ export const HomePage = () => {
     <div className="page-container">
       <main>
         <h1>Vesmírem emocí</h1>
-        <img className="rocket" src="./img/rocket.svg" alt="rocket" />
+        <img className="rocket" src="/img/rocket.svg" alt="rocket" />
         <Link to="games">
           <img
             className="button__game"
