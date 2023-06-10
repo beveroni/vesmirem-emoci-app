@@ -7,7 +7,7 @@ export const ConversationPlanetBubble = ({ dialog }) => {
     (planet) => planet.planetDialog === planetDialog,
   );
   return (
-    <div className="conversation__planet--text bubble">
+    <div className="conversation__planet--text bubble bubble-bottom-right">
       <p>{dialog}</p>
     </div>
   );
