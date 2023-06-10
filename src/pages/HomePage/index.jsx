@@ -4,6 +4,7 @@ import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
+import { PopupExplanationRules } from '../../components/PopupExplanationRules';
 
 export const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ export const HomePage = () => {
         </button>
         <PopupExplanationAbout />
         <PopupExplanationEmotions />
+        <PopupExplanationRules />
       </main>
       <Footer />
     </div>
