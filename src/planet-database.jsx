@@ -1,3 +1,6 @@
+import { GameAnger } from './components/GameAnger';
+import { GameSadness } from './components/GameSadness';
+
 export const planets = [
   {
     id: 1,
@@ -24,6 +27,7 @@ export const planets = [
     task: 'Pusť si stopky a počkej s planetkou na další padající hvězdu.',
     question:
       'Taky se ti stalo, že si něco prošvihl/a? Co umí rozesmutnit Tebe? Komu se svěřuješ, když je Ti smutno?',
+    game: GameSadness,
   },
   {
     id: 3,
@@ -50,6 +54,7 @@ export const planets = [
     task: 'Pomoz planetce a ukliď vesmírný nepořádek do popelnice.',
     question:
       'Co pomáhá Tobě, když se zlobíš? Umíš říct, proč se zlobíš? A kde zlobu cítíš v těle?',
+    game: GameAnger,
   },
   {
     id: 5,

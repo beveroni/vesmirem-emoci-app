@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Header } from '../../components/Header';
-import { planets } from '../../planet-database.js';
+import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 console.log(planets);
 

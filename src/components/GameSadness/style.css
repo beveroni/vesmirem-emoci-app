@@ -1,0 +1,112 @@
+.popup__game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.controls__input--group {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+
+input[type='text'] {
+  border: none;
+  background-color: rgb(232, 230, 230);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.time-input {
+  width: rem;
+}
+
+.time-input:hover {
+  cursor: help;
+}
+
+.controls__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.controls__top button,
+.controls__top label {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  background-color: #2684ff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.stopwatch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 22rem;
+  top: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/public/img/stopwatch.svg);
+}
+
+
+.stopwatch__seconds {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.stopwatch__minutes {
+  font-weight: 900;
+}
+
+.stopwatch___seconds {
+  font-weight: 100;
+}
+
+
+/* ANIMACE KOMETY  */
+.comet {
+  display: none;
+  /* Skrytí komety */
+}
+
+.comet-animation {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  animation: fly 10s linear forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(100vw) translateY(50vh);
+  }
+
+  100% {
+    transform: translateX(-100vw) translateY(-20vh);
+    opacity: 0;
+  }
+}

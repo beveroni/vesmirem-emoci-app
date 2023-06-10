@@ -5,13 +5,14 @@ import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
 
-export const PopupGame = ({ text, question }) => {
+export const PopupGame = ({ text, question, game }) => {
   const { planetText } = useParams();
   const planet = planets.find((planet) => planet.task === planetText);
   console.log(planet);
   const planetQuestion = planets.find(
     (planet) => planet.question === planetText,
   );
+  const Game = game;
 
   return (
     <div className="popup">
@@ -21,7 +22,7 @@ export const PopupGame = ({ text, question }) => {
       <div className="popup__content">
         <p className="popup__content--task1">{text}</p>
         <div className="popup__game">
-          <GameAnger />
+          <Game />
         </div>
         <div className="popup__content2">
           <img className="stars__group" src="/img/stars_group.svg" alt="" />
