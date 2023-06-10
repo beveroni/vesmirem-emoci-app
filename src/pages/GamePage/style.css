@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* html {
+  background-image: linear-gradient(#00115d, #2453fa);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+body {
+  background-image: url('./img/backround_game.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+/*Styly pro nadpis H1*/
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  position: relative;
+  font-size: 4em;
+  padding-left: 50px;
+  transition: all 0.3s ease;
+  top: 40px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2.0em;
+  }
+}
+
+h1:hover {
+  text-shadow: 0 0 10px yellow;
+  transform: scale(1.0);
+}
+
+img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Styl pro pop-up okno nápovědy  */
+.popup__hint {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  background-color: rgb(168, 168, 168);
+  position: fixed;
+  z-index: 9999;
+  border-radius: 40px;
+}
+
+#popup__hint--close {
+  color: #a5a5a5;
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 0.3rem;
+  left: 92rem;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* Div pro obrázkový kontejner */
+
+.container__planets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+
+/* Raketa  */
+
+.rocket {
+  rotate: 30deg;
+  width: 100px;
+  position: relative;
+  top: 1rem;
+  left: 3rem;
+  transition: transform 0.2s ease-in-out;
+  filter: drop-shadow(1px 1px 1px 1px rgba(255, 255, 255, 0.5));
+}
+
+/* Planety */
+
+.planet__joy {
+
+  transition: transform 0.2s ease-in-out;
+  width: 150px;
+  filter: drop-shadow(1px 1px 1px 1px rgb(247, 251, 122));
+}
+
+.planet__boredom {
+
+  transition: transform 0.2s ease-in-out;
+  width: 150px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(129, 88, 0, 0.558));
+}
+
+.planet__sadness {
+
+  transition: transform 0.2s ease-in-out;
+  width: 150px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(111, 181, 255, 0.576));
+}
+
+.planet__fear {
+  transition: transform 0.2s ease-in-out;
+  width: 150px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(218, 218, 218, 0.576));
+}
+
+.planet__anger {
+  transition: transform 0.2s ease-in-out;
+  width: 150px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(255, 27, 27, 0.5));
+}
+
+.planet__courage {
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(82, 255, 47, 0.5));
+}
+
+.planet__love {
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(253, 149, 206, 0.531));
+}
+
+.planet__enthusiasm {
+  transition: transform 0.2s ease-in-out;
+  width: 200px;
+  filter: drop-shadow(1px 1px 1px 1px rgba(255, 142, 55, 0.5));
+}
+
+
+/* Efekty po najetí myší  */
+
+.planet__joy:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgb(247, 251, 122));
+}
+
+
+.planet__boredom:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(129, 88, 0, 0.558));
+}
+
+.planet__sadness:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(111, 181, 255, 0.576));
+}
+
+.planet__fear:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(218, 218, 218, 0.576));
+}
+
+.planet__anger:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(255, 27, 27, 0.5));
+}
+
+.planet__courage:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(82, 255, 47, 0.5));
+}
+
+.planet__love:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(253, 149, 206, 0.531));
+}
+
+.planet__enthusiasm:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(255, 142, 55, 0.5));
+}
+
+.rocket:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.5));
+}
+
+/* 
+Názvy planet */
+.link {
+  display: block;
+  text-align: center;
+}
+
+.link__text {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* @media (max-width: 1024px) {
+ }
+
+@media (max-width: 768px) {
+  }
+
+@media (max-width: 320px) {
+  } */

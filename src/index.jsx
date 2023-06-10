@@ -15,38 +15,18 @@ import './style.css';
 const App = () => {
   return (
     <div className="container">
-      <h1>Vesmírem emocí</h1>
       <nav>
         <Link to="/">Homepage</Link>
         <span> | </span>
-        <Link to="/gamepage">Gamepage</Link>
+        <Link to="/games">Games</Link>
         <span> | </span>
-        <Link to="/game/:Id">Game</Link>
+        <Link to="/games/:Id">Games</Link>
         <span> | </span>
       </nav>
       <Outlet />
     </div>
   );
 };
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//   },
-//   {
-//     path: '/',
-//     element: ,
-//   },
-//   {
-//     path: '/',
-//     element: ,
-//   },
-//   {
-//     path: '/',
-//     element: ,
-//   },
-// ]);
 
 const router = createBrowserRouter([
   {
@@ -59,11 +39,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/gamepage',
+        path: '/games',
         element: <GamePage />,
       },
       {
-        path: '/game/:Id',
+        path: '/games/:Id',
         element: <Game />,
       },
     ],

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./img/backround_main.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  /* padding-bottom: 2rem; */
+}
+
+/* .page-container {
+  overflow: auto;
+  height: 100vh;
+} */
+
+main {
+  position: relative;
+}
+
+/*Styly pro nadpis H1*/
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 5em;
+  padding-left: 60px;
+  position: relative;
+  top: 45px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+h1:hover {
+  text-shadow: 0 0 10px yellow;
+  transform: scale(1.0);
+}
+
+/*Styly pro nadpis container*/
+
+/* .container {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 52px;
+  width: 996px;
+  background-color: #d1d1d164;
+  padding: 20px;
+  height: 550px;
+} */
+
+/* @media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    right: auto;
+    left: 5%;
+      }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 10px;
+
+  }
+} */
+
+.rocket {
+  rotate: 30deg;
+  width: 250px;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  /* position: relative;
+  top: 133px;
+  left: 174px; */
+}
+
+/* styly pro btn na jednotlivé POP-UP STRÁNKY */
+
+.button__game {
+  width: 450px;
+  /* position: relative;
+  top: -68px;
+  left: 50%; */
+  position: fixed;
+  top: 35%;
+  left: 60%;
+
+  background: none;
+  cursor: pointer;
+  filter: none;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.button__game:hover {
+  filter: drop-shadow(0 0 40px rgb(255, 255, 193));
+  transform: scale(1.1);
+}
+
+.button__project {
+  /* position: absolute; */
+  /* top: 5rem;
+  left: 18rem; */
+  position: fixed;
+  top: 65%;
+  left: 55%;
+  /* top: -170px;
+  left: 74px; */
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
+  background: rgb(252, 116, 57);
+  width: 13rem;
+  height: 13rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+.button__emotions {
+  /* position: relative;
+  bottom: 25rem;
+  right: 10rem; */
+  position: fixed;
+  top: 15%;
+  left: 45%;
+  /* top: -392px;
+  left: 67px; */
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
+  background: rgb(255, 139, 199);
+  width: 9rem;
+  height: 9rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button__rules {
+  /* position: relative;
+  bottom: 5rem;
+  right: 30rem; */
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  /* top: 55px;
+  left: -72px; */
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
+  background: rgb(84, 84, 213);
+  width: 12rem;
+  height: 12rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.button__project:hover,
+.button__emotions:hover,
+.button__rules:hover {
+  box-shadow: 0 0 40px 20px rgb(255, 255, 193);
+  transform: scale(1.1);
+}

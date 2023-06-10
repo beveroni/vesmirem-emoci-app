@@ -1,6 +1,7 @@
 export const planets = [
   {
     id: 1,
+    label: 'Radost',
     name: 'joy',
     avatar: './img/planet_joy.svg',
     planetDialog:
@@ -13,6 +14,7 @@ export const planets = [
   },
   {
     id: 2,
+    label: 'Smutek',
     name: 'sadness',
     avatar: './img/planet_sadness.svg',
     planetDialog:
@@ -25,6 +27,7 @@ export const planets = [
   },
   {
     id: 3,
+    label: 'Láska',
     name: 'love',
     avatar: './img/planet_love.svg',
     planetDialog:
@@ -38,6 +41,7 @@ export const planets = [
   {
     id: 4,
     name: 'anger',
+    label: 'Vztek',
     avatar: './img/planet_anger.svg',
     planetDialog:
       'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat!',
@@ -49,6 +53,7 @@ export const planets = [
   },
   {
     id: 5,
+    label: 'Nadšení',
     name: 'enthusiasm',
     avatar: './img/planet_enthusiasm.svg',
     planetDialog:
@@ -60,6 +65,7 @@ export const planets = [
   },
   {
     id: 6,
+    label: 'Nuda',
     name: 'boredom',
     avatar: './img/planet_boredom.svg',
     planetDialog:
@@ -71,6 +77,7 @@ export const planets = [
   },
   {
     id: 7,
+    label: 'Odvaha',
     name: 'courage',
     avatar: './img/planet_courage.svg',
     planetDialog:
@@ -83,6 +90,7 @@ export const planets = [
   },
   {
     id: 8,
+    label: 'Strach',
     name: 'fear',
     avatar: './img/planet_fear.svg',
     planetDialog:

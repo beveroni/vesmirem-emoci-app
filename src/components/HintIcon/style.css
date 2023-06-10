@@ -1,0 +1,11 @@
+.container__icon--hint {
+  width: 50px;
+  background: none;
+  transition: transform 0.3s;
+  filter: none;
+}
+
+.container__icon--hint:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 8px 8px yellow);
+}
