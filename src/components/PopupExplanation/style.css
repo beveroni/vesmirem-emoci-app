@@ -1,6 +1,6 @@
 .explanations-popup {
   display: flex;
-  /* display: none; */
+  display: none;
   flex-direction: column;
   text-align: justify;
   position: absolute;

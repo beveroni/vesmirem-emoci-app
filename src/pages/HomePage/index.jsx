@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 import { PopupExplanationRules } from '../../components/PopupExplanationRules';
+import { PopulExplanationTips } from '../../components/PopupExplanationTips';
 
 export const HomePage = () => {
   return (
@@ -31,6 +32,7 @@ export const HomePage = () => {
         <PopupExplanationAbout />
         <PopupExplanationEmotions />
         <PopupExplanationRules />
+        <PopulExplanationTips />
       </main>
       <Footer />
     </div>
