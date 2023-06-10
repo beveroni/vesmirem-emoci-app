@@ -9,13 +9,13 @@ export const PlanetsPage = () => {
   return (
     <>
       <Header />
+      <h1>Vesmírem emocí</h1>
       <div className="popup__hint">
         <button id="popup__hint--close">
           <img src="./img/cross.svg" alt="cross_button" />
         </button>
         <p>Toto je obsah popupu.</p>
       </div>
-      <h1>Vesmírem emocí</h1>
       <div className="container__planets">
         {planets.map((planet) => (
           <Link to={planet.name} className="link" key={planet.id}>
