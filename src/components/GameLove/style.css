@@ -1,34 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&display=swap');
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: rgb(212, 130, 200);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* OBECNÝ CONTAINER PRO HRY */
-
-.task-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  left: 50%;
-  transform: translateX(-50%, -50%);
-}
-
-/* STYLY PRO LÁSKA - HRA */
-
 .task__love--container {
   position: relative;
   display: flex;
@@ -45,7 +16,7 @@ img {
 }
 
 .task__love--textarea {
-  /* background-image: url('/img/love_dotted_lines.svg'); */
+  background-image: url('/public/img/love_dotted_lines.svg');
   background-color: rgba(255, 245, 210, 1);
   background-repeat: no-repeat;
   background-size: contain;

@@ -1,5 +1,5 @@
 import { GameAnger } from './components/GameAnger';
-import { GameJoy } from './components/GameJoy';
+import { GameLove } from './components/GameLove';
 import { GameSadness } from './components/GameSadness';
 
 export const planets = [
@@ -43,6 +43,7 @@ export const planets = [
     task: 'Pomoz planetce napsat zaláskovaný pohled měsíci:',
     question:
       'Koho máš taky rád/a? A co máš nejraději? Velké objetí s kým právě tohle čteš.',
+    game: GameLove,
   },
   {
     id: 4,
