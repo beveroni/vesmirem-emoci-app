@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(212, 130, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* OBECNÝ CONTAINER PRO HRY */
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+}
+
+/* STYLY PRO LÁSKA - HRA */
+
+.task__love--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 700px;
+  height: 400px;
+}
+
+
+img {
+  width: 100%;
+}
+
+.task__love--textarea {
+  /* background-image: url('/img/love_dotted_lines.svg'); */
+  background-color: rgba(255, 245, 210, 1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 30px;
+  border: none;
+  background-position: 0px, 50px, 50px, 50px;
+  top: 60px;
+  left: 90px;
+  width: 300px;
+  height: 250px;
+}
+
+.task__love--btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 70px;
+  cursor: pointer;
+  /* kód níže odstraňuje, aby nebyla vidět čárka velikosti btn */
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.task__love--btn:hover {
+  box-shadow: 0 0 10px 5px rgb(255, 255, 193);
+  transform: scale(1.1);
+}
+
+/* BOD ZA ÚKOL */
+
+.score__star--love {
+  width: 300px;
+  display: none;
+}
