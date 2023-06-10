@@ -20,7 +20,7 @@ export const Game = () => {
       <Header />
       <div className="conversation">
         <div className="conversation__rocket">
-          <ConversationRocketBubble />
+          <ConversationRocketBubble dialogrocket={planet.rocketDialog} />
           <Rocket />
         </div>
         <div className="conversation__planet">

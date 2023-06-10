@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.css';
+import { planets } from '../../planet-database';
 
-export const ConversationRocketBubble = () => {
+export const ConversationRocketBubble = ({ dialogrocket }) => {
+  const rocketDialog = planets.find(
+    (planet) => planet.rocketDialog === rocketDialog,
+  );
   return (
     <div className="conversation__rocket--text">
-      <p>
-        Ahoj plateko, no jasně, ráda Ti dopis pomůžu napsat, ať ho můžeš poslat
-        po oběžné dráze.
-      </p>
+      <p>{dialogrocket}</p>
     </div>
   );
 };
