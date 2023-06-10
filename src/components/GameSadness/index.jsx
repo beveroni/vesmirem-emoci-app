@@ -1,10 +1,51 @@
 import React from 'react';
 import './style.css';
+import { useState, useEffect } from 'react';
 
 export const GameSadness = () => {
+  const [time, setTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+
+  const startStopwatch = (e) => {
+    e.preventDefault();
+
+    const parsedValue = Number(inputValue);
+
+    if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 5) {
+      setInputValue('');
+      return;
+    }
+
+    setTime(parsedValue);
+    setIsRunning(true);
+  };
+
+  const decrementTime = () => {
+    setTime((prevTime) => prevTime - 1);
+  };
+
+  useEffect(() => {
+    let interval;
+
+    if (isRunning && time > 0) {
+      interval = setInterval(decrementTime, 1000);
+    } else if (time <= 0) {
+      clearInterval(interval);
+      setIsRunning(false);
+      setInputValue('');
+    }
+
+    return () => clearInterval(interval);
+  }, [isRunning, time]);
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
     <div className="popup__game">
-      <form className="controls">
+      <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
             <button type="submit">Start</button>
@@ -12,6 +53,8 @@ export const GameSadness = () => {
               <input
                 type="text"
                 className="time-input"
+                value={inputValue}
+                onChange={handleInputChange}
                 title="Zadej maximálně 5 sekund"
               />
               sekund
@@ -21,7 +64,7 @@ export const GameSadness = () => {
       </form>
       <div className="stopwatch">
         <div className="stopwatch__minutes"></div>
-        <div className="stopwatch__seconds">00</div>
+        <div className="stopwatch__seconds">{time}</div>
       </div>
       <img
         src="/img/comet.svg"
