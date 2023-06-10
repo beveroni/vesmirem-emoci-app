@@ -29,6 +29,9 @@ export const HomePage = () => {
         <button className="button__rules" id="popup__open--rules">
           Pravidla
         </button>
+        <button className="button__tips" id="popup__open--tips">
+          Další tipy
+        </button>
         <PopupExplanationAbout />
         <PopupExplanationEmotions />
         <PopupExplanationRules />
