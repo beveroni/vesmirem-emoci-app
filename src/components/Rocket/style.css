@@ -1,16 +1,34 @@
 .conversation__rocket--img {
   text-align: center;
   position: absolute;
-  left: 2rem;
-  bottom: 0rem;
+  left: -20%;
+  bottom: -20%;
+  animation: rocketFly 4s forwards;
+}
+
+@keyframes rocketFly {
+  0% {
+    left: -20%;
+    bottom: -20%;
+    transform: scale(0.8);
+
+  }
+
+  100% {
+    left: 10rem;
+    bottom: 3rem;
+    transform: scale(1.5);
+
+  }
 }
 
 .rocket-img {
   width: 40%;
-  rotate: 40deg;
   transition: transform 0.3s;
+  filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
 }
 
 .rocket-img:hover {
   transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.5));
 }

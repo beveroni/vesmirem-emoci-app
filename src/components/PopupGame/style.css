@@ -9,7 +9,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  min-height: 85%;
+  height: 95%;
   background-color: rgb(168, 168, 168);
   border-radius: 40px;
   /* background-image: url(""); */
