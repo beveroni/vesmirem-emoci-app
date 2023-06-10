@@ -29,6 +29,7 @@ export const GamePage = () => {
         </div>
       </div>
       <PopupGame
+        background={planet.backgroundGame}
         task={planet.task}
         game={planet.game}
         question={planet.question}

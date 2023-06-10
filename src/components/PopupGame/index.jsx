@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
 
-export const PopupGame = ({ task, question, game }) => {
-  const { planetTask, planetQuestion } = useParams();
-  const planet = planets.find((planet) => planet.task === planetTask);
-  console.log(planet);
-  const planetQuestions = planets.find(
-    (planet) => planet.question === planetQuestion,
-  );
+export const PopupGame = ({ background, task, question, game }) => {
+  // const { planetTask, planetQuestion, planetBackground } = useParams();
+  // const planet = planets.find((planet) => planet.task === planetTask);
+  // console.log(planet);
+  // const planetQuestions = planets.find(
+  //   (planet) => planet.question === planetQuestion,
+  // );
   const Game = game;
 
   // const backgroundImage = planets.find(
@@ -19,7 +19,7 @@ export const PopupGame = ({ task, question, game }) => {
   // );
 
   return (
-    <div className="popup">
+    <div className="popup" style={{ backgroundImage: `url(${background})` }}>
       <button id="popup__close">
         <img src="/img/cross.svg" alt="cross_button" />
       </button>
