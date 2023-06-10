@@ -200,10 +200,22 @@ h1:hover {
 }
 
 
-.button__project:hover,
-.button__emotions:hover,
-.button__rules:hover,
+.button__project:hover {
+  box-shadow: 0 0 40px 20px rgb(252, 116, 57);
+  transform: scale(1.1);
+}
+
+.button__emotions:hover {
+  box-shadow: 0 0 40px 20px rgb(255, 139, 199);
+  transform: scale(1.1);
+}
+
+.button__rules:hover {
+  box-shadow: 0 0 40px 20px rgb(84, 84, 213);
+  transform: scale(1.1);
+}
+
 .button__tips:hover {
-  box-shadow: 0 0 40px 20px rgb(255, 255, 193);
+  box-shadow: 0 0 40px 20px rgb(10, 134, 105);
   transform: scale(1.1);
 }
