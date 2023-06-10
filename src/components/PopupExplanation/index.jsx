@@ -1,6 +1,12 @@
 import React from 'react';
 import './style.css';
+import { Cross } from '../Cross';
 
-export const PopupExplanation = () => {
-  return <div className="explanations-popup">tady je obsah popupů</div>;
+export const PopupExplanation = ({ children }) => {
+  return (
+    <div className="explanations-popup">
+      <div className="explanation-contain">{children}</div>
+      <Cross />
+    </div>
+  );
 };

@@ -1,0 +1,48 @@
+.popup__about--us {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.about-us__veronika .about-us__eliska {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.astronaut {
+  width: 100px;
+  transform-origin: center;
+}
+
+.astronaut:hover {
+  cursor: pointer;
+  animation: swing 1s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.github_logo {
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}

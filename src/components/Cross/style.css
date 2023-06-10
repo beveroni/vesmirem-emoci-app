@@ -1,0 +1,13 @@
+.popup__btn--close {
+  color: #a5a5a5;
+  /* display: inline-block; */
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

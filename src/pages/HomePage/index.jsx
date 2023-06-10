@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
-import { PopupExplanation } from '../../components/PopupExplanation';
+import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 
 export const HomePage = () => {
   return (
@@ -26,7 +26,7 @@ export const HomePage = () => {
         <button className="button__rules" id="popup__open--rules">
           Pravidla
         </button>
-        <PopupExplanation />
+        <PopupExplanationAbout />
       </main>
       <Footer />
     </div>
