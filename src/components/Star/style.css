@@ -1,11 +1,10 @@
 .score-star {
-  flex-direction: center;
-  background-color: antiquewhite;
-
   width: 300px;
-
+  height: 300px;
+  margin: auto;
 }
 
-.score-star img {
-  fill: currentColor;
+.score-star svg {
+  width: 300px;
+  height: 300px;
 }
