@@ -9,6 +9,7 @@ export const planets = [
     label: 'Radost',
     name: 'joy',
     avatar: '/img/planet_joy.svg',
+    color: '#b3b370',
     planetDialog:
       'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. A co tu vlastně děláš?',
     rocketDialog:
@@ -24,6 +25,7 @@ export const planets = [
     label: 'Smutek',
     name: 'sadness',
     avatar: '/img/planet_sadness.svg',
+    color: '#40a6c5',
     planetDialog:
       'Ahoj, jsem úplně nejvíc smutná, víš... Prolítla tady kolem mě moc pěkná kometa s dlouhým ocasem.. a než jsem se stačila otočit, brek brek, byla pryč. Nestihla jsem si nic přát, brek brek.',
     rocketDialog:
@@ -39,6 +41,7 @@ export const planets = [
     label: 'Láska',
     name: 'love',
     avatar: '/img/planet_love.svg',
+    color: '#bc6ea7',
     planetDialog:
       'Ááách, ahoj, raketko, koukej, dostala jsem dopis od měsíce. Moc krásný. Napsal mi, že se těší, až se zase za měsíc uvidíme... ááách. Akorát nevím, co mu mám odpovědět. Trochu se stydím.',
     rocketDialog:
@@ -54,6 +57,7 @@ export const planets = [
     name: 'anger',
     label: 'Vztek',
     avatar: '/img/planet_anger.svg',
+    color: '#ba5858',
     planetDialog:
       'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat!',
     rocketDialog:
@@ -69,6 +73,7 @@ export const planets = [
     label: 'Nadšení',
     name: 'enthusiasm',
     avatar: '/img/planet_enthusiasm.svg',
+    color: '#c49847',
     planetDialog:
       'Ahoj raketko, cha cha, koukej, jaký mám kolem sebe pěkný kruh! A víš co? Právě jsem zjistila, že se to odborně nazývá planetární prstenec. A víš, co ještě? Vygooglila jsem, že je složený z úlomků a prachu. No není nádherný? Koukej, jak mi sluší!',
     rocketDialog:
@@ -82,6 +87,7 @@ export const planets = [
     label: 'Nuda',
     name: 'boredom',
     avatar: '/img/planet_boredom.svg',
+    color: '995524',
     planetDialog:
       ' text: Ahoj, raketko, co děláš tady vzadu? Jsem úplně nejdál. A jsem tu sama. Dny jsou tady děsně dlouhý. Počítala jsem meteority, co prolítnou kolem. Bylo jich 2782, družic 678, nebo 687 a jedno auto. Ale to už mě taky nebaví... A co děláš ty?',
     rocketDialog:
@@ -95,6 +101,7 @@ export const planets = [
     label: 'Odvaha',
     name: 'courage',
     avatar: '/img/planet_courage.svg',
+    color: '#5ebe5e',
     planetDialog:
       'Ahoj! Pojď ke mně dál, ať jsi kdo jsi! Já mám pro strach uděláno. Koukni totiž, jaký mám bicáky. Vidíš támhle tu planetu úplně vzadu? Tak tu jsem předběhla. Jestli chceš, můžeš být se mnou v týmu a můžeme prozkoumávat vesmír spolu. Ale napřed sem ti připravila jeden úkol - máš odvahu na to jej splnit?',
     rocketDialog:
@@ -109,6 +116,7 @@ export const planets = [
     label: 'Strach',
     name: 'fear',
     avatar: '/img/planet_fear.svg',
+    color: '#a3aab1',
     planetDialog:
       'Jéééé, kdo jsi? Co tady děláš? Ty si mě teda vylekala. Všechny planety se mi někam ztratily. Žádnou nevidím.. Jsem tu taková sama malinkatá po tmě. A to nemám ráda. Řeknu ti tajemství, jo? Víš, já se bojím tmy. Ale nikomu to neříkej, jo? To se planetám nestává.. A taky se bojím, že na mne někdo přiletí a obsadí',
     rocketDialog:
