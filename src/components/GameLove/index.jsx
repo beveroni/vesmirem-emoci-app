@@ -26,9 +26,6 @@ export const GameLove = ({ onFinish }) => {
         </form>
         <img className="task__love--img" src="/img/love_letter.svg" />
       </div>
-      <div className="score__star--love">
-        <img src="/img/love_star.svg" alt="hvězdička za splnění úkolu" />
-      </div>
     </div>
   );
 };
