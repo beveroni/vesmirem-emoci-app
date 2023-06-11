@@ -30,7 +30,7 @@ export const Dustbin = memo(function Dustbin({
   if (isActive) {
     backgroundColor = 'none';
   } else if (canDrop) {
-    backgroundColor = 'darkkhaki';
+    backgroundColor = 'none';
   }
   return (
     <div ref={drop} style={{ ...style, backgroundColor }} data-testid="dustbin">

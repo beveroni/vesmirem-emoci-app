@@ -4,7 +4,7 @@ import { NativeTypes } from 'react-dnd-html5-backend';
 import { Box } from './box.jsx';
 import { Dustbin } from './dustbin.jsx';
 import { ItemTypes } from './ItemTypes.jsx';
-export const Container = memo(function Container() {
+export const Container = memo(function Container({ onFinish }) {
   const [dustbins, setDustbins] = useState([
     { accepts: [ItemTypes.GLASS], lastDroppedItem: null },
     {
@@ -48,6 +48,10 @@ export const Container = memo(function Container() {
           },
         }),
       );
+      console.log(droppedBoxNames.length);
+      if (droppedBoxNames.length === 6) {
+        onFinish();
+      }
     },
     [droppedBoxNames, dustbins],
   );

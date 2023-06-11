@@ -5,7 +5,7 @@ import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 console.log(planets);
 
-export const PlanetsPage = ({finishedGames}) => {
+export const PlanetsPage = ({ finishedGames }) => {
   return (
     <>
       <Header finishedGames={finishedGames} />
@@ -18,14 +18,22 @@ export const PlanetsPage = ({finishedGames}) => {
       </div>
       <div className="container__planets">
         {planets.map((planet) => (
-          <Link to={planet.name} className="link" key={planet.id}>
-            <img
-              src={planet.avatar}
-              alt="planet joy button"
-              className={'planet__' + planet.name}
-            />
-            <span className="link__text">{planet.label}</span>
-          </Link>
+          <div
+            className={`planet__${planet.name} ${
+              finishedGames.includes(planet.name) ? 'disabled' : ''
+            }`}
+          >
+            <Link to={planet.name} className="link" key={planet.id}>
+              <img
+                src={planet.avatar}
+                alt="planet joy button"
+                className={`planet__${planet.name} ${
+                  finishedGames.includes(planet.name) ? 'disabled' : ''
+                }`}
+              />
+              <span className="link__text">{planet.label}</span>
+            </Link>
+          </div>
         ))}
       </div>
       <img src="img/rocket.svg" alt="rocket" className="rocket" />
