@@ -87,7 +87,7 @@ export const planets = [
     label: 'Nuda',
     name: 'boredom',
     avatar: '/img/planet_boredom.svg',
-    color: '995524',
+    color: '#995524',
     planetDialog:
       ' text: Ahoj, raketko, co děláš tady vzadu? Jsem úplně nejdál. A jsem tu sama. Dny jsou tady děsně dlouhý. Počítala jsem meteority, co prolítnou kolem. Bylo jich 2782, družic 678, nebo 687 a jedno auto. Ale to už mě taky nebaví... A co děláš ty?',
     rocketDialog:

@@ -46,7 +46,10 @@ export const GamePage = () => {
         </div>
         <div className="conversation__planet">
           {isPlanetBubbleOpen && (
-            <ConversationPlanetBubble dialog={planet.planetDialog} />
+            <ConversationPlanetBubble
+              color={planet.color}
+              dialog={planet.planetDialog}
+            />
           )}
           <Planet onClick={handlePlanetClick} planet={planet} />
         </div>
