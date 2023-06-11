@@ -5,7 +5,10 @@ import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 console.log(planets);
 
-export const PlanetsPage = ({finishedGames}) => {
+export const PlanetsPage = ({ finishedGames }) => {
+  // console.log(finishedGames.length);
+  // console.log(planets.length);
+
   return (
     <>
       <Header finishedGames={finishedGames} />
@@ -16,18 +19,22 @@ export const PlanetsPage = ({finishedGames}) => {
         </button>
         <p>Toto je obsah popupu.</p>
       </div>
-      <div className="container__planets">
-        {planets.map((planet) => (
-          <Link to={planet.name} className="link" key={planet.id}>
-            <img
-              src={planet.avatar}
-              alt="planet joy button"
-              className={'planet__' + planet.name}
-            />
-            <span className="link__text">{planet.label}</span>
-          </Link>
-        ))}
-      </div>
+      {finishedGames.length === planets.length ? (
+        <div>WinerPage</div>
+      ) : (
+        <div className="container__planets">
+          {planets.map((planet) => (
+            <Link to={planet.name} className="link" key={planet.id}>
+              <img
+                src={planet.avatar}
+                alt="planet joy button"
+                className={'planet__' + planet.name}
+              />
+              <span className="link__text">{planet.label}</span>
+            </Link>
+          ))}
+        </div>
+      )}
       <img src="img/rocket.svg" alt="rocket" className="rocket" />
       <script src="scriptgamepage.js" type="module"></script>
     </>
