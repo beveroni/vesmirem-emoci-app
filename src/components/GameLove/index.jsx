@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const GameLove = () => {
+export const GameLove = ({ onClick }) => {
   return (
     <div className="task-container">
       <div className="task__love--container">
@@ -12,7 +12,12 @@ export const GameLove = () => {
             placeholder="Milý Měsíci, ..."
             required
           ></textarea>
-          <button id="love-btn" className="task__love--btn" type="submit">
+          <button
+            id="love-btn"
+            className="task__love--btn"
+            type="submit"
+            onClick={onClick}
+          >
             <img
               className="task__love--btn"
               src="/img/love_stamp.svg"
