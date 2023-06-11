@@ -6,7 +6,6 @@ export const Card = ({ onClick, name, hidden, selected }) => {
     onClick(name);
   };
 
-
   return (
     <>
       <img
@@ -20,4 +19,3 @@ export const Card = ({ onClick, name, hidden, selected }) => {
     </>
   );
 };
-

@@ -5,10 +5,10 @@ import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 console.log(planets);
 
-export const PlanetsPage = () => {
+export const PlanetsPage = ({finishedGames}) => {
   return (
     <>
-      <Header />
+      <Header finishedGames={finishedGames} />
       <h1>Vesmírem emocí</h1>
       <div className="popup__hint">
         <button id="popup__hint--close">
