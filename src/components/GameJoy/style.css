@@ -7,11 +7,6 @@
   flex: row;
 }
 
-.game__card {
-  width: 100px;
-  cursor: pointer;
-}
-
 .popup__game--column1 {
   display: flex;
   flex-direction: column;
@@ -19,12 +14,6 @@
   gap: 0.2rem;
 }
 
-.popup__game--column2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.2rem;
-}
 
 /* @media (max-width: 1024px) {
  }

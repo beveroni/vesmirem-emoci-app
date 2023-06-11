@@ -15,14 +15,6 @@ import './style.css';
 const App = () => {
   return (
     <div className="container">
-      <nav>
-        <Link to="/">Homepage</Link>
-        <span> | </span>
-        <Link to="/games">Games</Link>
-        <span> | </span>
-        <Link to="/games/:Id">Games</Link>
-        <span> | </span>
-      </nav>
       <Outlet />
     </div>
   );
