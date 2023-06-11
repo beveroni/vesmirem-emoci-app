@@ -2,10 +2,15 @@ import React from 'react';
 import './style.css';
 import { PopupExplanation } from '../components/PopupExplanation';
 
-const PopupWiner = ({ onClose }) => {
+export const PopupWiner = ({ onClose }) => {
   return (
     <div className="popup-winer">
-      <PopupExplanation onClose={onClose}>Winer Page</PopupExplanation>
+      <PopupExplanation onClose={onClose}>
+        <p>
+          <strong>Gratulujeme!</strong>
+        </p>
+        <p>Objevil si všechny planetky.</p>
+      </PopupExplanation>
     </div>
   );
 };

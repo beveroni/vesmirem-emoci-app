@@ -3,9 +3,11 @@ import './style.css';
 import { Header } from '../../components/Header';
 import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
+import { PopupWiner } from '../../PopupWiner';
+
 console.log(planets);
 
-export const PlanetsPage = ({ finishedGames }) => {
+export const PlanetsPage = ({ finishedGames, onClose }) => {
   return (
     <>
       <Header finishedGames={finishedGames} />
@@ -16,8 +18,9 @@ export const PlanetsPage = ({ finishedGames }) => {
         </button>
         <p>Toto je obsah popupu.</p>
       </div>
+      <PopupWiner onClose={onClose} />
       {finishedGames.length === planets.length ? (
-        <div>WinerPage</div>
+        <div>WinerPopap</div>
       ) : (
         <>
           <div className="container__planets">
