@@ -21,7 +21,8 @@ img {
   background-repeat: repeat;
   background-size: contain;
   position: absolute;
-  background-position: 0px 34px;
+  background-position: 0px 30px;
+  line-height: 43px;
   /* background-attachment: fixed; */
   font-family: 'Amatic SC', sans-serif;
   font-size: 33px;
