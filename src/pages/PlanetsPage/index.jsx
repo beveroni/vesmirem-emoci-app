@@ -3,7 +3,6 @@ import './style.css';
 import { Header } from '../../components/Header';
 import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
-console.log(planets);
 
 export const PlanetsPage = ({ finishedGames }) => {
   return (
@@ -16,35 +15,29 @@ export const PlanetsPage = ({ finishedGames }) => {
         </button>
         <p>Toto je obsah popupu.</p>
       </div>
-      {finishedGames.length === planets.length ? (
-        <div>WinerPage</div>
-      ) : (
-        <>
-          <div className="container__planets">
-            {planets.map((planet) => (
-              <div
+      <div className="container__planets">
+        {planets.map((planet) => (
+          <div
+            className={`planet__${planet.name} ${
+              finishedGames.includes(planet.name) ? 'disabled' : ''
+            }`}
+            key={planet.id}
+          >
+            <Link to={planet.name} className="link">
+              <img
+                src={planet.avatar}
+                alt="planet joy button"
                 className={`planet__${planet.name} ${
                   finishedGames.includes(planet.name) ? 'disabled' : ''
                 }`}
-              >
-                <Link to={planet.name} className="link" key={planet.id}>
-                  <img
-                    src={planet.avatar}
-                    alt="planet joy button"
-                    className={`planet__${planet.name} ${
-                      finishedGames.includes(planet.name) ? 'disabled' : ''
-                    }`}
-                  />
-                  <span className="link__text">{planet.label}</span>
-                </Link>
-              </div>
-            ))}
+              />
+              <span className="link__text">{planet.label}</span>
+            </Link>
           </div>
-          <img src="img/rocket.svg" alt="rocket" className="rocket" />
-          <script src="scriptgamepage.js" type="module"></script>
-        </>
-      )}
-      ;
+        ))}
+      </div>
+      <img src="img/rocket.svg" alt="rocket" className="rocket" />
+      <script src="scriptgamepage.js" type="module"></script>
     </>
   );
 };
