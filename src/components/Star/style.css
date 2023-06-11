@@ -1,0 +1,11 @@
+.score-star {
+  flex-direction: center;
+  background-color: antiquewhite;
+
+  width: 300px;
+
+}
+
+.score-star img {
+  fill: currentColor;
+}

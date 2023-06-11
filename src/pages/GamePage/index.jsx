@@ -61,6 +61,7 @@ export const GamePage = () => {
           game={planet.game}
           question={planet.question}
           onClose={handleClosePopup}
+          color={planet.color}
         />
       )}
       <ButtonGameStart onButtonClick={handleGameStart} />

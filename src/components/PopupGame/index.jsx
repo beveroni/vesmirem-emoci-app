@@ -6,7 +6,14 @@ import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
 import { Star } from '../Star';
 
-export const PopupGame = ({ background, task, question, game, onClose }) => {
+export const PopupGame = ({
+  background,
+  task,
+  question,
+  game,
+  onClose,
+  color,
+}) => {
   // const { planetTask, planetQuestion, planetBackground } = useParams();
   // const planet = planets.find((planet) => planet.task === planetTask);
   // console.log(planet);
@@ -32,7 +39,11 @@ export const PopupGame = ({ background, task, question, game, onClose }) => {
       </button>
       <div className="popup__content">
         <p className="popup__content--task1">{task}</p>
-        <Game onFinish={handleShowStar} /> {gameFinish ? <Star /> : null}
+        {gameFinish ? (
+          <Star color={color} />
+        ) : (
+          <Game onFinish={handleShowStar} />
+        )}
       </div>
       <div className="popup__content2">
         <img className="stars__group" src="/img/stars_group.svg" alt="" />
