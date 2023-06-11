@@ -1,23 +1,22 @@
 import React from 'react';
 import './style.css';
 
-export const GameLove = ({ onClick }) => {
+export const GameLove = ({ onFinish }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault(), onFinish();
+  };
+
   return (
     <div className="task-container">
       <div className="task__love--container">
-        <form className="task__love--form">
+        <form className="task__love--form" onSubmit={handleSubmit}>
           <textarea
             id="message"
             className="task__love--textarea"
             placeholder="Milý Měsíci, ..."
             required
           ></textarea>
-          <button
-            id="love-btn"
-            className="task__love--btn"
-            type="submit"
-            onClick={onClick}
-          >
+          <button id="love-btn" className="task__love--btn" type="submit">
             <img
               className="task__love--btn"
               src="/img/love_stamp.svg"

@@ -4,6 +4,7 @@ import { HomeArrow } from '../HomeArrow';
 import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
+import { Star } from '../Star';
 
 export const PopupGame = ({ background, task, question, game, onClose }) => {
   // const { planetTask, planetQuestion, planetBackground } = useParams();
@@ -18,6 +19,12 @@ export const PopupGame = ({ background, task, question, game, onClose }) => {
   //   (planet) => planet.backgroundGame === planetBackground,
   // );
 
+  //e.
+  const [gameFinish, setGameFinish] = useState(false);
+  const handleShowStar = () => {
+    setGameFinish(true);
+  };
+
   return (
     <div className="popup" style={{ backgroundImage: `url(${background})` }}>
       <button id="popup__close" onClick={onClose}>
@@ -25,7 +32,7 @@ export const PopupGame = ({ background, task, question, game, onClose }) => {
       </button>
       <div className="popup__content">
         <p className="popup__content--task1">{task}</p>
-        <Game />
+        <Game onFinish={handleShowStar} /> {gameFinish ? <Star /> : null}
       </div>
       <div className="popup__content2">
         <img className="stars__group" src="/img/stars_group.svg" alt="" />
