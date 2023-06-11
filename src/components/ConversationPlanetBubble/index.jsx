@@ -9,7 +9,7 @@ export const ConversationPlanetBubble = ({ color, dialog }) => {
   return (
     <div
       className="conversation__planet--text bubble bubble-bottom-right"
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: color, '--color': color }}
     >
       <p>{dialog}</p>
     </div>
