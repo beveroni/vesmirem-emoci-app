@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
-import { HomeArrow } from '../HomeArrow';
+import { ContinueArrow } from '../ContinueArrow';
 import { useParams } from 'react-router-dom';
 import { planets } from '../../planet-database';
 import { GameAnger } from '../GameAnger';
@@ -48,7 +48,7 @@ export const PopupGame = ({
       <div className="popup__content2">
         <img className="stars__group" src="/img/stars_group.svg" alt="" />
         <p className="popup__content--task2">{question}</p>
-        <HomeArrow />
+        <ContinueArrow />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 /* HOVER NA TLAČÍTKO POKRAČOVAT */
-.button__continue--home {
+.button__continue--arrow {
   transform: scale(1);
   transition: transform 0.3s;
 }
 
-.button__continue--home:hover {
+.button__continue--arrow:hover {
   transform: scale(1.1);
 }
