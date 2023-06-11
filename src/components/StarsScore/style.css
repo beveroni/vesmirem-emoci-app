@@ -14,10 +14,11 @@
   border-radius: 10px;
 }
 
-.star {
+/* 
+.container__stars--score svg {
   width: 30px;
   transition: transform 0.3s;
-}
+} */
 
 .star:hover {
   transform: scale(1.1);

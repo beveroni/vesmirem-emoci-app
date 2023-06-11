@@ -40,15 +40,17 @@ export const PopupGame = ({
       <div className="popup__content">
         <p className="popup__content--task1">{task}</p>
         {gameFinish ? (
-          <Star color={color} />
+          <>
+            <Star color={color} />
+            <div className="popup__content2">
+              <img className="stars__group" src="/img/stars_group.svg" alt="" />
+              <p className="popup__content--task2">{question}</p>
+              <ContinueArrow />
+            </div>
+          </>
         ) : (
           <Game onFinish={handleShowStar} />
         )}
-      </div>
-      <div className="popup__content2">
-        <img className="stars__group" src="/img/stars_group.svg" alt="" />
-        <p className="popup__content--task2">{question}</p>
-        <ContinueArrow />
       </div>
     </div>
   );

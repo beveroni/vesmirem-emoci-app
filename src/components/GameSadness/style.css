@@ -97,7 +97,7 @@ button {
   position: absolute;
   top: 50%;
   right: 0;
-  animation: fly 2s linear forwards;
+  animation: fly 1s linear forwards;
 }
 
 @keyframes fly {
