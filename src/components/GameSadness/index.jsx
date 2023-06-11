@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import { useState, useEffect } from 'react';
 
-export const GameSadness = () => {
+export const GameSadness = ({ onFinish }) => {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -33,6 +33,7 @@ export const GameSadness = () => {
       interval = setInterval(decrementTime, 1000);
     } else if (isRunning && time === 0) {
       setGameFinished(true);
+      setTimeout(onFinish, 2000);
     } else if (time <= 0) {
       clearInterval(interval);
       setIsRunning(false);
