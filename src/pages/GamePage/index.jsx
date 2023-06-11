@@ -11,12 +11,16 @@ import { planets } from '../../planet-database';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 
-export const GamePage = () => {
+export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);
   const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(false);
   const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(false);
+
+  const handleGameFinished = () => {
+    gameFinished(planet.name);
+  };
 
   const handleGameStart = () => {
     setShowPopup(true);
@@ -36,7 +40,7 @@ export const GamePage = () => {
 
   return (
     <>
-      <Header />
+      <Header finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
           {isRocketBubbleOpen && (
@@ -56,6 +60,7 @@ export const GamePage = () => {
       </div>
       {showPopup && (
         <PopupGame
+          gameFinished={handleGameFinished}
           background={planet.backgroundGame}
           task={planet.task}
           game={planet.game}

@@ -13,6 +13,7 @@ export const PopupGame = ({
   game,
   onClose,
   color,
+  gameFinished,
 }) => {
   // const { planetTask, planetQuestion, planetBackground } = useParams();
   // const planet = planets.find((planet) => planet.task === planetTask);
@@ -30,6 +31,7 @@ export const PopupGame = ({
   const [gameFinish, setGameFinish] = useState(false);
   const handleShowStar = () => {
     setGameFinish(true);
+    gameFinished();
   };
 
   return (
