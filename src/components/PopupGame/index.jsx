@@ -38,10 +38,11 @@ export const PopupGame = ({
         <img src="/img/cross.svg" alt="cross_button" />
       </button>
       <div className="popup__content">
-        <p className="popup__content--task1">{task}</p>
         {gameFinish ? (
           <>
-            <Star color={color} />
+            <div className="popup__content--star">
+              <Star color={color} />
+            </div>
             <div className="popup__content2">
               <img className="stars__group" src="/img/stars_group.svg" alt="" />
               <p className="popup__content--task2">{question}</p>
@@ -49,7 +50,11 @@ export const PopupGame = ({
             </div>
           </>
         ) : (
-          <Game onFinish={handleShowStar} />
+          <>
+            {' '}
+            <p className="popup__content--task1">{task}</p>
+            <Game onFinish={handleShowStar} />
+          </>
         )}
       </div>
     </div>

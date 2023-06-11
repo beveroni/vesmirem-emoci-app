@@ -40,6 +40,11 @@
   margin: 2rem;
 }
 
+.popup__content--star {
+  width: 300px;
+  height: 300px;
+}
+
 .popup__content--task1 {
   display: flex;
   background-color: #ffffff;

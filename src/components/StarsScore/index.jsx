@@ -7,11 +7,9 @@ export const StarScore = () => {
   return (
     <div className="container__stars">
       {planets.map((planet) => (
-        <Star
-          color={planet.color}
-          className="container__stars--score"
-          key={planet.id}
-        ></Star>
+        <div className="container__stars--score">
+          <Star color={planet.color} key={planet.id}></Star>
+        </div>
       ))}
     </div>
   );

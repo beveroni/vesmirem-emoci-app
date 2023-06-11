@@ -14,12 +14,13 @@
   border-radius: 10px;
 }
 
-/* 
-.container__stars--score svg {
-  width: 30px;
-  transition: transform 0.3s;
-} */
 
-.star:hover {
+.container__stars--score {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.container__stars--score:hover {
   transform: scale(1.1);
 }
