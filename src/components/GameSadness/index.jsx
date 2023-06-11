@@ -6,6 +6,7 @@ export const GameSadness = () => {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [inputValue, setInputValue] = useState('');
+  const [gameFinished, setGameFinished] = useState(false);
 
   const startStopwatch = (e) => {
     e.preventDefault();
@@ -30,6 +31,8 @@ export const GameSadness = () => {
 
     if (isRunning && time > 0) {
       interval = setInterval(decrementTime, 1000);
+    } else if (isRunning && time === 0) {
+      setGameFinished(true);
     } else if (time <= 0) {
       clearInterval(interval);
       setIsRunning(false);
@@ -69,7 +72,7 @@ export const GameSadness = () => {
       <img
         src="/img/comet.svg"
         id="comet"
-        className="comet"
+        className={gameFinished ? 'comet-animation' : 'comet'}
         alt="obrázek letící komety"
       />
     </div>
