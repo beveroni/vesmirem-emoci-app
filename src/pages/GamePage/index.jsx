@@ -15,8 +15,8 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);
-  const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(false);
-  const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(false);
+  const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(true);
+  const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(true);
 
   const handleGameFinished = () => {
     gameFinished(planet.name);

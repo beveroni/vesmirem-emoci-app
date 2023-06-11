@@ -18,9 +18,8 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
         </button>
         <p>Toto je obsah popupu.</p>
       </div>
-      <PopupWiner onClose={onClose} />
       {finishedGames.length === planets.length ? (
-        <div>WinerPopap</div>
+        <div>WinerPage</div>
       ) : (
         <>
           <div className="container__planets">

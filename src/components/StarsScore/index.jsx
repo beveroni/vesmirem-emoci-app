@@ -7,7 +7,7 @@ export const StarScore = ({ finishedGames }) => {
   return (
     <div className="container__stars">
       {planets.map((planet) => (
-        <div className="container__stars--score">
+        <div className="container__stars--score" key={planet.id}>
           <Star
             color={
               finishedGames?.includes(planet.name) ? planet.color : 'yellow'
