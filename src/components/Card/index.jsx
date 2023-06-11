@@ -12,9 +12,9 @@ export const Card = ({ onClick, name, hidden, selected }) => {
         onClick={handleClick}
         src={`/img/game_joy_card_${name}.svg`}
         alt="game card rabbit"
-        // className={`game__card ${hidden ? 'game__card hidden' : ''}`+ ${
-
-        // }}
+        className={`game__card ${hidden ? 'hidden' : ''}${
+          selected ? 'selected' : ''
+        }`}
       />
     </>
   );
