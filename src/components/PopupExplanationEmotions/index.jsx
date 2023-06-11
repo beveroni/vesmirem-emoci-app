@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import { PopupExplanation } from '../PopupExplanation';
 
-export const PopupExplanationEmotions = () => {
+export const PopupExplanationEmotions = ({ onClose }) => {
   return (
-    <PopupExplanation>
+    <PopupExplanation onClose={onClose}>
       <div className="popup__emotions--description">
         <h2>Seznam emocí použitých ve hře</h2>
         <div className="emotions__container">

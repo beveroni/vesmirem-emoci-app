@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import { PopupExplanation } from '../PopupExplanation';
 
-export const PopupExplanationAbout = () => {
+export const PopupExplanationAbout = ({ onClose }) => {
   return (
-    <PopupExplanation>
+    <PopupExplanation onClose={onClose}>
       <div className="popup__about--description">
         <h2>O projektu</h2>
         <p>

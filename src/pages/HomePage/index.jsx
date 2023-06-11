@@ -14,6 +14,8 @@ export const HomePage = () => {
   const [showPopupRules, setShowPopupRules] = useState(false);
   const [showPopupTips, setShowPopupTips] = useState(false);
 
+  console.log(showPopupRules);
+
   const handlePopupAboutOpen = () => {
     setShowPopupAbout(true);
   };
@@ -87,47 +89,16 @@ export const HomePage = () => {
           Další tipy
         </button>
         {showPopupAbout && (
-          <div className="popup">
-            <div className="popup__content">
-              <button className="popup__close" onClick={handlePopupAboutClose}>
-                X
-              </button>
-              <PopupExplanationAbout />
-            </div>
-          </div>
+          <PopupExplanationAbout onClose={handlePopupAboutClose} />
         )}
         {showPopupEmotions && (
-          <div className="popup">
-            <div className="popup__content">
-              <button
-                className="popup__close"
-                onClick={handlePopupEmotionsClose}
-              >
-                X
-              </button>
-              <PopupExplanationEmotions />
-            </div>
-          </div>
+          <PopupExplanationEmotions onClose={handlePopupEmotionsClose} />
         )}
         {showPopupRules && (
-          <div className="popup">
-            <div className="popup__content">
-              <button className="popup__close" onClick={handlePopupRulesClose}>
-                X
-              </button>
-              <PopupExplanationRules />
-            </div>
-          </div>
+          <PopupExplanationRules onClose={handlePopupRulesClose} />
         )}
         {showPopupTips && (
-          <div className="popup">
-            <div className="popup__content">
-              <button className="popup__close" onClick={handlePopupTipsClose}>
-                X
-              </button>
-              <PopulExplanationTips />
-            </div>
-          </div>
+          <PopulExplanationTips onClose={handlePopupTipsClose} />
         )}
       </main>
       <Footer />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './style.css';
 
-export const Cross = () => {
+export const Cross = ({ onClick }) => {
   // const [isOpen, setIsOpen] = useState(true);
 
   // const handleClose = () => {
@@ -22,7 +22,7 @@ export const Cross = () => {
   // };
 
   return (
-    <button className="popup__btn--close">
+    <button className="popup__btn--close" onClick={onClick}>
       <img src="/img/cross.svg" alt="křížek" />
     </button>
   );

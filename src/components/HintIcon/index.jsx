@@ -10,6 +10,10 @@ export const HintIcon = () => {
     setIsPopupOpen(true);
   };
 
+  const handleHintClickClose = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div>
       <img
@@ -18,7 +22,7 @@ export const HintIcon = () => {
         alt="home icon"
         onClick={handleHintClick}
       />
-      {isPopupOpen && <PopupExplanationRules />}
+      {isPopupOpen && <PopupExplanationRules onClose={handleHintClickClose} />}
     </div>
   );
 };
