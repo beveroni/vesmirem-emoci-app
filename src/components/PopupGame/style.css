@@ -1,23 +1,29 @@
 /* Styl pro pop-up okno hry */
 
-.popup {
+/* .popup {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   position: fixed;
   z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   width: 90%;
   height: 95%;
   background-color: rgb(168, 168, 168);
   border-radius: 40px;
   /* background-image: url(""); */
-  background-repeat: no-repeat;
-  background-size: cover;
+/*background-repeat: no-repeat;
+background-size: cover;
 }
+*/
 
-#popup__close {
+
+
+
+*/ #popup__close {
   display: flex;
   color: #a5a5a5;
   display: inline-block;
@@ -32,28 +38,13 @@
 
 
 /* Styly úkolu */
-.popup__content {
+/* .popup__content {
   position: relative;
   bottom: -0.5rem;
   height: auto;
   padding: 0.1rem;
   margin: 2rem;
-}
-
-.popup__content--star {
-  width: 300px;
-  height: 300px;
-}
-
-.popup__content--task1 {
-  display: flex;
-  background-color: #ffffff;
-  color: black;
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 10px;
-  justify-content: center;
-}
+} */
 
 .popup__content2 {
   display: flex;
@@ -66,6 +57,32 @@
   left: 0.4rem;
 }
 
+.stars__group {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 0.5rem;
+  right: 2rem;
+}
+
+
+/* .popup__content--star {
+  width: 300px;
+  height: 300px;
+} */
+
+.popup__content--task1 {
+  display: flex;
+  background-color: #ffffff;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+
+
 .popup__content--task2 {
   display: flex;
   color: black;
@@ -75,16 +92,8 @@
 
 }
 
-.popup__game {
+/* .popup__game {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.stars__group {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  top: 0.5rem;
-  right: 2rem;
-}
+} */
