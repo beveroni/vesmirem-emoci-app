@@ -7,9 +7,11 @@
   font-size: 1em;
   line-height: 1.5;
   width: 80vw;
+
   max-height: 80vh;
-  top: 4rem;
-  /* left: 50%; */
+  /* top: calk(10%- 5rem);
+  top: 10%; */
+  left: 10%;
   background-color: rgb(168, 168, 168);
   border-radius: 40px;
   padding: 3rem;

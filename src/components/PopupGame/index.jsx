@@ -36,7 +36,7 @@ export const PopupGame = ({
 
   return (
     <div className="popup" style={{ backgroundImage: `url(${background})` }}>
-      <button id="popup__close" onClick={onClose}>
+      <button onClick={onClose}>
         <img src="/img/cross.svg" alt="cross_button" />
       </button>
       <div className="popup__content">

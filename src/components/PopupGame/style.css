@@ -17,13 +17,14 @@
   /* background-image: url(""); */
 /*background-repeat: no-repeat;
 background-size: cover;
+id="popup__close"
 }
 */
 
 
 
 
-*/ #popup__close {
+/* #popup__close {
   display: flex;
   color: #a5a5a5;
   display: inline-block;
@@ -34,9 +35,9 @@ background-size: cover;
   padding: 0;
   border: none;
   background: none;
-}
+} */
 
-
+*/
 /* Styly úkolu */
 /* .popup__content {
   position: relative;
