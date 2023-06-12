@@ -29,8 +29,9 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
                 className={`planet__${planet.name} ${
                   finishedGames.includes(planet.name) ? 'disabled' : ''
                 }`}
+                key={planet.id}
               >
-                <Link to={planet.name} className="link" key={planet.id}>
+                <Link to={planet.name} className="link">
                   <img
                     src={planet.avatar}
                     alt="planet joy button"

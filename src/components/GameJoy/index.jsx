@@ -12,7 +12,6 @@ export const GameJoy = ({ onFinish }) => {
     if (selectedRight && selectedLeft) {
       const isMatched =
         (selectedLeft === 'rabbit' && selectedRight === 'carrot') ||
-        (selectedRight === 'carrot' && selectedLeft === 'rabbit') ||
         (selectedLeft === 'astronaut' && selectedRight === 'rocket') ||
         (selectedLeft === 'baby' && selectedRight === 'dummy');
 
@@ -32,7 +31,7 @@ export const GameJoy = ({ onFinish }) => {
       return () => clearTimeout(timeout);
     }
   }, [hiddenCards, onFinish]);
-  console.log(hiddenCards);
+
   return (
     <>
       <div className="popup__game--joy">

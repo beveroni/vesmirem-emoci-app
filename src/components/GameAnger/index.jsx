@@ -11,12 +11,6 @@ import { Container } from './container';
 //   PET: 'pet',
 // };
 
-export const ItemTypes = {
-  FOOD: 'food',
-  GLASS: 'glass',
-  PAPER: 'paper',
-};
-
 export const GameAnger = ({ onFinish }) => {
   return (
     <div className="App">

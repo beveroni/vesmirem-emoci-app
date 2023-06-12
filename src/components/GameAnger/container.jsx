@@ -18,7 +18,7 @@ export const Container = memo(function Container({ onFinish }) {
     {
       accepts: [ItemTypes.PAPER],
       lastDroppedItem: null,
-    },
+    }, 
   ]);
   const [boxes] = useState([
     { name: 'odpad_druzice', type: ItemTypes.GLASS },
@@ -48,7 +48,7 @@ export const Container = memo(function Container({ onFinish }) {
           },
         }),
       );
-      console.log(droppedBoxNames.length);
+      // console.log(droppedBoxNames.length);
       if (droppedBoxNames.length === 6) {
         onFinish();
       }
