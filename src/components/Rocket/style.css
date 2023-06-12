@@ -10,15 +10,13 @@
   0% {
     left: -20%;
     bottom: -20%;
-    transform: scale(0.8);
-
+    transform: scale(0.8) rotate(35deg);
   }
 
   100% {
     left: 10rem;
     bottom: 3rem;
-    transform: scale(1.5);
-
+    transform: scale(1.5) rotate(45deg);
   }
 }
 

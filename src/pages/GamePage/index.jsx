@@ -23,11 +23,11 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
   useEffect(() => {
     const planetBubbleTimer = setTimeout(() => {
       setIsPlanetBubbleVisible(true);
-    }, 4520);
+    }, 4300);
 
     const rocketBubbleTimer = setTimeout(() => {
       setIsRocketBubbleVisible(true);
-    }, 4500);
+    }, 4300);
 
     return () => {
       clearTimeout(planetBubbleTimer);
