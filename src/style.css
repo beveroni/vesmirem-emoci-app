@@ -3,11 +3,25 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url('/public/img/backround_main.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 
 .container {
   max-width: 26rem;

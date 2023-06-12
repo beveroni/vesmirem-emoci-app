@@ -39,7 +39,7 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
   };
 
   return (
-    <>
+    <div className="game-page">
       <Header finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
@@ -70,6 +70,6 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
         />
       )}
       <ButtonGameStart onButtonClick={handleGameStart} />
-    </>
+    </div>
   );
 };
