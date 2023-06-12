@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ErrorPage = () => {
   return (
-    <div className="erroPageMain">
+    <div className="error-page">
       <h2 className="erroPageHeading">404: Tady nic není</h2>
       <p className="erroPageParam">Asi jste se spletli</p>
     </div>
