@@ -1,12 +1,18 @@
 .game__card {
-  width: 100px;
-  cursor: pointer;
+  width: 80px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.game__card:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgb(9, 160, 254));
 }
 
 .hidden {
   visibility: hidden;
 }
 
+
 .selected {
-  border: 3px solid black;
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
 }

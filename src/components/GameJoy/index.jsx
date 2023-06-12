@@ -12,6 +12,7 @@ export const GameJoy = ({ onFinish }) => {
     if (selectedRight && selectedLeft) {
       const isMatched =
         (selectedLeft === 'rabbit' && selectedRight === 'carrot') ||
+        (selectedRight === 'carrot' && selectedLeft === 'rabbit') ||
         (selectedLeft === 'astronaut' && selectedRight === 'rocket') ||
         (selectedLeft === 'baby' && selectedRight === 'dummy');
 
@@ -60,19 +61,19 @@ export const GameJoy = ({ onFinish }) => {
             onClick={setSelectedRight}
             name={'rocket'}
             hidden={hiddenCards.includes('rocket')}
-            selected={selectedLeft === 'rocket'}
+            selected={selectedRight === 'rocket'}
           />
           <Card
             onClick={setSelectedRight}
             name={'dummy'}
             hidden={hiddenCards.includes('dummy')}
-            selected={selectedLeft === 'dummy'}
+            selected={selectedRight === 'dummy'}
           />
           <Card
             onClick={setSelectedRight}
             name={'carrot'}
             hidden={hiddenCards.includes('carrot')}
-            selected={selectedLeft === 'carrot'}
+            selected={selectedRight === 'carrot'}
           />
         </div>
       </div>
