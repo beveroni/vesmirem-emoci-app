@@ -1,5 +1,6 @@
 .planets-miniature {
-  width: 2rem;
+  margin-top: 2rem;
+  width: 3rem;
 }
 
 .emotions__container {
@@ -9,6 +10,6 @@
 
 .emotions__container--title {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 1rem;
 }
