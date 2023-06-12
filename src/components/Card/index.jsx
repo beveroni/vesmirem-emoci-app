@@ -7,15 +7,13 @@ export const Card = ({ onClick, name, hidden, selected }) => {
   };
 
   return (
-    <>
-      <img
-        onClick={handleClick}
-        src={`/img/game_joy_card_${name}.svg`}
-        alt="game card rabbit"
-        className={`game__card ${hidden ? 'hidden' : ''}${
-          selected ? 'selected' : ''
-        }`}
-      />
-    </>
+    <img
+      onClick={handleClick}
+      src={`/img/game_joy_card_${name}.svg`}
+      alt="game card rabbit"
+      className={`game__card${hidden ? ' hidden' : ''}${
+        selected ? ' selected' : ''
+      }`}
+    />
   );
 };

@@ -13,7 +13,7 @@ export const GameJoy = ({ onFinish }) => {
       const isMatched =
         (selectedLeft === 'rabbit' && selectedRight === 'carrot') ||
         (selectedLeft === 'astronaut' && selectedRight === 'rocket') ||
-        (selectedLeft === 'dummy' && selectedRight === 'baby');
+        (selectedLeft === 'baby' && selectedRight === 'dummy');
 
       if (isMatched) {
         const newHiddenCards = [...hiddenCards, selectedRight, selectedLeft];
@@ -24,9 +24,13 @@ export const GameJoy = ({ onFinish }) => {
 
   useEffect(() => {
     if (hiddenCards.length === 6) {
-      onFinish();
+      const timeout = setTimeout(() => {
+        onFinish();
+      }, 1500);
+
+      return () => clearTimeout(timeout);
     }
-  }, [hiddenCards]);
+  }, [hiddenCards, onFinish]);
   console.log(hiddenCards);
   return (
     <>
@@ -45,30 +49,30 @@ export const GameJoy = ({ onFinish }) => {
             selected={selectedLeft === 'astronaut'}
           />
           <Card
-            onClick={setSelectedRight}
-            name={'carrot'}
-            hidden={hiddenCards.includes('carrot')}
-            selected={selectedLeft === 'carrot'}
+            onClick={setSelectedLeft}
+            name={'baby'}
+            hidden={hiddenCards.includes('baby')}
+            selected={selectedLeft === 'baby'}
           />
         </div>
         <div className="popup__game--column1">
           <Card
-            onClick={setSelectedLeft}
+            onClick={setSelectedRight}
+            name={'rocket'}
+            hidden={hiddenCards.includes('rocket')}
+            selected={selectedLeft === 'rocket'}
+          />
+          <Card
+            onClick={setSelectedRight}
             name={'dummy'}
             hidden={hiddenCards.includes('dummy')}
             selected={selectedLeft === 'dummy'}
           />
           <Card
             onClick={setSelectedRight}
-            name={'baby'}
-            hidden={hiddenCards.includes('baby')}
-            selected={selectedLeft === 'baby'}
-          />
-          <Card
-            onClick={setSelectedRight}
-            name={'rocket'}
-            hidden={hiddenCards.includes('rocket')}
-            selected={selectedLeft === 'rocket'}
+            name={'carrot'}
+            hidden={hiddenCards.includes('carrot')}
+            selected={selectedLeft === 'carrot'}
           />
         </div>
       </div>
