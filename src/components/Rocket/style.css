@@ -25,10 +25,5 @@
 .rocket-img {
   width: 40%;
   transition: transform 0.3s;
-  filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
-}
-
-.rocket-img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
 }

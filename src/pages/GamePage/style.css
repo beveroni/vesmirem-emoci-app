@@ -196,7 +196,7 @@ img {
   bottom: 0rem;
 }
 
-.rocket-img {
+/* .rocket-img {
   width: 40%;
   rotate: 40deg;
   transition: transform 0.3s;
@@ -204,7 +204,7 @@ img {
 
 .rocket-img:hover {
   transform: scale(1.1);
-}
+} */
 
 .conversation__planet--img {
   text-align: center;
@@ -213,14 +213,6 @@ img {
   bottom: 1rem;
 }
 
-.planet-img {
-  width: 40%;
-  transition: transform 0.3s;
-}
-
-.planet-img:hover {
-  transform: scale(1.1);
-}
 
 /* POP-UP S HROU */
 .game__popup {

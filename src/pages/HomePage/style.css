@@ -65,15 +65,35 @@ h1:hover {
 } */
 
 .rocket {
-  rotate: 30deg;
+  rotate: 50deg;
   width: 250px;
   position: fixed;
   top: 20%;
   left: 10%;
-  /* position: relative;
+  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+  animation: flying 2s forwards;
+}
+
+@keyframes flying {
+  0% {
+    left: -20%;
+    bottom: -0%;
+    transform: scale(0.8);
+
+  }
+
+  100% {
+    left: 10rem;
+    bottom: 3rem;
+    transform: scale(1.1);
+
+  }
+}
+
+/* position: relative;
   top: 133px;
   left: 174px; */
-}
+
 
 /* styly pro btn na jednotlivé POP-UP STRÁNKY */
 

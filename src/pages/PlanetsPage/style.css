@@ -41,6 +41,15 @@ a {
 
 /* Div pro obrázkový kontejner */
 
+.rocket__planetspage {
+  rotate: 30deg;
+  width: 250px;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+}
+
 .container__planets {
   display: flex;
   justify-content: center;
@@ -50,17 +59,6 @@ a {
 }
 
 
-/* Raketa  */
-
-.rocket {
-  rotate: 30deg;
-  width: 100px;
-  position: relative;
-  top: 1rem;
-  left: 3rem;
-  transition: transform 0.2s ease-in-out;
-  filter: drop-shadow(1px 1px 1px 1px rgba(255, 255, 255, 0.5));
-}
 
 /* Planety */
 
@@ -157,11 +155,6 @@ a {
 .planet__enthusiasm:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(255, 142, 55, 0.5));
-}
-
-.rocket:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.5));
 }
 
 /* 

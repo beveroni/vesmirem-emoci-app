@@ -44,8 +44,11 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
               </div>
             ))}
           </div>
-          <img src="img/rocket.svg" alt="rocket" className="rocket" />
-          <script src="scriptgamepage.js" type="module"></script>
+          <img
+            src="img/rocket.svg"
+            alt="raketka"
+            className="rocket__planetspage"
+          />
         </>
       )}
       ;
