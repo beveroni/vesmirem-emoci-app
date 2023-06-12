@@ -19,7 +19,7 @@ export const planets = [
     question:
       'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
     game: GameJoy,
-    desription:
+    description:
       'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
   },
   {
