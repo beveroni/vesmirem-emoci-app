@@ -19,6 +19,8 @@ export const planets = [
     question:
       'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
     game: GameJoy,
+    desription:
+      'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
   },
   {
     id: 2,
@@ -35,6 +37,8 @@ export const planets = [
     question:
       'Taky se ti stalo, že si něco prošvihl/a? Co umí rozesmutnit Tebe? Komu se svěřuješ, když je Ti smutno?',
     game: GameSadness,
+    description:
+      'Smutek je emoční stav vyjadřující zármutek, ztrátu nebo bolest. Lidé se cítí smutní v reakci na negativní události, jako je ztráta blízkého člověka, selhání nebo rozchod s někým koho mají rádi.',
   },
   {
     id: 3,
@@ -51,6 +55,8 @@ export const planets = [
     question:
       'Koho máš taky rád/a? A co máš nejraději? Velké objetí s kým právě tohle čteš.',
     game: GameLove,
+    description:
+      'Láska je hluboká emoční připoutanost a náklonnost k někomu nebo něčemu. Vyjadřuje péči, soucit, ochranu a důvěru. Láska může být vztahem mezi rodinnými příslušníky, přáteli nebo romantickým partnerstvím.',
   },
   {
     id: 4,
@@ -67,6 +73,8 @@ export const planets = [
     question:
       'Co pomáhá Tobě, když se zlobíš? Umíš říct, proč se zlobíš? A kde zlobu cítíš v těle?',
     game: GameAnger,
+    description:
+      'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
   },
   {
     id: 5,
@@ -81,6 +89,8 @@ export const planets = [
     backgroundGame: '/img/backround_task_enthusiasm.svg',
     task: 'Zahraj si a zkus trefit hvězdičku.',
     question: 'Z čeho si nadšený/á Ty? Co ti vykouzlí hvězdičky v očích?',
+    description:
+      'Nadšení je silná pozitivní emoce, která vyjadřuje kombinaci zvědavosti, odvahy a touhy pustit se do nových věcí. Je spojeno s očekáváním a radostí z budoucích událostí, nových zážitků nebo objevů.',
   },
   {
     id: 6,
@@ -95,6 +105,8 @@ export const planets = [
     backgroundGame: '/img/backround_task_boredom.svg',
     task: 'Zahraj si s planetkou pexeso.',
     question: 'Co děláš, když se nudíš? A jakou činnost naopak děláš rád?',
+    description:
+      'Nuda je emoční stav vyjadřující nedostatek zájmu, stimulace nebo vzrušení. Nudíme se, když nemáme nic zajímavého, co by nás zabavilo. Dlouhodobá nuda může vést k pocitu neuspokojení nebo frustrace.',
   },
   {
     id: 7,
@@ -110,6 +122,8 @@ export const planets = [
     task: 'Vyber z uvedených dvou situaci tu, kde se podle Tebe nějaká osoba chová statečně?',
     question:
       'A co ty? Dostal/a jsi se někdy do situace, kdy jsi musel/a překonat své obavy a zachovat se statečně? Popiš tuto situaci - jak se udála a jak si se zachoval a proč. Zachoval/a by si se nyní třeba jinak?',
+    description:
+      'Odvaha je emocionální stav, který vyjadřuje statečnost, odhodlání a odvahu čelit strachu nebo nebezpečí. Je spojena s překonáním překážek, riskováním a prosazováním vlastních přesvědčení.',
   },
   {
     id: 8,
@@ -124,5 +138,7 @@ export const planets = [
     backgroundGame: '/img/backround_task_fear.svg',
     task: 'Pomoz planetce vybrat z věcí ty, které by ji mohly pomoci, aby se tolik nebála.',
     question: 'Řekni, proč si je vybral/a? Čeho se bojíš Ty? A co Ti pomáhá?',
+    description:
+      'Strach je negativní emocionální stav vyvolaný pocitem ohrožení, nebezpečí nebo nejistoty. Lidé se cítí znepokojeni, nervózní nebo vystrašení při konfrontaci s možným rizikem nebo strašidelnou situací.',
   },
 ];
