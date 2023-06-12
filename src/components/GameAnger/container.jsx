@@ -18,7 +18,7 @@ export const Container = memo(function Container({ onFinish }) {
     {
       accepts: [ItemTypes.PAPER],
       lastDroppedItem: null,
-    }, 
+    },
   ]);
   const [boxes] = useState([
     { name: 'odpad_druzice', type: ItemTypes.GLASS },

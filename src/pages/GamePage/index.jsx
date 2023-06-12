@@ -9,14 +9,31 @@ import { Rocket } from '../../components/Rocket';
 import { Planet } from '../../components/Planet';
 import { planets } from '../../planet-database';
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);
-  const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(true);
-  const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(true);
+  // const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(true);
+  // const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(true);
+  const [isPlanetBubbleVisible, setIsPlanetBubbleVisible] = useState(false);
+  const [isRocketBubbleVisible, setIsRocketBubbleVisible] = useState(false);
+
+  useEffect(() => {
+    const planetBubbleTimer = setTimeout(() => {
+      setIsPlanetBubbleVisible(true);
+    }, 4520);
+
+    const rocketBubbleTimer = setTimeout(() => {
+      setIsRocketBubbleVisible(true);
+    }, 4500);
+
+    return () => {
+      clearTimeout(planetBubbleTimer);
+      clearTimeout(rocketBubbleTimer);
+    };
+  }, [isPlanetBubbleVisible, isRocketBubbleVisible]);
 
   const handleGameFinished = () => {
     gameFinished(planet.name);
@@ -30,32 +47,32 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
     setShowPopup(false);
   };
 
-  const handleRocketClick = () => {
-    setIsRocketBubbleOpen(true);
-  };
+  // const handleRocketClick = () => {
+  //   setIsRocketBubbleOpen(true);
+  // };
 
-  const handlePlanetClick = () => {
-    setIsPlanetBubbleOpen(true);
-  };
+  // const handlePlanetClick = () => {
+  //   setIsPlanetBubbleOpen(true);
+  // };
 
   return (
     <div className="game-page">
       <Header finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
-          {isRocketBubbleOpen && (
+          {isRocketBubbleVisible && (
             <ConversationRocketBubble dialogrocket={planet.rocketDialog} />
           )}
-          <Rocket onClick={handleRocketClick} />
+          <Rocket />
         </div>
         <div className="conversation__planet">
-          {isPlanetBubbleOpen && (
+          {isPlanetBubbleVisible && (
             <ConversationPlanetBubble
               color={planet.color}
               dialog={planet.planetDialog}
             />
           )}
-          <Planet onClick={handlePlanetClick} planet={planet} />
+          <Planet planet={planet} />
         </div>
       </div>
       {showPopup && (

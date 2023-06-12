@@ -3,6 +3,7 @@ import './style.css';
 import { planets } from '../../planet-database';
 
 export const ConversationRocketBubble = ({ dialogrocket }) => {
+  
   const rocketDialog = planets.find(
     (planet) => planet.rocketDialog === rocketDialog,
   );
