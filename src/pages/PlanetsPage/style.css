@@ -1,5 +1,5 @@
 /*Styly pro nadpis H1*/
-
+/* 
 h1 {
   position: relative;
   font-size: 4em;
@@ -29,15 +29,15 @@ h1 {
 h1:hover {
   text-shadow: 0 0 10px yellow;
   transform: scale(1.0);
-}
+} */
 
-img {
+/* img {
   cursor: pointer;
 }
 
 a {
   text-decoration: none;
-}
+} */
 
 /* Div pro obrázkový kontejner */
 

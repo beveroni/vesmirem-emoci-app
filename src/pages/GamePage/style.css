@@ -1,18 +1,18 @@
 .game-page {
   background-image: url('/public/img/backround_game.svg');
-  min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  min-height: 100vh;
 }
 
 
-img {
+/* img {
   cursor: pointer;
-}
+} */
 
 /* Styl pro pop-up okno nápovědy  */
-.popup__hint {
+/* .popup__hint {
   display: none;
   position: fixed;
   z-index: 1;
@@ -25,9 +25,9 @@ img {
   position: fixed;
   border-radius: 40px;
   padding: 3rem
-}
+} */
 
-#popup__hint--close {
+/* #popup__hint--close {
   color: #a5a5a5;
   display: inline-block;
   position: absolute;
@@ -38,11 +38,11 @@ img {
   padding: 0;
   border: none;
   background: none;
-}
+} */
 
 
 /* Skóre s hvězdama  */
-.container__stars {
+/* .container__stars {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,9 @@ img {
 .container__stars:hover {
   transform: scale(1.1);
 }
+*/
 
+/*
 .star {
   width: 30px;
   transition: transform 0.3s;
@@ -66,7 +68,7 @@ img {
   transform: scale(1.2);
   filter: drop-shadow(0px 4px 4px yellow);
 }
-
+*/
 
 /* ROZHOVOR */
 /* main {
@@ -90,49 +92,11 @@ img {
   flex-direction: column;
 }
 
-/* pokus o zobáček */
-/* .conversation__rocket {
-  margin: 40px;
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: auto;
-  background-color: lightyellow;
-  border: 20px solid #666;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-}
 
-.conversation__rocket:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  right: auto;
-  top: auto;
-  bottom: -40px;
-  border: 20px solid;
-  border-color: #666 transparent transparent #666;
-}
-
-.conversation__rocket:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 38px;
-  right: auto;
-  top: auto;
-  bottom: -20px;
-  border: 12px solid;
-  border-color: lightyellow transparent transparent lightyellow;
-}
-*/
-
+/*
 .conversation__rocket--text {
   /* display: none; */
+/*
   position: absolute;
   top: 1rem;
   left: 5rem;
@@ -145,10 +109,11 @@ img {
   border: 1px solid black;
   border-radius: 20px;
   /* display: none; */
-}
 
+/*
 .conversation__planet--text {
   /* display: none; */
+/*
   position: absolute;
   top: 2rem;
   right: 5rem;
@@ -161,6 +126,7 @@ img {
   border: 1px solid black;
   border-radius: 20px;
 }
+*/
 
 /* Bublina pro text planety se zobáčkem */
 /*

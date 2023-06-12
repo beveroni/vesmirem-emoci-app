@@ -3,9 +3,9 @@ import './style.css';
 import { Header } from '../../components/Header';
 import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
-import { PopupWiner } from '../../PopupWiner';
+import { PopupWiner } from '../../components/PopupWiner';
 
-console.log(planets);
+// console.log(planets);
 
 export const PlanetsPage = ({ finishedGames, onClose }) => {
   return (

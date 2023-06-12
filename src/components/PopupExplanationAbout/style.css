@@ -1,15 +1,3 @@
-h2 {
-  color: white;
-  font-size: 2em;
-  text-align: center;
-}
-
-h3,
-h4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .popup__about--us {
   display: flex;
   flex-direction: row;

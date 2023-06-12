@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { PopupExplanation } from '../components/PopupExplanation';
+import { PopupExplanation } from '../PopupExplanation';
 
 export const PopupWiner = ({ onClose }) => {
   return (
