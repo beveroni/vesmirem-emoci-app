@@ -1,11 +1,16 @@
-/* Kontejner s ikonama home a nápovědou  */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  width: 100%;
+  top: 0vh;
+  padding: 1rem;
+}
 
-.container__icons {
+.header__container--icons {
+  display: flex;
   width: 110px;
   height: 50px;
-  position: fixed;
-  top: 10px;
-  left: 10px;
   gap: 0.7rem;
-  display: flex;
 }

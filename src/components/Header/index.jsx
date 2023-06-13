@@ -7,8 +7,8 @@ import { HomeIcon } from '../HomeIcon';
 export const Header = ({ finishedGames }) => {
   return (
     <header>
-      <div className="container">
-        <div className="container__icons">
+      <div className="header__container">
+        <div className="header__container--icons">
           <HomeIcon />
           <HintIcon />
         </div>
