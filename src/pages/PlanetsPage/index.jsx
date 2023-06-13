@@ -4,17 +4,21 @@ import { Header } from '../../components/Header';
 import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 import { PopupWiner } from '../../components/PopupWiner';
-
-// console.log(planets);
+import { useState, useEffect } from 'react';
 
 export const PlanetsPage = ({ finishedGames, onClose }) => {
+  const [allGamesFinished, setAllGamesFinished] = useState(false);
+  useEffect(() => {
+    if (finishedGames.length === planets.length) {
+      setAllGamesFinished(true);
+    }
+  }, [finishedGames]);
   return (
     <div className="planets-page">
       <Header finishedGames={finishedGames} />
       <h1>Vesmírem emocí</h1>
-      <PopupWiner onClose={onClose} />
-      {finishedGames.length === planets.length ? (
-        <div>WinerPopap</div>
+      {allGamesFinished ? (
+        <PopupWiner onClose={onClose} allGamesFinished={allGamesFinished} />
       ) : (
         <>
           <div className="container__planets">
