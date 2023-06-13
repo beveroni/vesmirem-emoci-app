@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const ButtonGameStart = ({ onButtonClick }) => {
+export const ButtonGameStart = ({ onButtonClick, disabled }) => {
   return (
     <>
       <footer>
