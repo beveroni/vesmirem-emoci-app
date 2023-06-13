@@ -102,6 +102,14 @@ export const HomePage = () => {
         )}
       </main>
       <Footer />
+      <button className="p1">žlutá</button>
+      <button className="p2">modrá</button>
+      <button className="p3">láska</button>
+      <button className="p4">zloba</button>
+      <button className="p5">nadšení</button>
+      <button className="p6">nuda</button>
+      <button className="p7">odvaha</button>
+      <button className="p8">strach</button>
     </div>
   );
 };

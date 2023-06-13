@@ -1,69 +1,3 @@
-/* h1 {
-  font-size: 5em;
-  padding-left: 60px;
-  position: relative;
-  top: 45px;
-  transition: all 0.3s ease;
-} */
-
-/* @media (max-width: 768px) {
-  h1 {
-    font-size: 4em;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 3em;
-  }
-}
-
-@media (max-width: 320px) {
-  h1 {
-    font-size: 2.5em;
-  }
-}
-
-h1:hover {
-  text-shadow: 0 0 10px yellow;
-  transform: scale(1.0);
-} */
-
-/*Styly pro nadpis container*/
-
-/* .container {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-  right: 52px;
-  width: 996px;
-  background-color: #d1d1d164;
-  padding: 20px;
-  height: 550px;
-} */
-
-/* @media (max-width: 1024px) {
-  .container {
-    width: 90%;
-    right: auto;
-    left: 5%;
-      }
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    padding: 10px;
-
-  }
-} */
-
 .rocket {
   rotate: 50deg;
   width: 250px;
@@ -90,9 +24,6 @@ h1:hover {
   }
 }
 
-/* position: relative;
-  top: 133px;
-  left: 174px; */
 
 
 /* styly pro btn na jednotlivé POP-UP STRÁNKY */
@@ -105,7 +36,6 @@ h1:hover {
   position: fixed;
   top: 35%;
   left: 60%;
-
   background: none;
   cursor: pointer;
   filter: none;
@@ -225,4 +155,41 @@ h1:hover {
 .button__tips:hover {
   box-shadow: 0 0 40px 20px rgb(10, 134, 105);
   transform: scale(1.1);
+}
+
+
+button {
+  padding: 3rem;
+}
+
+.p1 {
+  background-color: #f6fc5b;
+}
+
+.p2 {
+  background-color: #7fbaf9;
+}
+
+.p3 {
+  background-color: #f97bc0;
+}
+
+.p4 {
+  background-color: #fd6363;
+}
+
+.p5 {
+  background-color: #eeab53;
+}
+
+.p6 {
+  background-color: #b27140;
+}
+
+.p7 {
+  background-color: #6fd25b;
+}
+
+.p8 {
+  background-color: #b1a8a8;
 }
