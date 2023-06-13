@@ -7,25 +7,23 @@ export const GameLove = ({ onFinish }) => {
   };
 
   return (
-    <div className="task-container">
-      <div className="task__love--container">
-        <form className="task__love--form" onSubmit={handleSubmit}>
-          <textarea
-            id="message"
-            className="task__love--textarea"
-            placeholder="Milý Měsíci, ..."
-            required
-          ></textarea>
-          <button id="love-btn" className="task__love--btn" type="submit">
-            <img
-              className="task__love--btn"
-              src="/img/love_stamp.svg"
-              alt="známka"
-            />
-          </button>
-        </form>
-        <img className="task__love--img" src="/img/love_letter.svg" />
-      </div>
+    <div className="popup__game--love">
+      <form className="game__love--form" onSubmit={handleSubmit}>
+        <textarea
+          id="message"
+          className="game__love--textarea"
+          placeholder="Milý Měsíci, ..."
+          required
+        ></textarea>
+        <button id="love-btn" className="game__love--btn" type="submit">
+          <img
+            className="game__love--btn"
+            src="/img/love_stamp.svg"
+            alt="známka"
+          />
+        </button>
+      </form>
+      <img className="game__love--img" src="/img/love_letter.svg" />
     </div>
   );
 };

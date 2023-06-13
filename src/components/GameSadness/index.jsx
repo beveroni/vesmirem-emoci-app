@@ -48,7 +48,7 @@ export const GameSadness = ({ onFinish }) => {
   };
 
   return (
-    <div className="popup__game">
+    <div className="popup__game--sadness">
       <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
