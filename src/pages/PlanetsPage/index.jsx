@@ -12,12 +12,6 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
     <div className="planets-page">
       <Header finishedGames={finishedGames} />
       <h1>Vesmírem emocí</h1>
-      <div className="popup__hint">
-        <button id="popup__hint--close">
-          <img src="./img/cross.svg" alt="cross_button" />
-        </button>
-        <p>Toto je obsah popupu.</p>
-      </div>
       <PopupWiner onClose={onClose} />
       {finishedGames.length === planets.length ? (
         <div>WinerPopap</div>

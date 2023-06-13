@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
 import { ContinueArrow } from '../ContinueArrow';
-import { useParams } from 'react-router-dom';
-import { planets } from '../../planet-database';
-import { GameAnger } from '../GameAnger';
 import { Star } from '../Star';
 
 export const PopupGame = ({
