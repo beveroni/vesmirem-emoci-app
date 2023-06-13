@@ -15,19 +15,23 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);
-  // const [isRocketBubbleOpen, setIsRocketBubbleOpen] = useState(true);
-  // const [isPlanetBubbleOpen, setIsPlanetBubbleOpen] = useState(true);
   const [isPlanetBubbleVisible, setIsPlanetBubbleVisible] = useState(false);
   const [isRocketBubbleVisible, setIsRocketBubbleVisible] = useState(false);
+  const [isTimersFinished, setIsTimersFinished] = useState(false);
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
 
   useEffect(() => {
-    const planetBubbleTimer = setTimeout(() => {
-      setIsPlanetBubbleVisible(true);
-    }, 4300);
-
     const rocketBubbleTimer = setTimeout(() => {
       setIsRocketBubbleVisible(true);
+      setIsTimersFinished(false);
+      setIsButtonVisible(false);
     }, 4300);
+
+    const planetBubbleTimer = setTimeout(() => {
+      setIsPlanetBubbleVisible(true);
+      setIsTimersFinished(true);
+      setIsButtonVisible(true);
+    }, 4310);
 
     return () => {
       clearTimeout(planetBubbleTimer);
@@ -35,25 +39,19 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
     };
   }, [isPlanetBubbleVisible, isRocketBubbleVisible]);
 
-  const handleGameFinished = () => {
-    gameFinished(planet.name);
+  const handleGameStart = () => {
+    if (isTimersFinished) {
+      setShowPopup(true);
+    }
   };
 
-  const handleGameStart = () => {
-    setShowPopup(true);
+  const handleGameFinished = () => {
+    gameFinished(planet.name);
   };
 
   const handleClosePopup = () => {
     setShowPopup(false);
   };
-
-  // const handleRocketClick = () => {
-  //   setIsRocketBubbleOpen(true);
-  // };
-
-  // const handlePlanetClick = () => {
-  //   setIsPlanetBubbleOpen(true);
-  // };
 
   return (
     <div className="game-page">
@@ -86,7 +84,12 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
           color={planet.color}
         />
       )}
-      <ButtonGameStart onButtonClick={handleGameStart} />
+      {isButtonVisible && (
+        <ButtonGameStart
+          onButtonClick={handleGameStart}
+          disabled={!isTimersFinished}
+        />
+      )}
     </div>
   );
 };
