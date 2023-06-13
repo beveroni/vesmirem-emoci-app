@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 import { ContinueArrow } from '../ContinueArrow';
 import { Star } from '../Star';
+import { Cross } from '../Cross';
 
 export const PopupGame = ({
   background,
@@ -37,9 +38,7 @@ export const PopupGame = ({
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="popup__content">
-        <button onClick={onClose}>
-          <img src="/img/cross.svg" alt="cross_button" />
-        </button>
+        <Cross onClick={onClose} />
         {gameFinish ? (
           <>
             <div className="popup__content--star">
