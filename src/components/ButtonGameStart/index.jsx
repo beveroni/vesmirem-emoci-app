@@ -5,9 +5,11 @@ export const ButtonGameStart = ({ onButtonClick }) => {
   return (
     <>
       <footer>
-        <button className="btn__play-game" onClick={onButtonClick}>
-          Úkol
-        </button>
+        <div className="game-page__footer">
+          <button className="btn__play-game" onClick={onButtonClick}>
+            Úkol
+          </button>
+        </div>
       </footer>
     </>
   );

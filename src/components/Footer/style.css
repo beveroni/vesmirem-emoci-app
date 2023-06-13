@@ -1,6 +1,4 @@
-/* PATIČKA */
-
-footer {
+.home-page__footer {
   font-family: 'Josefin Sans', sans-serif;
   position: fixed;
   /* background-color: rgba(255, 255, 255, 0.363); */
@@ -9,20 +7,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  bottom: 0vh;
   left: 0;
   width: 100%;
   padding: 1em;
 }
 
-.footer__odkaz--akademie {
+.footer__link--academy {
   color: white;
 }
 
-.footer__odkaz--akademie:hover {
+.footer__link--academy:hover {
   color: #fddb3a;
 }
 
-.footer__odkaz--czechitas img {
+.footer__link--czechitas img {
   height: 2rem;
 }
