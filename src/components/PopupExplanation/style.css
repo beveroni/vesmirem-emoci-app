@@ -13,7 +13,7 @@
   background-color: rgb(168, 168, 168);
   border-radius: 40px;
   padding: 3rem;
-  z-index: 3000;
+  z-index: 9999;
 }
 
 

@@ -130,17 +130,30 @@ Názvy planet */
   display: block;
 }
 
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 
 /* @media (max-width: 1024px) {
  }
 
 @media (max-width: 768px) {
+  }*/
+
+@media (max-width: 426px) {
+  .rocket__planetspage {
+    position: relative;
+    width: 85px;
+    top: -44rem;
+
+
   }
 
-@media (max-width: 320px) {
-  } */
-
-.disabled {
-  opacity: 0.5;
-  pointer-events: none;
+  .container__planets {
+    flex-direction: column;
+    top: 5rem;
+    position: relative;
+  }
 }

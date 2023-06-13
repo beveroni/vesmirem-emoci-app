@@ -19,25 +19,34 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
   const [isRocketBubbleVisible, setIsRocketBubbleVisible] = useState(false);
   const [isTimersFinished, setIsTimersFinished] = useState(false);
   const [isButtonVisible, setIsButtonVisible] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const rocketBubbleTimer = setTimeout(() => {
       setIsRocketBubbleVisible(true);
       setIsTimersFinished(false);
       setIsButtonVisible(false);
+
+      const buttonTimer = setTimeout(() => {
+        setShowButton(true);
+      }, 6000);
+
+      return () => {
+        clearTimeout(buttonTimer);
+      };
     }, 4300);
 
     const planetBubbleTimer = setTimeout(() => {
       setIsPlanetBubbleVisible(true);
       setIsTimersFinished(true);
       setIsButtonVisible(true);
-    }, 4310);
+    }, 4400);
 
     return () => {
       clearTimeout(planetBubbleTimer);
       clearTimeout(rocketBubbleTimer);
     };
-  }, [isPlanetBubbleVisible, isRocketBubbleVisible]);
+  }, [isPlanetBubbleVisible, isRocketBubbleVisible, isButtonVisible]);
 
   const handleGameStart = () => {
     if (isTimersFinished) {
@@ -84,7 +93,7 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
           color={planet.color}
         />
       )}
-      {isButtonVisible && (
+      {showButton && (
         <ButtonGameStart
           onButtonClick={handleGameStart}
           disabled={!isTimersFinished}

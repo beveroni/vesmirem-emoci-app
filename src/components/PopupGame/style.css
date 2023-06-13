@@ -12,7 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  z-index: 3;
 
 }
 
@@ -61,24 +60,13 @@
 .popup__content--star {
   width: 30%;
   height: 30%;
-  /* animation: growing 1s; */
   z-index: 4;
   animation: enlarging-reducing 1s forwards;
   animation-iteration-count: 1;
 
+
+  filter: drop-shadow(0 30px 32px rgba(255, 255, 255, 0.712));
 }
-
-/* 
-@keyframes growing {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
-} */
-
 
 @keyframes enlarging-reducing {
   0% {
@@ -86,7 +74,7 @@
   }
 
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
   100% {
