@@ -1,40 +1,17 @@
-/* Styl pro pop-up okno hry */
-.game-popup {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 95%;
-  background-color: rgb(168, 168, 168);
-  border-radius: 40px;
-  /* background-image: url(""); */
-  /*background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3rem; */
-
-}
-
 .game-popup {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
   position: absolute;
   font-size: 1em;
   line-height: 1.5;
-  width: 80vw;
-  height: 70vw;
+  width: 80%;
+  height: 70%;
   top: 10vh;
   left: 10vw;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  /* padding: 3rem; */
   z-index: 3;
 
 }
@@ -42,11 +19,12 @@
 .popup__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 3rem;
 
 }
 
@@ -56,9 +34,8 @@
   position: relative;
   height: auto;
   background-color: #ffffff;
-  /* padding: 3rem;
-  margin: 2rem; */
-  /* left: 0.4rem; */
+  border-radius: 20px;
+  padding: 1.5rem;
 }
 
 .stars__group {
@@ -74,19 +51,22 @@
   display: flex;
   background-color: #ffffff;
   color: black;
-  padding: 0.5rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   justify-content: center;
-  padding: 3rem;
-  margin: 2rem;
+  padding: 1.5rem;
+}
+
+
+.popup__content--star {
+  width: 30%;
+  height: 30%;
 }
 
 .popup__content--task2 {
   display: flex;
   color: black;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-align: center;
-  border-radius: 10px;
 
 }
