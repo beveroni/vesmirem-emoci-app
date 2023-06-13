@@ -61,7 +61,20 @@
 .popup__content--star {
   width: 30%;
   height: 30%;
+  animation: growing 1s;
 }
+
+@keyframes growing {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
 
 .popup__content--task2 {
   display: flex;
