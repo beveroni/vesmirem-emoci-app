@@ -1,0 +1,33 @@
+.explanations__popup__winer {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  text-align: justify;
+  position: absolute;
+  font-size: 1em;
+  line-height: 1.5;
+  width: 80vw;
+  max-height: 75vh;
+  top: 20vh;
+  left: 10vw;
+  background-color: rgb(168, 168, 168);
+  border-radius: 40px;
+  padding: 3rem;
+  z-index: 3000;
+}
+
+
+@media (max-width: 425px) {
+  .explanations__popup__winer {
+    width: 90vw;
+    max-height: 80vh;
+    top: 15vh;
+    left: 5%;
+  }
+}
+
+
+.explanations__popup__winer--contain {
+  max-height: 100%;
+  overflow: auto;
+}

@@ -6,7 +6,7 @@ export const ContinueArrow = () => {
   return (
     <Link to="/games">
       <img
-        className="button__continue--arrow"
+        className="button__arrow--continue"
         src="/img/arrow_green_continue.svg"
         alt="šipka pokračovat na stránku s planetkami"
       />

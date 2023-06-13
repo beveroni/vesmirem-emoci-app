@@ -1,16 +1,18 @@
 import React from 'react';
 import './style.css';
-import { PopupExplanation } from '../PopupExplanation';
+import { PopupWinerExplanation } from '../PopupWinerExplanation';
+import { ContinueArrowHome } from '../ContinueArrowHome';
 
-export const PopupWiner = ({ onClose, allGamesFinished }) => {
+export const PopupWiner = ({ allGamesFinished }) => {
   return (
     <div className="popup-winer">
-      <PopupExplanation onClose={onClose} allGamesFinished={allGamesFinished}>
+      <PopupWinerExplanation allGamesFinished={allGamesFinished}>
         <p>
           <strong>Gratulujeme!</strong>
         </p>
         <p>Objevil si všechny planetky.</p>
-      </PopupExplanation>
+        <ContinueArrowHome />
+      </PopupWinerExplanation>
     </div>
   );
 };
