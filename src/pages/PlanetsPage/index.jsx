@@ -16,7 +16,6 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
   return (
     <div className="planets-page">
       <Header finishedGames={finishedGames} />
-      <h1>Vesmírem emocí</h1>
       {allGamesFinished ? (
         <PopupWiner allGamesFinished={allGamesFinished} />
       ) : (
