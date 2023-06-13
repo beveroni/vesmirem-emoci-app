@@ -32,11 +32,14 @@ export const PopupGame = ({
   };
 
   return (
-    <div className="popup" style={{ backgroundImage: `url(${background})` }}>
-      <button onClick={onClose}>
-        <img src="/img/cross.svg" alt="cross_button" />
-      </button>
+    <div
+      className="game-popup"
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <div className="popup__content">
+        <button onClick={onClose}>
+          <img src="/img/cross.svg" alt="cross_button" />
+        </button>
         {gameFinish ? (
           <>
             <div className="popup__content--star">

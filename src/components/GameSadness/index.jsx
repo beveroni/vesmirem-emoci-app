@@ -52,7 +52,9 @@ export const GameSadness = ({ onFinish }) => {
       <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
-            <button type="submit">Start</button>
+            <button type="submit" className="btn-stopwatsch">
+              Start
+            </button>
             <label>
               <input
                 type="text"
