@@ -1,10 +1,8 @@
 .popup__game--joy {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 50px;
   gap: 1rem;
-  flex: row;
+  flex-direction: row;
 }
 
 .popup__game--column1 {
