@@ -1,9 +1,4 @@
 .explanations-popup {
-  /* display: flex; */
-  /* display: none; */
-  flex-direction: column;
-  text-align: justify;
-  position: absolute;
   color: white;
   font-size: 1em;
   line-height: 1.5;
@@ -15,7 +10,6 @@
   border-radius: 40px;
   border: none;
   padding: 3rem;
-  z-index: 9999;
 }
 
 .explanations-popup::backdrop {
