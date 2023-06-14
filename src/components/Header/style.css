@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0vh;
   padding: 1rem;
