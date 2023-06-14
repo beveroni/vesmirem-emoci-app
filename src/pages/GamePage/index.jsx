@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from '../../components/Header';
 import './style.css';
 import { ButtonGameStart } from '../../components/ButtonGameStart';
 import { PopupGame } from '../../components/PopupGame';
@@ -10,6 +9,7 @@ import { Planet } from '../../components/Planet';
 import { planets } from '../../planet-database';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { HeaderGame } from '../../components/HeaderGame';
 
 export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
@@ -64,7 +64,7 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
 
   return (
     <div className="game-page">
-      <Header finishedGames={finishedGames} />
+      <HeaderGame finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
           {isRocketBubbleVisible && (

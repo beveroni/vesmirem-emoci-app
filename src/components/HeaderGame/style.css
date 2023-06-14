@@ -1,0 +1,16 @@
+.header__game__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  width: 100%;
+  top: 0vh;
+  padding: 1rem;
+}
+
+.header__game__container--icons {
+  display: flex;
+  width: 110px;
+  height: 50px;
+  gap: 0.7rem;
+}

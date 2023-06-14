@@ -54,7 +54,7 @@ export const GameSadness = ({ onFinish }) => {
           <div className="controls__input--group">
             <button type="submit" className="btn-stopwatsch">
               Start
-            </button>
+            </button> 
             <label>
               <input
                 type="text"
@@ -63,7 +63,7 @@ export const GameSadness = ({ onFinish }) => {
                 onChange={handleInputChange}
                 title="Zadej maximálně 5 sekund"
               />
-              sekund
+              &nbsp;sekund
             </label>
           </div>
         </div>
