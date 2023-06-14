@@ -3,9 +3,9 @@ import './style.css';
 import { PopupExplanation } from '../PopupExplanation';
 import { planets } from '../../planet-database';
 
-export const PopupExplanationEmotions = ({ onClose }) => {
+export const PopupExplanationEmotions = ({ onClose, dialogRef }) => {
   return (
-    <PopupExplanation onClose={onClose}>
+    <PopupExplanation onClose={onClose} dialogRef={dialogRef}>
       <div className="popup__emotions--description">
         <h2>Seznam emocí použitých ve hře</h2>
         {planets.map((planet) => (

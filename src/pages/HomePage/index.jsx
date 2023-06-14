@@ -1,52 +1,91 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './style.css';
 import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 import { PopupExplanationRules } from '../../components/PopupExplanationRules';
-import { PopulExplanationTips } from '../../components/PopupExplanationTips';
+import { PopupExplanationTips } from '../../components/PopupExplanationTips';
 import { useState } from 'react';
 
 export const HomePage = () => {
-  const [showPopupAbout, setShowPopupAbout] = useState(false);
-  const [showPopupEmotions, setShowPopupEmotions] = useState(false);
-  const [showPopupRules, setShowPopupRules] = useState(false);
-  const [showPopupTips, setShowPopupTips] = useState(false);
+  const aboutDialogRef = useRef(null);
+  const emotionsDialogRef = useRef(null);
+  const rulesDialogRef = useRef(null);
+  const tipsDialogRef = useRef(null);
 
-  console.log(showPopupRules);
-
-  const handlePopupAboutOpen = () => {
-    setShowPopupAbout(true);
+  const openPopupAbout = () => {
+    aboutDialogRef.current.showModal();
   };
 
+  const openPopupEmotions = () => {
+    emotionsDialogRef.current.showModal();
+  };
+
+  const openPopupRules = () => {
+    rulesDialogRef.current.showModal();
+  };
+
+  const openPopupTips = () => {
+    tipsDialogRef.current.showModal();
+  };
+
+  //ideálně closePopupAbout
   const handlePopupAboutClose = () => {
-    setShowPopupAbout(false);
-  };
-
-  const handlePopupEmotionsOpen = () => {
-    setShowPopupEmotions(true);
+    aboutDialogRef.current.close();
   };
 
   const handlePopupEmotionsClose = () => {
-    setShowPopupEmotions(false);
-  };
-
-  const handlePopupRulesOpen = () => {
-    setShowPopupRules(true);
+    emotionsDialogRef.current.close();
   };
 
   const handlePopupRulesClose = () => {
-    setShowPopupRules(false);
-  };
-
-  const handlePopupTipsOpen = () => {
-    setShowPopupTips(true);
+    rulesDialogRef.current.close();
   };
 
   const handlePopupTipsClose = () => {
-    setShowPopupTips(false);
+    tipsDialogRef.current.close();
   };
+
+  // export const HomePage = () => {
+  // const [showPopupAbout, setShowPopupAbout] = useState(false);
+  // const [showPopupEmotions, setShowPopupEmotions] = useState(false);
+  // const [showPopupRules, setShowPopupRules] = useState(false);
+  // const [showPopupTips, setShowPopupTips] = useState(false);
+
+  //   console.log(showPopupRules);
+
+  //   const handlePopupAboutOpen = () => {
+  //     setShowPopupAbout(true);
+  //   };
+
+  //   const handlePopupAboutClose = () => {
+  //     setShowPopupAbout(false);
+  //   };
+
+  // const handlePopupEmotionsOpen = () => {
+  //   setShowPopupEmotions(true);
+  // };
+
+  // const handlePopupEmotionsClose = () => {
+  //   setShowPopupEmotions(false);
+  // };
+
+  // const handlePopupRulesOpen = () => {
+  //   setShowPopupRules(true);
+  // };
+
+  // const handlePopupRulesClose = () => {
+  //   setShowPopupRules(false);
+  // };
+
+  // const handlePopupTipsOpen = () => {
+  //   setShowPopupTips(true);
+  // };
+
+  // const handlePopupTipsClose = () => {
+  //   setShowPopupTips(false);
+  // };
 
   return (
     <div className="page-container">
@@ -63,32 +102,49 @@ export const HomePage = () => {
         <button
           className="button__project"
           id="popup__open--about"
-          onClick={handlePopupAboutOpen}
+          onClick={openPopupAbout}
         >
           O projektu
         </button>
         <button
           className="button__emotions"
           id="popup__open--emotions"
-          onClick={handlePopupEmotionsOpen}
+          onClick={openPopupEmotions}
         >
           Seznam emocí
         </button>
         <button
           className="button__rules"
           id="popup__open--rules"
-          onClick={handlePopupRulesOpen}
+          onClick={openPopupRules}
         >
           Pravidla
         </button>
         <button
           className="button__tips"
           id="popup__open--tips"
-          onClick={handlePopupTipsOpen}
+          onClick={openPopupTips}
         >
           Další tipy
         </button>
-        {showPopupAbout && (
+        <PopupExplanationAbout
+          onClose={handlePopupAboutClose}
+          dialogRef={aboutDialogRef}
+        />
+        <PopupExplanationEmotions
+          onClose={handlePopupEmotionsClose}
+          dialogRef={emotionsDialogRef}
+        />
+        <PopupExplanationRules
+          onClose={handlePopupRulesClose}
+          dialogRef={rulesDialogRef}
+        />
+        <PopupExplanationTips
+          onClose={handlePopupTipsClose}
+          dialogRef={tipsDialogRef}
+        />
+
+        {/* {showPopupAbout && (
           <PopupExplanationAbout onClose={handlePopupAboutClose} />
         )}
         {showPopupEmotions && (
@@ -99,7 +155,7 @@ export const HomePage = () => {
         )}
         {showPopupTips && (
           <PopulExplanationTips onClose={handlePopupTipsClose} />
-        )}
+        )} */}
       </main>
       <Footer />
       <button className="p1">žlutá</button>

@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import { PopupExplanation } from '../PopupExplanation';
 
-export const PopulExplanationTips = ({ onClose }) => {
+export const PopupExplanationTips = ({ onClose, dialogRef }) => {
   return (
-    <PopupExplanation onClose={onClose}>
+    <PopupExplanation onClose={onClose} dialogRef={dialogRef}>
       <div className="popup__rules--tips">
         <h2>Další tipy na práci s emocemi:</h2>
         <h4>kartičky:</h4>

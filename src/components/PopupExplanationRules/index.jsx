@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import { PopupExplanation } from '../PopupExplanation';
 
-export const PopupExplanationRules = ({ onClose }) => {
+export const PopupExplanationRules = ({ onClose, dialogRef }) => {
   return (
-    <PopupExplanation onClose={onClose}>
+    <PopupExplanation onClose={onClose} dialogRef={dialogRef}>
       <div className="popup__rules--description">
         <h2>Pravidla hry</h2>
         <h3>Jak hrát</h3>
