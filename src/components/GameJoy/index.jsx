@@ -15,7 +15,10 @@ export const GameJoy = ({ onFinish }) => {
         (selectedLeft === 'astronaut' && selectedRight === 'rocket') ||
         (selectedLeft === 'baby' && selectedRight === 'dummy');
 
-      if (isMatched) {
+      if (!isMatched) {
+        setSelectedLeft(null);
+        setSelectedRight(null);
+      } else {
         const newHiddenCards = [...hiddenCards, selectedRight, selectedLeft];
         setHiddenCards(newHiddenCards);
       }

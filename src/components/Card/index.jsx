@@ -3,7 +3,11 @@ import './style.css';
 
 export const Card = ({ onClick, name, hidden, selected }) => {
   const handleClick = () => {
-    onClick(name);
+    if (selected && !hidden) {
+      onClick(null);
+    } else {
+      onClick(name);
+    }
   };
 
   return (
@@ -11,9 +15,7 @@ export const Card = ({ onClick, name, hidden, selected }) => {
       onClick={handleClick}
       src={`/img/game_joy_card_${name}.svg`}
       alt="game card rabbit"
-      className={`game__card${hidden ? ' hidden' : ''}${
-        selected ? ' selected' : ''
-      }`}
+      className={`game__card${hidden ? ' hidden' : ''}${selected ? ' selected' : ''}`}
     />
   );
 };

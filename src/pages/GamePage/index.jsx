@@ -29,18 +29,18 @@ export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
 
       const buttonTimer = setTimeout(() => {
         setShowButton(true);
-      }, 4500);
+      }, 4000);
 
       return () => {
         clearTimeout(buttonTimer);
       };
-    }, 4300);
+    }, 4000);
 
     const planetBubbleTimer = setTimeout(() => {
       setIsPlanetBubbleVisible(true);
       setIsTimersFinished(true);
       setIsButtonVisible(true);
-    }, 4400);
+    }, 4000);
 
     return () => {
       clearTimeout(planetBubbleTimer);
