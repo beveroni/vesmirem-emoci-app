@@ -20,7 +20,7 @@ export const HomePage = () => {
   };
 
   const openPopupEmotions = () => {
-    emotionsDialogRef.current.showModal();git 
+    emotionsDialogRef.current.showModal();
   };
 
   const openPopupRules = () => {

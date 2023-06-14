@@ -33,7 +33,7 @@ export const GameSadness = ({ onFinish }) => {
       interval = setInterval(decrementTime, 1000);
     } else if (isRunning && time === 0) {
       setGameFinished(true);
-      setTimeout(onFinish, 2000);
+      setTimeout(onFinish, 5000);
     } else if (time <= 0) {
       clearInterval(interval);
       setIsRunning(false);
