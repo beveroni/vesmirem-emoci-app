@@ -1,12 +1,38 @@
+.planets__page {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url('/public/img/backround_main.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 /* Div pro obrázkový kontejner */
 
 .rocket__planetspage {
-  rotate: 30deg;
-  width: 250px;
+  rotate: 90deg;
+  width: 140px;
   position: fixed;
-  top: 20%;
-  left: 10%;
+  bottom: 3rem;
+  left: -20%;
   filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+  animation: rocketFly1 4s forwards;
+}
+
+@keyframes rocketFly1 {
+  0% {
+    bottom: 3rem;
+    left: -20%;
+    transform: scale(0.8);
+  }
+
+  100% {
+    bottom: 1rem;
+    left: 12rem;
+    transform: scale(1.1)
+  }
 }
 
 .container__planets {
@@ -144,11 +170,10 @@ Názvy planet */
 
 @media (max-width: 426px) {
   .rocket__planetspage {
-    position: relative;
-    width: 85px;
-    top: -44rem;
-
-
+    position: fixed;
+    width: 93px;
+    top: 10rem;
+    left: 2rem;
   }
 
   .container__planets {

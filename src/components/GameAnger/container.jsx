@@ -1,6 +1,5 @@
 import update from 'immutability-helper';
 import React, { memo, useCallback, useState } from 'react';
-import { NativeTypes } from 'react-dnd-html5-backend';
 import { Box } from './box.jsx';
 import { Dustbin } from './dustbin.jsx';
 import { ItemTypes } from './ItemTypes.jsx';
@@ -75,6 +74,11 @@ export const Container = memo(function Container({ onFinish }) {
             type={type}
             isDropped={isDropped(name)}
             key={index}
+            style={
+              isDropped(name) && type === ItemTypes.GLASS
+                ? { backgroundColor: 'rgb(128, 128, 128)' }
+                : {}
+            }
           />
         ))}
       </div>

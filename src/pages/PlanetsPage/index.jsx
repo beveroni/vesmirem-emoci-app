@@ -14,7 +14,7 @@ export const PlanetsPage = ({ finishedGames, onClose }) => {
     }
   }, [finishedGames]);
   return (
-    <div className="planets-page">
+    <div className="planets__page">
       <Header finishedGames={finishedGames} />
       {allGamesFinished ? (
         <PopupWiner allGamesFinished={allGamesFinished} />

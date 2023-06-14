@@ -4,19 +4,14 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Container } from './container';
 
-// export const ItemTypes = {
-//   FOOD: 'food',
-//   OTHER: 'other',
-//   PAPER: 'paper',
-//   PET: 'pet',
-// };
-
 export const GameAnger = ({ onFinish }) => {
   return (
-    <div className="App">
-      <DndProvider backend={HTML5Backend}>
-        <Container onFinish={onFinish} />
-      </DndProvider>
-    </div>
+    <>
+      <div className="game__anger">
+        <DndProvider backend={HTML5Backend}>
+          <Container onFinish={onFinish} />
+        </DndProvider>
+      </div>
+    </>
   );
 };

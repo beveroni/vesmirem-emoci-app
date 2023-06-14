@@ -16,7 +16,12 @@ export const Box = memo(function Box({ name, type, isDropped }) {
     [name, type],
   );
   return (
-    <div ref={drag} style={{ ...style, opacity }}>
+    <div
+      className="trash"
+      ref={drag}
+      style={{ ...style, opacity }}
+      className="trash__container"
+    >
       {isDropped ? null : (
         <img src={`/img/${name}.svg`} alt="" className="trash" />
       )}

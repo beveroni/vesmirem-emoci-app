@@ -1,15 +1,10 @@
 import React, { memo } from 'react';
+import { ItemTypes } from './ItemTypes';
 import { useDrop } from 'react-dnd';
+
 const style = {
-  // height: '12rem',
-  // width: '12rem',
-  // marginRight: '1.5rem',
-  // marginBottom: '1.5rem',
-  // color: 'white',
   padding: '1rem',
   textAlign: 'center',
-  // fontSize: '1rem',
-  // lineHeight: 'normal',
   float: 'left',
 };
 export const Dustbin = memo(function Dustbin({
@@ -25,15 +20,23 @@ export const Dustbin = memo(function Dustbin({
       canDrop: monitor.canDrop(),
     }),
   });
+  const colorMap = {
+    [ItemTypes.FOOD]: 'green',
+    [ItemTypes.PAPER]: 'blue',
+    [ItemTypes.OTHER]: 'grey',
+    [ItemTypes.PET]: 'yellow',
+  };
+
   const isActive = isOver && canDrop;
-  let backgroundColor = 'none';
-  if (isActive) {
-    backgroundColor = 'none';
-  } else if (canDrop) {
-    backgroundColor = 'none';
-  }
+  const backgroundColor = isActive ? colorMap[accept] || 'grey' : 'none';
+
   return (
-    <div ref={drop} style={{ ...style, backgroundColor }} data-testid="dustbin">
+    <div
+      className="dustbin__container"
+      ref={drop}
+      style={{ ...style, backgroundColor }}
+      data-testid="dustbin"
+    >
       <img src={`/img/popelnice_${accept}.svg`} alt="" className="trashbin" />
     </div>
   );
