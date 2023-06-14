@@ -6,7 +6,7 @@ import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 import { PopupExplanationRules } from '../../components/PopupExplanationRules';
 import { PopupExplanationTips } from '../../components/PopupExplanationTips';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export const HomePage = () => {
   const aboutDialogRef = useRef(null);
@@ -14,6 +14,7 @@ export const HomePage = () => {
   const rulesDialogRef = useRef(null);
   const tipsDialogRef = useRef(null);
 
+  // otevírání pop-upů
   const openPopupAbout = () => {
     aboutDialogRef.current.showModal();
   };
@@ -30,20 +31,20 @@ export const HomePage = () => {
     tipsDialogRef.current.showModal();
   };
 
-  //ideálně closePopupAbout
-  const handlePopupAboutClose = () => {
+  // Zavírání pop-upů
+  const closePopupAbout = () => {
     aboutDialogRef.current.close();
   };
 
-  const handlePopupEmotionsClose = () => {
+  const closePopupEmotions = () => {
     emotionsDialogRef.current.close();
   };
 
-  const handlePopupRulesClose = () => {
+  const closePopupRules = () => {
     rulesDialogRef.current.close();
   };
 
-  const handlePopupTipsClose = () => {
+  const closePopupTips = () => {
     tipsDialogRef.current.close();
   };
 
@@ -129,19 +130,19 @@ export const HomePage = () => {
             Další tipy
           </button>
           <PopupExplanationAbout
-            onClose={handlePopupAboutClose}
+            onClose={closePopupAbout}
             dialogRef={aboutDialogRef}
           />
           <PopupExplanationEmotions
-            onClose={handlePopupEmotionsClose}
+            onClose={closePopupEmotions}
             dialogRef={emotionsDialogRef}
           />
           <PopupExplanationRules
-            onClose={handlePopupRulesClose}
+            onClose={closePopupRules}
             dialogRef={rulesDialogRef}
           />
           <PopupExplanationTips
-            onClose={handlePopupTipsClose}
+            onClose={closePopupTips}
             dialogRef={tipsDialogRef}
           />
 
