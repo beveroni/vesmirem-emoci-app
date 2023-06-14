@@ -11,9 +11,9 @@ export const planets = [
     avatar: '/img/planet_joy.svg',
     color: '#f6fc5b',
     planetDialog:
-      'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. A co tu vlastně děláš?',
+      'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. Pomůžeš mi udělat radost i ostatním?',
     rocketDialog:
-      'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti... Dobře, ráda se u Tebe na chvilku zdržím.',
+      'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti...Jsi tak krásně radostná a zářivá tak se u Tebe na chvíli zdržím.',
     backgroundGame: '/img/backround_task_joy.svg',
     task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Přiřaď/klikni na správné obrázky.',
     question:
@@ -29,7 +29,7 @@ export const planets = [
     avatar: '/img/planet_sadness.svg',
     color: '#7fbaf9',
     planetDialog:
-      'Ahoj, jsem úplně nejvíc smutná, víš... Prolítla tady kolem mě moc pěkná kometa s dlouhým ocasem.. a než jsem se stačila otočit, brek brek, byla pryč. Nestihla jsem si nic přát, brek brek.',
+      'Ahoj, jsem úplně nejvíc smutná, víš... Prolítla tady kolem mě moc pěkná kometa s dlouhým ocasem.. a než jsem se stačila otočit, brek brek, byla pryč. Nestihla jsem si nic přát, brek brek. Pomůžeš mi, abych ji mohla vidět znova?',
     rocketDialog:
       'Ahoj planetko, proč pláčeš? Co se stalo, že si taková smutná? Můžu ti nějak pomoct?',
     backgroundGame: '/img/backround_task_sadness.svg',
@@ -47,9 +47,9 @@ export const planets = [
     avatar: '/img/planet_love.svg',
     color: '#f97bc0',
     planetDialog:
-      'Ááách, ahoj, raketko, koukej, dostala jsem dopis od měsíce. Moc krásný. Napsal mi, že se těší, až se zase za měsíc uvidíme... ááách. Akorát nevím, co mu mám odpovědět. Trochu se stydím.',
+      'Ááách, ahoj, raketko, koukej, dostala jsem dopis od měsíce. Moc krásný. Napsal mi, že se těší, až se zase za měsíc uvidíme... ááách. Akorát nevím, co mu mám odpovědět. Trochu se stydím. Pomůžeš mi s tím?',
     rocketDialog:
-      'Ahoj planetko, no jasně, ráda Ti dopis pomůžu napsat, ať ho můžeš poslat po oběžné dráze.',
+      'Ahoj planetko, ty tak krásně růžově záříš po celé oběžné dráze. Pověz mi o tom víc.',
     backgroundGame: '/img/backround_task_love.svg',
     task: 'Pomoz planetce napsat zaláskovaný pohled měsíci:',
     question:
@@ -65,7 +65,7 @@ export const planets = [
     avatar: '/img/planet_anger.svg',
     color: '#fd6363',
     planetDialog:
-      'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat!',
+      'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat! Pomůžeš mi s úklidem?',
     rocketDialog:
       'Ahoj planetko, letím si vesmírem a vidím takovou zajímavou planetku ... tak jsem si řekla, že se tě zaletím zeptat proč jsi tak rudá?',
     backgroundGame: '/img/backround_task_anger.svg',
