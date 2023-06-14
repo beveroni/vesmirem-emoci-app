@@ -10,7 +10,7 @@ export const StarScore = ({ finishedGames }) => {
         <div className="container__stars--score" key={planet.id}>
           <Star
             color={
-              finishedGames?.includes(planet.name) ? planet.color : 'yellow'
+              finishedGames?.includes(planet.name) ? planet.color : '#9f969f'
             }
             key={planet.id}
           ></Star>
@@ -19,4 +19,3 @@ export const StarScore = ({ finishedGames }) => {
     </div>
   );
 };
-
