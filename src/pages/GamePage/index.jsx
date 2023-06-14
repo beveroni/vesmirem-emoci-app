@@ -11,7 +11,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { HeaderGame } from '../../components/HeaderGame';
 
-export const GamePage = ({ finishedGames, gameFinished }) => {
+export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);
@@ -64,7 +64,7 @@ export const GamePage = ({ finishedGames, gameFinished }) => {
 
   return (
     <div className="game-page">
-      <HeaderGame finishedGames={finishedGames} />
+      <HeaderGame dialogRef={dialogRef} finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
           {isRocketBubbleVisible && (
