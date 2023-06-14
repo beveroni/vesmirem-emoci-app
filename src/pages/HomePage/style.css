@@ -1,18 +1,27 @@
 .homepage {
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   color: white;
   background-image: url('/public/img/backround_main.svg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: right;
   background-size: cover;
   min-height: 100vh;
+
+}
+
+.main {
+  flex-grow: 1;
 }
 
 
 .rocket {
   rotate: 50deg;
-  width: 250px;
+  width: 170px;
   position: fixed;
   top: 20%;
   left: 10%;
@@ -38,10 +47,16 @@
 
 
 
+.main {
+  flex-grow: 1;
+}
+
+
+
 /* styly pro btn na jednotlivé POP-UP STRÁNKY */
 
 .button__game {
-  width: 450px;
+  width: 300px;
   /* position: relative;
   top: -68px;
   left: 50%; */

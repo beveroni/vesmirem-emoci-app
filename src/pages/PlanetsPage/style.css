@@ -1,6 +1,10 @@
 .planets__page {
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   color: white;
   background-image: url('/public/img/backround_main.svg');
   background-repeat: no-repeat;
@@ -36,10 +40,12 @@
 }
 
 .container__planets {
+  top: 13rem;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 3.5rem;
   flex-wrap: wrap;
 }
 

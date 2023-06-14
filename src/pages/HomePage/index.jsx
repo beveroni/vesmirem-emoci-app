@@ -91,7 +91,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="homepage">
-        <main>
+        <main className="main">
           <h1>Vesmírem emocí</h1>
           <img className="rocket" src="/img/rocket.svg" alt="raketka" />
           <Link to="games">

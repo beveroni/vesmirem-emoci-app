@@ -1,7 +1,7 @@
 .game-page {
   background-image: url('/public/img/backround_game.svg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   min-height: 100vh;
 }

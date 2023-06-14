@@ -26,7 +26,7 @@ export const GameJoy = ({ onFinish }) => {
     if (hiddenCards.length === 6) {
       const timeout = setTimeout(() => {
         onFinish();
-      }, 1500);
+      }, 1000);
 
       return () => clearTimeout(timeout);
     }
