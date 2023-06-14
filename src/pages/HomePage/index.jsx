@@ -88,63 +88,64 @@ export const HomePage = () => {
   // };
 
   return (
-    <div className="page-container">
-      <main>
-        <h1>Vesmírem emocí</h1>
-        <img className="rocket" src="/img/rocket.svg" alt="raketka" />
-        <Link to="games">
-          <img
-            className="button__game"
-            src="./img/button_game_main.svg"
-            alt="tlačítko hrát"
+    <>
+      <div className="page-container">
+        <main>
+          <h1>Vesmírem emocí</h1>
+          <img className="rocket" src="/img/rocket.svg" alt="raketka" />
+          <Link to="games">
+            <img
+              className="button__game"
+              src="./img/button_game_main.svg"
+              alt="tlačítko hrát"
+            />
+          </Link>
+          <button
+            className="button__project"
+            id="popup__open--about"
+            onClick={openPopupAbout}
+          >
+            O projektu
+          </button>
+          <button
+            className="button__emotions"
+            id="popup__open--emotions"
+            onClick={openPopupEmotions}
+          >
+            Seznam emocí
+          </button>
+          <button
+            className="button__rules"
+            id="popup__open--rules"
+            onClick={openPopupRules}
+          >
+            Pravidla
+          </button>
+          <button
+            className="button__tips"
+            id="popup__open--tips"
+            onClick={openPopupTips}
+          >
+            Další tipy
+          </button>
+          <PopupExplanationAbout
+            onClose={handlePopupAboutClose}
+            dialogRef={aboutDialogRef}
           />
-        </Link>
-        <button
-          className="button__project"
-          id="popup__open--about"
-          onClick={openPopupAbout}
-        >
-          O projektu
-        </button>
-        <button
-          className="button__emotions"
-          id="popup__open--emotions"
-          onClick={openPopupEmotions}
-        >
-          Seznam emocí
-        </button>
-        <button
-          className="button__rules"
-          id="popup__open--rules"
-          onClick={openPopupRules}
-        >
-          Pravidla
-        </button>
-        <button
-          className="button__tips"
-          id="popup__open--tips"
-          onClick={openPopupTips}
-        >
-          Další tipy
-        </button>
-        <PopupExplanationAbout
-          onClose={handlePopupAboutClose}
-          dialogRef={aboutDialogRef}
-        />
-        <PopupExplanationEmotions
-          onClose={handlePopupEmotionsClose}
-          dialogRef={emotionsDialogRef}
-        />
-        <PopupExplanationRules
-          onClose={handlePopupRulesClose}
-          dialogRef={rulesDialogRef}
-        />
-        <PopupExplanationTips
-          onClose={handlePopupTipsClose}
-          dialogRef={tipsDialogRef}
-        />
+          <PopupExplanationEmotions
+            onClose={handlePopupEmotionsClose}
+            dialogRef={emotionsDialogRef}
+          />
+          <PopupExplanationRules
+            onClose={handlePopupRulesClose}
+            dialogRef={rulesDialogRef}
+          />
+          <PopupExplanationTips
+            onClose={handlePopupTipsClose}
+            dialogRef={tipsDialogRef}
+          />
 
-        {/* {showPopupAbout && (
+          {/* {showPopupAbout && (
           <PopupExplanationAbout onClose={handlePopupAboutClose} />
         )}
         {showPopupEmotions && (
@@ -156,16 +157,9 @@ export const HomePage = () => {
         {showPopupTips && (
           <PopulExplanationTips onClose={handlePopupTipsClose} />
         )} */}
-      </main>
-      <Footer />
-      <button className="p1">žlutá</button>
-      <button className="p2">modrá</button>
-      <button className="p3">láska</button>
-      <button className="p4">zloba</button>
-      <button className="p5">nadšení</button>
-      <button className="p6">nuda</button>
-      <button className="p7">odvaha</button>
-      <button className="p8">strach</button>
-    </div>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
