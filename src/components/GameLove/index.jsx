@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 export const GameLove = ({ onFinish }) => {
   const [message, setMessage] = useState('');
+  const [animationStarted, setAnimationStarted] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,11 +16,20 @@ export const GameLove = ({ onFinish }) => {
 
   const handleChange = (event) => {
     setMessage(event.target.value);
+
+    if (!animationStarted && event.target.value.trim().length >= 6) {
+      setAnimationStarted(true);
+    }
   };
+
+  const animationDuration = `${2 + message.length * 0.001}s`;
 
   const enlargedImageStyles = {
     transition: 'all 0.3s',
-    transform: `scale(${1 + message.length * 0.005})`,
+    animationName: 'enlarging-reducing',
+    animationDuration: animationDuration,
+    animationFillMode: 'forwards',
+    animationIterationCount: 30,
   };
 
   return (
@@ -43,7 +53,7 @@ export const GameLove = ({ onFinish }) => {
             className="game__love--btn"
             src="/img/love_stamp.svg"
             alt="známka"
-            style={enlargedImageStyles}
+            style={animationStarted ? enlargedImageStyles : {}}
           />
         </button>
       </form>
