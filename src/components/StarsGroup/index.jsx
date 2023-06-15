@@ -8,7 +8,7 @@ export const StarsGroup = ({ colorStar }) => {
         className="stars-group-svg"
         width="30"
         height="30"
-        viewBox="0 0 7.9374997 7.9374999"
+        viewBox="3 5 30 15"
         version="1.1"
         id="svg5"
         xmlns="http://www.w3.org/2000/svg"
