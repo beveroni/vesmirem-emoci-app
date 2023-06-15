@@ -11,6 +11,10 @@ export const GameSadness = ({ onFinish }) => {
   const startStopwatch = (e) => {
     e.preventDefault();
 
+    if (inputValue.length === 0) {
+      return;
+    }
+
     const parsedValue = Number(inputValue);
 
     if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 5) {
@@ -23,7 +27,12 @@ export const GameSadness = ({ onFinish }) => {
   };
 
   const decrementTime = () => {
-    setTime((prevTime) => prevTime - 1);
+    setTime((prevTime) => {
+      if (prevTime === 1) {
+        setInputValue('');
+      }
+      return prevTime - 1;
+    });
   };
 
   useEffect(() => {
@@ -52,9 +61,13 @@ export const GameSadness = ({ onFinish }) => {
       <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
-            <button type="submit" className="btn-stopwatsch">
+            <button
+              type="submit"
+              className="btn-stopwatsch"
+              disabled={inputValue.length === 0}
+            >
               Start
-            </button> 
+            </button>
             <label>
               <input
                 type="text"

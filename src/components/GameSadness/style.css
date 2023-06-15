@@ -106,12 +106,11 @@ input[type='text'] {
   0% {
     transform: translateX(0vw) translateY(0) translateZ(0);
 
-    /* Přidáno translateZ(0) pro zabránění posuvné lišty */
+
   }
 
   100% {
     transform: translateX(-100vw) translateY(-20%) translateZ(0);
-    /* Přidáno translateZ(0) pro zabránění posuvné lišty */
 
   }
 }
