@@ -38,22 +38,22 @@ export const PopupGame = ({
       className="game-popup"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="popup__content">
+      <div className="game__content">
         {!gameFinish && <Cross onClick={onClose} />}
         {gameFinish ? (
           <>
-            <div className="popup__content--star">
+            <div className="game__star">
               <Star colorStar={colorStar} />
             </div>
-            <div className="popup__content2">
+            <div className="game__question">
               <StarsGroup colorStar={colorStar} />
-              <p className="popup__content--task2">{question}</p>
+              <p className="game__question--text">{question}</p>
               <ContinueArrow />
             </div>
           </>
         ) : (
           <>
-            <p className="popup__content--task1">{task}</p>
+            <p className="game__task--text">{task}</p>
             <Game onFinish={handleShowStar} />
           </>
         )}
