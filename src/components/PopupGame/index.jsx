@@ -11,7 +11,7 @@ export const PopupGame = ({
   question,
   game,
   onClose,
-  color,
+  colorStar,
   gameFinished,
 }) => {
   // const { planetTask, planetQuestion, planetBackground } = useParams();
@@ -43,10 +43,10 @@ export const PopupGame = ({
         {gameFinish ? (
           <>
             <div className="popup__content--star">
-              <Star color={color} />
+              <Star colorStar={colorStar} />
             </div>
             <div className="popup__content2">
-              <StarsGroup color={color} />
+              <StarsGroup colorStar={colorStar} />
               <p className="popup__content--task2">{question}</p>
               <ContinueArrow />
             </div>

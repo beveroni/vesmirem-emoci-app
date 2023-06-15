@@ -90,7 +90,7 @@ export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
           game={planet.game}
           question={planet.question}
           onClose={handleClosePopup}
-          color={planet.color}
+          colorStar={planet.colorStar}
         />
       )}
       {showButton && (
