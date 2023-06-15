@@ -1,4 +1,4 @@
-.winer-popup {
+.winner-popup {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -17,27 +17,27 @@
 
 
 @media (max-width: 425px) {
-  .winer-popup {
+  .winner-popup {
     width: 90vw;
     max-height: 80vh;
   }
 }
 
 
-.winer-content {
+.winner__content {
   display: flex;
   flex-direction: column;
   max-height: 100%;
   overflow: auto;
 }
 
-.winer-heading {
+.winner__heading {
   color: yellow;
   margin: 2rem;
 
 }
 
-.winer-astronaut {
+.winner__astronaut {
   display: flex;
   justify-content: center;
 }

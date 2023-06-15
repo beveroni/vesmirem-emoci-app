@@ -2,11 +2,11 @@ import React from 'react';
 import './style.css';
 import { AstronautHome } from '../AstronautHome';
 
-export const PopupWiner = () => {
+export const PopupWinner = () => {
   return (
-    <div className="winer-popup">
-      <div className="winer-content">
-        <h2 className="winer-heading">
+    <div className="winner-popup">
+      <div className="winner__content">
+        <h2 className="winner__heading">
           <strong>Gratulujeme!</strong>
         </h2>
         <p>
@@ -25,7 +25,7 @@ export const PopupWiner = () => {
           Děkujeme ti za účast ve hře a doufáme, že se brzy vrátíš na další
           dobrodružství mezi hvězdami. Vesmír je plný překvapení a čeká na tebe
         </p>
-        <div className="winer-astronaut">
+        <div className="winner__astronaut">
           <AstronautHome />
         </div>
       </div>

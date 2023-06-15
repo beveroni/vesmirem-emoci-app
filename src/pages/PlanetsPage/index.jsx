@@ -3,7 +3,7 @@ import './style.css';
 import { Header } from '../../components/Header';
 import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
-import { PopupWiner } from '../../components/PopupWiner';
+import { PopupWinner } from '../../components/PopupWinner';
 import { useState, useEffect } from 'react';
 
 export const PlanetsPage = ({ finishedGames }) => {
@@ -19,7 +19,7 @@ export const PlanetsPage = ({ finishedGames }) => {
     <div className="planets__page">
       <Header finishedGames={finishedGames} />
       {allGamesFinished ? (
-        <PopupWiner />
+        <PopupWinner />
       ) : (
         <>
           <div className="container__planets">
