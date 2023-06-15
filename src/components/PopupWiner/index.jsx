@@ -1,8 +1,6 @@
 import React from 'react';
 import './style.css';
 import { PopupWinerExplanation } from '../PopupWinerExplanation';
-import { ContinueArrowHome } from '../ContinueArrowHome';
-import { Link } from 'react-router-dom';
 import { AstronautHome } from '../AstronautHome';
 
 export const PopupWiner = ({ allGamesFinished }) => {
@@ -30,7 +28,6 @@ export const PopupWiner = ({ allGamesFinished }) => {
         </p>
         <div className="popupWiner__container">
           <AstronautHome />
-          <ContinueArrowHome />
         </div>
       </PopupWinerExplanation>
     </div>

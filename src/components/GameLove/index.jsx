@@ -11,6 +11,8 @@ export const GameLove = ({ onFinish }) => {
 
     if (message.trim().length > 6) {
       onFinish();
+    } else {
+      setAnimationStarted(false);
     }
   };
 
@@ -19,18 +21,25 @@ export const GameLove = ({ onFinish }) => {
 
     if (!animationStarted && event.target.value.trim().length >= 6) {
       setAnimationStarted(true);
+    } else if (animationStarted && event.target.value.trim().length < 6) {
+      setAnimationStarted(false);
     }
   };
-
-  const animationDuration = `${2 + message.length * 0.001}s`;
+  // const animationDuration = `${2 + message.length * 0.001}s`;
 
   const enlargedImageStyles = {
     transition: 'all 0.3s',
-    animationName: 'enlarging-reducing',
-    animationDuration: animationDuration,
-    animationFillMode: 'forwards',
-    animationIterationCount: 30,
+    transform: `scale(${1 + message.length * 0.005})`,
+    filter: 'drop-shadow(2px 2px 4px rgb(255, 255, 0))',
   };
+
+  // const enlargedImageStyles = {
+  //   transition: 'all 0.3s',
+  //   animationName: 'enlarging-reducing',
+  //   animationDuration: animationDuration,
+  //   animationFillMode: 'forwards',
+  //   animationIterationCount: 30,
+  // };
 
   return (
     <div className="popup__game--love">
