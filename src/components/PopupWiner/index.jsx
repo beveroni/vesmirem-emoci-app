@@ -4,11 +4,11 @@ import { AstronautHome } from '../AstronautHome';
 
 export const PopupWiner = () => {
   return (
-    <div className="explanations__popup__winer">
-      <div className="popup__winer">
-        <p className="popupWiner__heading">
+    <div className="winer-popup">
+      <div className="winer-content">
+        <h2 className="winer-heading">
           <strong>Gratulujeme!</strong>
-        </p>
+        </h2>
         <p>
           Skvělá práce! Tvá raketka právě dokončila úžasnou misi a objevila
           všechny planetky ve vesmíru. Bylo to vzrušující dobrodružství plné
@@ -25,7 +25,7 @@ export const PopupWiner = () => {
           Děkujeme ti za účast ve hře a doufáme, že se brzy vrátíš na další
           dobrodružství mezi hvězdami. Vesmír je plný překvapení a čeká na tebe
         </p>
-        <div className="popupWiner__container">
+        <div className="winer-astronaut">
           <AstronautHome />
         </div>
       </div>

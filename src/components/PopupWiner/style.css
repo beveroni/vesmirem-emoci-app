@@ -1,4 +1,4 @@
-.explanations__popup__winer {
+.winer-popup {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -17,26 +17,27 @@
 
 
 @media (max-width: 425px) {
-  .explanations__popup__winer {
+  .winer-popup {
     width: 90vw;
     max-height: 80vh;
   }
 }
 
 
-.popop_winer {
-  max-height: 100%;
-  overflow: auto;
+.winer-content {
   display: flex;
   flex-direction: column;
-
+  max-height: 100%;
+  overflow: auto;
 }
 
-.popupWiner__heading {
+.winer-heading {
   color: yellow;
+  margin: 2rem;
+
 }
 
-.popupWiner__container {
+.winer-astronaut {
   display: flex;
   justify-content: center;
 }
