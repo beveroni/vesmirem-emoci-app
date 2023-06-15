@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 import { ContinueArrow } from '../ContinueArrow';
 import { Star } from '../Star';
+import { StarsGroup } from '../StarsGroup';
 import { Cross } from '../Cross';
 
 export const PopupGame = ({
@@ -45,7 +46,7 @@ export const PopupGame = ({
               <Star color={color} />
             </div>
             <div className="popup__content2">
-              <img className="stars__group" src="/img/stars_group.svg" alt="" />
+              <StarsGroup color={color} />
               <p className="popup__content--task2">{question}</p>
               <ContinueArrow />
             </div>
