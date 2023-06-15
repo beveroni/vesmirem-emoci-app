@@ -16,7 +16,7 @@ export const planets = [
     rocketDialog:
       'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti...Jsi tak krásně radostná a zářivá tak se u Tebe na chvíli zdržím.',
     backgroundGame: '/img/backround_task_joy.svg',
-    task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Přiřaď/klikni na správné obrázky.',
+    task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Klikni na správné obrázky a vyber tak dvojici, která k sobě patří.',
     question:
       'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
     game: GameJoy,
@@ -35,7 +35,7 @@ export const planets = [
     rocketDialog:
       'Ahoj planetko, proč pláčeš? Co se stalo, že si taková smutná? Můžu ti nějak pomoct?',
     backgroundGame: '/img/backround_task_sadness.svg',
-    task: 'Pusť si stopky a počkej s planetkou na další padající hvězdu.',
+    task: 'Pusť si stopky a počkej s planetkou na další letící kometu.',
     question:
       'Taky se ti stalo, že si něco prošvihl/a? Co umí rozesmutnit Tebe? Komu se svěřuješ, když je Ti smutno?',
     game: GameSadness,

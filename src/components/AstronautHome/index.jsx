@@ -6,7 +6,7 @@ export const AstronautHome = () => {
   return (
     <Link to="/">
       <img
-        src="/img/astronaut.svg"
+        src="/public/img/astronaut.svg"
         alt="obrázek kosmonauta odkazující na domovskou stránku"
         className="astronaut_winer"
       />

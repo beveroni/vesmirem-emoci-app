@@ -64,7 +64,7 @@ export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
 
   return (
     <div className="game-page">
-      <HeaderGame dialogRef={dialogRef} finishedGames={finishedGames} />
+      <HeaderGame finishedGames={finishedGames} />
       <div className="conversation">
         <div className="conversation__rocket">
           {isRocketBubbleVisible && (
