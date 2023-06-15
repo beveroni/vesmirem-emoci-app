@@ -1,4 +1,10 @@
 /* OBRÁZKY HRY */
+.game__anger {
+  display: flex;
+  position: relative;
+  bottom: 8rem;
+}
+
 .dustbin__container {
   display: flex;
   flex-direction: row;

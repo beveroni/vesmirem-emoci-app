@@ -1,0 +1,9 @@
+.popupWiner__heading {
+  color: yellow;
+}
+
+.popupWiner__container {
+  display: flex;
+  justify-content: center;
+}
+
