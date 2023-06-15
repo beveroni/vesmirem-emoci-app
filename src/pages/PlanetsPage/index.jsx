@@ -6,18 +6,20 @@ import { Link } from 'react-router-dom';
 import { PopupWiner } from '../../components/PopupWiner';
 import { useState, useEffect } from 'react';
 
-export const PlanetsPage = ({ finishedGames, onClose }) => {
+export const PlanetsPage = ({ finishedGames }) => {
   const [allGamesFinished, setAllGamesFinished] = useState(false);
+
   useEffect(() => {
     if (finishedGames.length === planets.length) {
       setAllGamesFinished(true);
     }
   }, [finishedGames]);
+
   return (
     <div className="planets__page">
       <Header finishedGames={finishedGames} />
       {allGamesFinished ? (
-        <PopupWiner allGamesFinished={allGamesFinished} />
+        <PopupWiner />
       ) : (
         <>
           <div className="container__planets">

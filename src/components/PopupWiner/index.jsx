@@ -1,12 +1,11 @@
 import React from 'react';
 import './style.css';
-import { PopupWinerExplanation } from '../PopupWinerExplanation';
 import { AstronautHome } from '../AstronautHome';
 
-export const PopupWiner = ({ allGamesFinished }) => {
+export const PopupWiner = () => {
   return (
-    <div className="popup__winer">
-      <PopupWinerExplanation allGamesFinished={allGamesFinished}>
+    <div className="explanations__popup__winer">
+      <div className="popup__winer">
         <p className="popupWiner__heading">
           <strong>Gratulujeme!</strong>
         </p>
@@ -29,7 +28,7 @@ export const PopupWiner = ({ allGamesFinished }) => {
         <div className="popupWiner__container">
           <AstronautHome />
         </div>
-      </PopupWinerExplanation>
+      </div>
     </div>
   );
 };
