@@ -32,6 +32,11 @@
   gap: 3rem;
 }
 
+.trash__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .trash {
   width: 50px;
   margin-bottom: 10px;
@@ -40,4 +45,21 @@
 
 .trash:hover {
   transform: scale(1.2);
+}
+
+
+.box-shadow-food {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.box-shadow-paper {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.box-shadow-other {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+}
+
+.box-shadow-pet {
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
 }

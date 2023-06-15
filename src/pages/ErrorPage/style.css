@@ -7,6 +7,7 @@
   background-position: bottom center;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .errorpage__container {
@@ -54,4 +55,74 @@
 .astronaut_errorpage:hover {
   transform: scale(1.1);
   filter: drop-shadow(0px 0px 10px rgba(246, 255, 0, 0.8));
+}
+
+/* .errorpage__rocket {
+  position: relative;
+  width: 170px;
+  top: -50%;
+  left: 0;
+
+  transform: translateZ(0) rotate(90deg);
+
+  animation: fly 6s linear forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-100vh) translateY(0) translateZ(0) rotate(90deg);
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: translateX(100vw) translateY(20%) translateZ(0) rotate(90deg);
+    opacity: 1;
+  }
+} */
+/* body {
+  overflow-x: hidden;
+} */
+
+.errorpage__rocket {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-image: url(/public/img/rocket.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  left: -170px;
+  top: 50%;
+  transform: translateY(-50%) translateZ(0) rotate(90deg);
+  opacity: 0;
+  /* Raketa je na začátku neviditelná */
+  animation: rocketAnimation 4s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes rocketAnimation {
+  0% {
+    transform: translateX(0) translateY(-50%) translateZ(0) rotate(90deg);
+    opacity: 0;
+    /* Raketa je neviditelná */
+  }
+
+  10% {
+    opacity: 1;
+    /* Raketa začne se objevovat */
+  }
+
+  90% {
+    opacity: 1;
+    /* Raketa zůstává viditelná */
+  }
+
+  100% {
+    transform: translateX(calc(90vw)) translateY(-50%) translateZ(0) rotate(90deg);
+    opacity: 0;
+    /* Raketa znovu zmizí */
+  }
 }

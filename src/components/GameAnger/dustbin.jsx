@@ -2,11 +2,6 @@ import React, { memo } from 'react';
 import { ItemTypes } from './ItemTypes';
 import { useDrop } from 'react-dnd';
 
-const style = {
-  padding: '1rem',
-  textAlign: 'center',
-  float: 'left',
-};
 export const Dustbin = memo(function Dustbin({
   accept,
   lastDroppedItem,
@@ -20,15 +15,34 @@ export const Dustbin = memo(function Dustbin({
       canDrop: monitor.canDrop(),
     }),
   });
+
   const colorMap = {
     [ItemTypes.FOOD]: 'green',
     [ItemTypes.PAPER]: 'blue',
-    [ItemTypes.OTHER]: 'grey',
+    [ItemTypes.OTHER]: '#808080',
     [ItemTypes.PET]: 'yellow',
   };
 
+  const shadowMap = {
+    [ItemTypes.FOOD]: '0 0 10px rgba(0, 255, 0, 0.5)',
+    [ItemTypes.PAPER]: '0 0 10px rgba(0, 0, 255, 0.5)',
+    [ItemTypes.OTHER]: '0 0 10px rgba(128, 128, 128, 0.5)',
+    [ItemTypes.PET]: '0 0 10px rgba(255, 255, 0, 0.5)',
+  };
+
   const isActive = isOver && canDrop;
-  const backgroundColor = isActive ? colorMap[accept] || 'grey' : 'none';
+  const backgroundColor = isActive
+    ? `${colorMap[accept] || 'none'} url(/img/popelnice_${accept}.svg)`
+    : 'none';
+  const boxShadow = isActive ? shadowMap[accept] || 'none' : 'none';
+
+  const style = {
+    padding: '3rem',
+    textAlign: 'center',
+    float: 'left',
+    filter: isActive ? `drop-shadow(${boxShadow})` : 'none',
+    backgroundSize: 'contain',
+  };
 
   return (
     <div
@@ -38,6 +52,7 @@ export const Dustbin = memo(function Dustbin({
       data-testid="dustbin"
     >
       <img src={`/img/popelnice_${accept}.svg`} alt="" className="trashbin" />
+      {isActive && <p>ANO, patří to tam.</p>}
     </div>
   );
 });

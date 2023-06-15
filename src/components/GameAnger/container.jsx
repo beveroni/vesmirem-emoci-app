@@ -56,7 +56,7 @@ export const Container = memo(function Container({ onFinish }) {
   );
   return (
     <div>
-      <div style={{ overflow: 'hidden', clear: 'both' }}>
+      <div>
         {dustbins.map(({ accepts, lastDroppedItem }, index) => (
           <Dustbin
             accept={accepts}
@@ -67,18 +67,13 @@ export const Container = memo(function Container({ onFinish }) {
         ))}
       </div>
 
-      <div style={{ overflow: 'hidden', clear: 'both' }}>
+      <div>
         {boxes.map(({ name, type }, index) => (
           <Box
             name={name}
             type={type}
             isDropped={isDropped(name)}
             key={index}
-            style={
-              isDropped(name) && type === ItemTypes.GLASS
-                ? { backgroundColor: 'rgb(128, 128, 128)' }
-                : {}
-            }
           />
         ))}
       </div>

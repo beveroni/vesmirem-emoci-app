@@ -15,13 +15,14 @@ export const ErrorPage = () => {
           naše raketka najde správnou cestu zpět do hry. Vesmír je plný
           dobrodružství, takže se brzy vrátíme zpátky k objevování!"
         </p>
-        <Link to="/" className="link__center" >
+        <Link to="/" className="link__center">
           <img
             src="/img/astronaut.svg"
             alt="obrázek kosmonauta odkazující na domovskou stránku"
             className="astronaut_errorpage"
           />
         </Link>
+        <div className="errorpage__rocket" />
       </div>
     </div>
   );
