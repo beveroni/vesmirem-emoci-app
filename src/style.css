@@ -82,25 +82,27 @@ h4 {
 
 
 
+/* Použité barvy v databázi */
 
-.color-database {
-  color: #b3b370;
-  color: #40a6c5;
-  color: #bc6ea7;
-  color: #ba5858;
-  color: #c49847;
-  color: #995524;
-  color: #5ebe5e;
-  color: #a3aab1;
+.database-colorText {
+  color: #f9f46d;
+  color: #77cdfe;
+  color: #f891cf;
+  color: #f47979;
+  color: #f8b271;
+  color: #7a5637;
+  color: #3a8a4c;
+  color: #aca29a;
+
 }
 
-.color-database-shadow {
-  color: #e2e74a;
-  color: #6fb5ff;
-  color: #fd95ce;
-  color: #ff1b1b;
-  color: #ff8e37;
-  color: #815800;
-  color: #52ff2f;
-  color: #dadada;
+.database-colorStar {
+  color: #FFF503;
+  color: #04A5FF;
+  color: #FC68C1;
+  color: #EC1F1F;
+  color: #FF7D04;
+  color: #793B03;
+  color: #038A21;
+  color: #58534f;
 }

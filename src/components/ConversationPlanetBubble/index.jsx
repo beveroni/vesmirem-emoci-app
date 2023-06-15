@@ -3,7 +3,7 @@ import './style.css';
 import { planets } from '../../planet-database';
 import { useState, useEffect } from 'react';
 
-export const ConversationPlanetBubble = ({ color, dialog }) => {
+export const ConversationPlanetBubble = ({ colorText, dialog }) => {
   const planetDialog = planets.find(
     (planet) => planet.planetDialog === planetDialog,
   );
@@ -11,7 +11,7 @@ export const ConversationPlanetBubble = ({ color, dialog }) => {
     <div
       className="conversation__planet--text bubble bubble-bottom-right"
       // @ts-ignore
-      style={{ backgroundColor: color, '--color': color }}
+      style={{ backgroundColor: colorText, '--colorText': colorText }}
     >
       <p>{dialog}</p>
     </div>

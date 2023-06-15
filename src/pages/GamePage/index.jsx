@@ -75,7 +75,7 @@ export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
         <div className="conversation__planet">
           {isPlanetBubbleVisible && (
             <ConversationPlanetBubble
-              color={planet.color}
+              colorText={planet.colorText}
               dialog={planet.planetDialog}
             />
           )}
