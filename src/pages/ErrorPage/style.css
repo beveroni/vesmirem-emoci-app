@@ -34,3 +34,24 @@
 .errorpage_strong {
   color: yellow;
 }
+
+.link__center {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.astronaut_errorpage {
+  width: 170px;
+  transform: scale(1);
+  transition: transform 0.3s;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8))
+}
+
+
+.astronaut_errorpage:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px rgba(246, 255, 0, 0.8));
+}

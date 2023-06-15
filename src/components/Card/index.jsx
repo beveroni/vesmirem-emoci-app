@@ -10,12 +10,21 @@ export const Card = ({ onClick, name, hidden, selected }) => {
     }
   };
 
+  const isIncorrectPair =
+    (selected === 'rabbit' && name === 'dummy') ||
+    (selected === 'astronaut' && name === 'carrot') ||
+    (selected === 'baby' && name === 'rocket');
+
+  const cardClassName = `game__card${hidden ? ' hidden' : ''}${
+    selected ? ' selected' : ''
+  }`;
+
   return (
     <img
       onClick={handleClick}
       src={`/img/game_joy_card_${name}.svg`}
-      alt="game card rabbit"
-      className={`game__card${hidden ? ' hidden' : ''}${selected ? ' selected' : ''}`}
+      alt={`game card ${name}`}
+      className={cardClassName}
     />
   );
 };

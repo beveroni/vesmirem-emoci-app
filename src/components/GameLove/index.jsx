@@ -29,7 +29,7 @@ export const GameLove = ({ onFinish }) => {
 
   const enlargedImageStyles = {
     transition: 'all 0.3s',
-    transform: `scale(${1 + message.length * 0.005})`,
+    transform: `scale(${1 + message.length * 0.01})`,
     filter: 'drop-shadow(2px 2px 4px rgb(255, 255, 0))',
   };
 
