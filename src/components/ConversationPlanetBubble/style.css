@@ -9,6 +9,7 @@
   padding: 1rem;
   margin: 2rem;
   background-color: violet;
+  border: 1px solid black;
   border-radius: 20px;
 }
 
@@ -19,10 +20,11 @@
   width: 300px;
   background: #fff;
   border-radius: 40px;
-  padding: 24px;
-  text-align: center;
+  /* padding: 24px; */
+  /* text-align: center; */
   color: #000;
 }
+
 
 
 .bubble-bottom-right:before {
@@ -38,4 +40,20 @@
   border-bottom: 20px solid transparent;
   right: 32px;
   bottom: -24px;
+}
+
+@media (max-width: 1024px) {
+  .conversation__planet--text {
+    position: absolute;
+    right: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .conversation__planet--text {
+    position: absolute;
+    top: 30rem;
+    right: 2rem;
+    width: 400px;
+  }
 }

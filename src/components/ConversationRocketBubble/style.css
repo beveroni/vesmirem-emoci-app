@@ -1,12 +1,12 @@
 .conversation__rocket--text {
   /* display: none; */
-  position: absolute;
-  top: 1rem;
+  /* position: absolute;
+  top: 1rem; */
   left: 5rem;
-  color: black;
+  /* color: black; */
   text-align: justify;
-  width: 30%;
-  padding: 1rem;
+  /* width: 30%; */
+  padding: 2rem;
   margin: 2rem;
   background-color: antiquewhite;
   border-radius: 20px;
@@ -20,8 +20,8 @@
   width: 300px;
   background: #fff;
   border-radius: 40px;
-  padding: 24px;
-  text-align: center;
+  /* padding: 24px;
+  text-align: center; */
   color: #000;
 }
 
@@ -36,4 +36,19 @@
   border-bottom: 20px solid transparent;
   left: 32px;
   bottom: -24px;
+}
+
+@media (max-width: 1024px) {
+  .conversation__rocket--text {
+    position: absolute;
+    left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .conversation__rocket--text {
+    position: absolute;
+    left: 2rem;
+    width: 400px;
+  }
 }
