@@ -28,7 +28,7 @@ export const Box = ({ name, type, isDropped }) => {
     }
   };
 
-  const opacity = isDragging ? 0.4 : 1;
+  const opacity = isDragging ? 0.9 : 1;
   const shadowStyle = getShadowStyle();
 
   return (

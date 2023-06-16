@@ -175,7 +175,7 @@
 
 
   .button__project:hover {
-    box-shadow: 0 0 40px 20px rgb(252, 116, 57);
+    box-shadow: 0 0 20px 10px rgb(252, 116, 57);
     transform: scale(1.1);
   }
 
@@ -231,7 +231,7 @@
     background-color: #b1a8a8;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     h1 {
       font-size: 2em;
       word-wrap: break-word;
@@ -281,12 +281,12 @@
     }
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     h1 {
       font-size: 2em;
       top: 5vh;
     }
-  }
+  } */
 
   @media (max-width: 768px) {
     h1 {

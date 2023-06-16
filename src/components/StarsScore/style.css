@@ -5,8 +5,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 300px;
-  height: 40px;
   position: fixed;
   top: 10px;
   right: 20px;
@@ -16,11 +14,49 @@
 
 
 .container__stars--score {
-  width: 30px;
-  height: 30px;
   transition: transform 0.3s;
 }
 
 .container__stars--score:hover {
   transform: scale(1.1);
+}
+
+
+@media (min-width: 320px) {
+
+  .container__stars {
+    width: 181px;
+    height: 30px;
+  }
+
+  .container__stars--score {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+
+  .container__stars {
+    width: 268px;
+    height: 40px;
+  }
+
+  .container__stars--score {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 765px) {
+
+  .container__stars {
+    width: 350px;
+    height: 50px;
+  }
+
+  .container__stars--score {
+    width: 40px;
+    height: 40px;
+  }
 }

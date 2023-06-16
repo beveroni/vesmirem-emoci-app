@@ -37,7 +37,7 @@ export const Dustbin = memo(function Dustbin({
   const boxShadow = isActive ? shadowMap[accept] || 'none' : 'none';
 
   const style = {
-    padding: '3rem',
+    padding: '1rem',
     textAlign: 'center',
     float: 'left',
     filter: isActive ? `drop-shadow(${boxShadow})` : 'none',
