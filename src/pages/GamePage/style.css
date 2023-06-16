@@ -1,4 +1,6 @@
 .game-page {
+  display: flex;
+  flex-direction: column;
   background-image: url('/public/img/backround_game.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -13,5 +15,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-grow: 1;
+  margin-top: 20vh;
+  /* flex-grow: 1; */
 }
