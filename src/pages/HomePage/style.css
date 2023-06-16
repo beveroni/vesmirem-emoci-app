@@ -1,279 +1,302 @@
   .homepage {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  color: white;
-  background-image: url('/public/img/backround_main.svg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  min-height: 100vh;
-
-}
-
-h1 {
-  font-size: 5em;
-  position: relative;
-  top: 10vh;
-  left: 6vw;
-  transition: all 0.3s ease;
-}
-
-h1:hover {
-  text-shadow: 0 0 10px yellow;
-  transform: scale(1.0);
-}
-
-.main {
-  flex-grow: 1;
-}
-
-
-.rocket {
-  rotate: 50deg;
-  width: 170px;
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
-  animation: flying 2s forwards;
-}
-
-@keyframes flying {
-  0% {
-    left: -20%;
-    bottom: -0%;
-    transform: scale(0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: white;
+    background-image: url('/public/img/backround_main.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    min-height: 100vh;
 
   }
 
-  100% {
-    left: 10rem;
-    bottom: 3rem;
-    transform: scale(1.1);
-
-  }
-}
-
-
-
-.main {
-  flex-grow: 1;
-}
-
-
-
-/* styly pro btn na jednotlivé POP-UP STRÁNKY */
-
-.button__game {
-  width: 439px;
-  position: fixed;
-  top: 25%;
-  left: 65%;
-  background: none;
-  cursor: pointer;
-  filter: none;
-  transition: filter 0.3s, transform 0.3s;
-}
-
-.button__game:hover {
-  filter: drop-shadow(0 0 40px rgb(255, 255, 193));
-  transform: scale(1.1);
-}
-
-.button__project {
-  /* position: absolute; */
-  /* top: 5rem;
-  left: 18rem; */
-  position: fixed;
-  top: 65%;
-  left: 55%;
-  /* top: -170px;
-  left: 74px; */
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 2rem;
-  background: rgb(252, 116, 57);
-  width: 13rem;
-  height: 13rem;
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-  /* overflow: hidden; */
-  cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-
-.button__emotions {
-  /* position: relative;
-  bottom: 25rem;
-  right: 10rem; */
-  position: fixed;
-  top: 15%;
-  left: 45%;
-  /* top: -392px;
-  left: 67px; */
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 2rem;
-  background: rgb(255, 139, 199);
-  width: 9rem;
-  height: 9rem;
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-  /* overflow: hidden; */
-  cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.button__rules {
-  /* position: relative;
-  bottom: 5rem;
-  right: 30rem; */
-  position: fixed;
-  top: 40%;
-  left: 30%;
-  /* top: 55px;
-  left: -72px; */
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 2rem;
-  background: rgb(84, 84, 213);
-  width: 12rem;
-  height: 12rem;
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-  /* overflow: hidden; */
-  cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s;
-  /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); */
-}
-
-
-.button__tips {
-  position: fixed;
-  top: 70%;
-  left: 10%;
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 2rem;
-  background: rgb(10, 134, 105);
-  width: 8rem;
-  height: 8rem;
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-  cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-
-.button__project:hover {
-  box-shadow: 0 0 40px 20px rgb(252, 116, 57);
-  transform: scale(1.1);
-}
-
-.button__emotions:hover {
-  box-shadow: 0 0 40px 20px rgb(255, 139, 199);
-  transform: scale(1.1);
-}
-
-.button__rules:hover {
-  box-shadow: 0 0 40px 20px rgb(84, 84, 213);
-  transform: scale(1.1);
-}
-
-.button__tips:hover {
-  box-shadow: 0 0 40px 20px rgb(10, 134, 105);
-  transform: scale(1.1);
-}
-
-
-button {
-  padding: 3rem;
-}
-
-.p1 {
-  background-color: #f6fc5b;
-}
-
-.p2 {
-  background-color: #7fbaf9;
-}
-
-.p3 {
-  background-color: #f97bc0;
-}
-
-.p4 {
-  background-color: #fd6363;
-}
-
-.p5 {
-  background-color: #eeab53;
-}
-
-.p6 {
-  background-color: #b27140;
-}
-
-.p7 {
-  background-color: #6fd25b;
-}
-
-.p8 {
-  background-color: #b1a8a8;
-}
-
-@media (max-width: 320px) {
   h1 {
-    font-size: 2em;
-    word-wrap: break-word;
+    font-size: 5em;
+    position: relative;
+    top: 10vh;
+    left: 6vw;
+    transition: all 0.3s ease;
   }
+
+  h1:hover {
+    text-shadow: 0 0 10px yellow;
+    transform: scale(1.0);
+  }
+
+  .main {
+    flex-grow: 1;
+  }
+
+
+  .rocket {
+    rotate: 50deg;
+    width: 170px;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+    animation: flying 2s forwards;
+  }
+
+  @keyframes flying {
+    0% {
+      left: -20%;
+      bottom: -0%;
+      transform: scale(0.8);
+
+    }
+
+    100% {
+      left: 10rem;
+      bottom: 3rem;
+      transform: scale(1.1);
+
+    }
+  }
+
+
+
+  .main {
+    flex-grow: 1;
+  }
+
+
+
+  /* styly pro btn na jednotlivé POP-UP STRÁNKY */
+
+  .button__game {
+    width: 439px;
+    position: fixed;
+    top: 25%;
+    left: 65%;
+    background: none;
+    cursor: pointer;
+    filter: none;
+    transition: filter 0.3s, transform 0.3s;
+  }
+
+  .button__game:hover {
+    filter: drop-shadow(0 0 40px rgb(255, 255, 193));
+    transform: scale(1.1);
+  }
+
+  .button__project {
+    /* position: absolute; */
+    /* top: 5rem;
+  left: 18rem; */
+    position: fixed;
+    top: 65%;
+    left: 55%;
+    /* top: -170px;
+  left: 74px; */
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    background: rgb(252, 116, 57);
+    width: 13rem;
+    height: 13rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    /* overflow: hidden; */
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
 
   .button__emotions {
-    top: 22%;
-    left: 35%;
-    font-size: 0.9rem;
-    width: 7rem;
-    height: 7rem;
+    /* position: relative;
+  bottom: 25rem;
+  right: 10rem; */
+    position: fixed;
+    top: 15%;
+    left: 45%;
+    /* top: -392px;
+  left: 67px; */
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    background: rgb(255, 139, 199);
+    width: 9rem;
+    height: 9rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    /* overflow: hidden; */
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
 
   .button__rules {
-    left: 20%;
-    font-size: 1.5rem;
+    /* position: relative;
+  bottom: 5rem;
+  right: 30rem; */
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    /* top: 55px;
+  left: -72px; */
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    background: rgb(84, 84, 213);
+    width: 12rem;
+    height: 12rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    /* overflow: hidden; */
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); */
+  }
+
+
+  .button__tips {
+    position: fixed;
+    top: 70%;
+    left: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    background: rgb(10, 134, 105);
     width: 8rem;
     height: 8rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
 
-  .rocket {
-    width: 42px;
-    top: 12%;
-  }
-}
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2em;
-    top: 5vh;
+  .button__project:hover {
+    box-shadow: 0 0 40px 20px rgb(252, 116, 57);
+    transform: scale(1.1);
   }
-}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 4em;
-    top: 8vh;
+  .button__emotions:hover {
+    box-shadow: 0 0 40px 20px rgb(255, 139, 199);
+    transform: scale(1.1);
   }
-}
 
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 3em;
+  .button__rules:hover {
+    box-shadow: 0 0 40px 20px rgb(84, 84, 213);
+    transform: scale(1.1);
   }
-}
+
+  .button__tips:hover {
+    box-shadow: 0 0 40px 20px rgb(10, 134, 105);
+    transform: scale(1.1);
+  }
+
+
+  button {
+    padding: 3rem;
+  }
+
+  .p1 {
+    background-color: #f6fc5b;
+  }
+
+  .p2 {
+    background-color: #7fbaf9;
+  }
+
+  .p3 {
+    background-color: #f97bc0;
+  }
+
+  .p4 {
+    background-color: #fd6363;
+  }
+
+  .p5 {
+    background-color: #eeab53;
+  }
+
+  .p6 {
+    background-color: #b27140;
+  }
+
+  .p7 {
+    background-color: #6fd25b;
+  }
+
+  .p8 {
+    background-color: #b1a8a8;
+  }
+
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 2em;
+      word-wrap: break-word;
+    }
+
+    .button__emotions {
+      top: 65%;
+      left: 20%;
+      font-size: 0.9rem;
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .button__rules {
+      top: 24rem;
+      left: 4rem;
+      font-size: 1.4rem;
+      width: 6rem;
+      height: 6rem;
+    }
+
+    .button__project {
+      top: 55%;
+      left: 55%;
+      font-size: 0.9rem;
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .button__game {
+      width: 280px;
+      top: 24%;
+      left: 5%;
+    }
+
+    .button__tips {
+      top: 75%;
+      left: 50%;
+      font-size: 1rem;
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .rocket {
+      width: 42px;
+      top: 12%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2em;
+      top: 5vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4em;
+      top: 8vh;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 3em;
+    }
+  }

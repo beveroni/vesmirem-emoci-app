@@ -173,12 +173,6 @@ Názvy planet */
 }
 
 
-/* @media (max-width: 1024px) {
- }
-
-@media (max-width: 768px) {
-  }*/
-
 @media (max-width: 426px) {
   .rocket__planetspage {
     position: fixed;
@@ -192,4 +186,10 @@ Názvy planet */
     top: 5rem;
     position: relative;
   }
+  
 }
+
+/* @media (max-width: 768px) {
+  }
+  @media (max-width: 1024px) {
+ } */

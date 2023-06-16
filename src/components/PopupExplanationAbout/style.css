@@ -43,3 +43,21 @@
 .github_logo {
   width: 1.5rem;
 }
+
+
+
+@media (max-width: 320px) {
+  .popup__about--us {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup__about--us {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
