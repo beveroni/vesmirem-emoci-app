@@ -34,11 +34,11 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
           </div>
           <h3>Ahoj, já jsem Veronika, </h3>
           <p>
-            jsem občas trochu střelec a rebel, který pořád o něčem přemýšlí.
-            Ráda bych se tak nějak oklikou přes IT vrátila k animaci. V
-            programování jsem úplný začátečník a účast v DA je pro mne velkou
-            výzvou 😉. Single maminka dvou skvělých dětí - 7 let a 4 roky. A
-            rodilá Ostravačka (přízvuk mi zůstal i po osmi letech v Praze).
+            občas trochu střelec a rebel, který pořád o něčem přemýšlí. Ráda
+            bych se tak nějak oklikou přes IT vrátila k animaci. V programování
+            jsem úplný začátečník a účast v DA je pro mne velkou výzvou 😉.
+            Single maminka dvou skvělých dětí - 7 let a 4 roky. A rodilá
+            Ostravačka (přízvuk mi zůstal i po osmi letech v Praze).
           </p>
           <a href="https://github.com/beveroni">
             <img
@@ -62,8 +62,8 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
             vzděláním sociální pracovnice, máma dvou malých dětí, která
             momentálně hledá, kam by se vrtla. Mám ráda různá prostředí, ať už
             sociální, nebo ta na mapě. Na rodičovské dovolené II. jsem se
-            rozhodla zkusit udělat otočku o 180° a zjistit, kam mě tato sobní
-            challange zanese a zda se mi podaří stát se forntend vývojářkou 😅.
+            rozhodla zkusit udělat otočku o 180° a zjistit, kam mě tato osobní
+            challange zanese a zda se mi podaří stát se frontend vývojářkou 😅.
           </p>
           <a href="https://github.com/EliKorenc">
             <img

@@ -1,12 +1,12 @@
-.container__arrow--game {
-  width: 98px;
+.container__icon--game {
+  width: 50px;
   background: none;
   transition: transform 0.3s;
   filter: none;
 
 }
 
-.container__arrow--game:hover {
+.container__icon--game:hover {
   transform: scale(1.2);
   filter: drop-shadow(0px 8px 8px rgb(0, 157, 13));
 }

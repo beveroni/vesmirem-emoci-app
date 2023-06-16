@@ -23,7 +23,6 @@
 }
 
 .astronaut:hover {
-  cursor: pointer;
   animation: swing 1s ease-in-out infinite;
 }
 

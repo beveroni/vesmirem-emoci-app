@@ -3,7 +3,7 @@ import './style.css';
 import { StarScore } from '../StarsScore';
 import { HintIcon } from '../HintIcon';
 import { HomeIcon } from '../HomeIcon';
-import { ArrowHome } from '../ArrowGame';
+import { ContinueToGames } from '../ContinueToGames';
 
 export const HeaderGame = ({ finishedGames }) => {
   return (
@@ -12,7 +12,7 @@ export const HeaderGame = ({ finishedGames }) => {
         <div className="header__game__container--icons">
           <HomeIcon />
           <HintIcon />
-          <ArrowHome />
+          <ContinueToGames />
         </div>
         <StarScore finishedGames={finishedGames} />
       </div>

@@ -1,4 +1,4 @@
-.homepage {
+  .homepage {
   position: fixed;
   top: 0;
   left: 0;
@@ -235,7 +235,6 @@ button {
   h1 {
     font-size: 2em;
     word-wrap: break-word;
-
   }
 
   .button__emotions {
