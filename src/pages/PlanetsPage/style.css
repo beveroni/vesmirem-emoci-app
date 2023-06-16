@@ -16,26 +16,31 @@
 /* Div pro obrázkový kontejner */
 
 .rocket__planetspage {
+  cursor: pointer;
   rotate: 90deg;
   width: 140px;
   position: fixed;
   bottom: 3rem;
   left: -20%;
-  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
   animation: rocketFly1 4s forwards;
+  transition: transform 0.3s;
+}
+
+.rocket__planetspage:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
 }
 
 @keyframes rocketFly1 {
   0% {
     bottom: 3rem;
     left: -20%;
-    transform: scale(0.8);
   }
 
   100% {
     bottom: 1rem;
     left: 12rem;
-    transform: scale(1.1)
+
   }
 }
 

@@ -5,9 +5,15 @@ import { planets } from '../../planet-database';
 import { Link } from 'react-router-dom';
 import { PopupWinner } from '../../components/PopupWinner';
 import { useState, useEffect } from 'react';
+import { RocketBubbleInfo } from '../../components/RocketBubbleInfo';
 
 export const PlanetsPage = ({ finishedGames }) => {
   const [allGamesFinished, setAllGamesFinished] = useState(false);
+  const [showRocketBubble, setShowRocketBubble] = useState(false);
+
+  const handleRocketClick = () => {
+    setShowRocketBubble(!showRocketBubble);
+  };
 
   useEffect(() => {
     if (finishedGames.length === planets.length) {
@@ -42,15 +48,21 @@ export const PlanetsPage = ({ finishedGames }) => {
                 </Link>
               </div>
             ))}
+            {showRocketBubble && (
+              <div>
+                <RocketBubbleInfo />
+                <div onClick={() => setShowRocketBubble(false)} />
+              </div>
+            )}
           </div>
           <img
             src="img/rocket.svg"
             alt="raketka"
             className="rocket__planetspage"
+            onClick={handleRocketClick}
           />
         </>
       )}
-      ;
     </div>
   );
 };

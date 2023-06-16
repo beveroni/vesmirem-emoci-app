@@ -52,7 +52,7 @@ export const Dustbin = memo(function Dustbin({
       data-testid="dustbin"
     >
       <img src={`/img/popelnice_${accept}.svg`} alt="" className="trashbin" />
-      {isActive && <p>ANO, patří to tam.</p>}
+      {isActive && <p>✅</p>}
     </div>
   );
 });

@@ -25,7 +25,7 @@ a {
 
 /* NADPISY */
 
-h1 {
+/* h1 {
   font-size: 5em;
   position: relative;
   top: 10vh;
@@ -54,12 +54,12 @@ h1 {
     word-wrap: break-word;
 
   }
-}
+} 
 
 h1:hover {
   text-shadow: 0 0 10px yellow;
   transform: scale(1.0);
-}
+} */
 
 h2 {
   color: white;

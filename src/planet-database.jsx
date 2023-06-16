@@ -22,6 +22,7 @@ export const planets = [
     game: GameJoy,
     description:
       'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
+      infoBubble:'',
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ export const planets = [
     game: GameSadness,
     description:
       'Smutek je emoční stav vyjadřující zármutek, ztrátu nebo bolest. Lidé se cítí smutní v reakci na negativní události, jako je ztráta blízkého člověka, selhání nebo rozchod s někým koho mají rádi.',
+      infoBubble:'',
   },
   {
     id: 3,
@@ -60,6 +62,7 @@ export const planets = [
     game: GameLove,
     description:
       'Láska je hluboká emoční připoutanost a náklonnost k někomu nebo něčemu. Vyjadřuje péči, soucit, ochranu a důvěru. Láska může být vztahem mezi rodinnými příslušníky, přáteli nebo romantickým partnerstvím.',
+      infoBubble:'',
   },
   {
     id: 4,
@@ -79,6 +82,7 @@ export const planets = [
     game: GameAnger,
     description:
       'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
+      infoBubble:'',
   },
   // {
   //   id: 5,
@@ -96,6 +100,7 @@ export const planets = [
   //   question: 'Z čeho si nadšený/á Ty? Co ti vykouzlí hvězdičky v očích?',
   //   description:
   //     'Nadšení je silná pozitivní emoce, která vyjadřuje kombinaci zvědavosti, odvahy a touhy pustit se do nových věcí. Je spojeno s očekáváním a radostí z budoucích událostí, nových zážitků nebo objevů.',
+  // infoBubble:'',
   // },
   // {
   //   id: 6,
@@ -113,6 +118,7 @@ export const planets = [
   //   question: 'Co děláš, když se nudíš? A jakou činnost naopak děláš rád?',
   //   description:
   //     'Nuda je emoční stav vyjadřující nedostatek zájmu, stimulace nebo vzrušení. Nudíme se, když nemáme nic zajímavého, co by nás zabavilo. Dlouhodobá nuda může vést k pocitu neuspokojení nebo frustrace.',
+  // infoBubble:'',
   // },
   // {
   //   id: 7,
@@ -131,6 +137,7 @@ export const planets = [
   //     'A co ty? Dostal/a jsi se někdy do situace, kdy jsi musel/a překonat své obavy a zachovat se statečně? Popiš tuto situaci - jak se udála a jak si se zachoval a proč. Zachoval/a by si se nyní třeba jinak?',
   //   description:
   //     'Odvaha je emocionální stav, který vyjadřuje statečnost, odhodlání a odvahu čelit strachu nebo nebezpečí. Je spojena s překonáním překážek, riskováním a prosazováním vlastních přesvědčení.',
+  // infoBubble:'',
   // },
   // {
   //   id: 8,
@@ -149,4 +156,5 @@ export const planets = [
   //   description:
   //     'Strach je negativní emocionální stav vyvolaný pocitem ohrožení, nebezpečí nebo nejistoty. Lidé se cítí znepokojeni, nervózní nebo vystrašení při konfrontaci s možným rizikem nebo strašidelnou situací.',
   // },
+  // infoBubble:'',
 ];
