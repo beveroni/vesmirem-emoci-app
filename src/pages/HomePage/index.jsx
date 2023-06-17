@@ -93,6 +93,8 @@ export const HomePage = () => {
       <div className="homepage">
                   <h1>Vesmírem emocí</h1>
           <img className="rocket" src="/img/rocket.svg" alt="raketka" />
+          <div className="homepage__container">
+            <div className="homepage__container">
           <Link to="games">
             <img
               className="button__game"
@@ -157,6 +159,8 @@ export const HomePage = () => {
         {showPopupTips && (
           <PopulExplanationTips onClose={handlePopupTipsClose} />
         )} */}
+        </div>
+        </div>
           <Footer />
       </div>
     </>
