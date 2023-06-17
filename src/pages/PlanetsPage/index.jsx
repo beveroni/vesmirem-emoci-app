@@ -40,7 +40,7 @@ export const PlanetsPage = ({ finishedGames }) => {
                   <img
                     src={planet.avatar}
                     alt="planet joy button"
-                    className={`planet__${planet.name} ${
+                    className={`planet__${planet.name}--img ${
                       finishedGames.includes(planet.name) ? 'disabled' : ''
                     }`}
                   />

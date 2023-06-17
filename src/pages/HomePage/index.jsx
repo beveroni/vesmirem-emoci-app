@@ -91,8 +91,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="homepage">
-        <main className="main">
-          <h1>Vesmírem emocí</h1>
+                  <h1>Vesmírem emocí</h1>
           <img className="rocket" src="/img/rocket.svg" alt="raketka" />
           <Link to="games">
             <img
@@ -158,8 +157,7 @@ export const HomePage = () => {
         {showPopupTips && (
           <PopulExplanationTips onClose={handlePopupTipsClose} />
         )} */}
-        </main>
-        <Footer />
+          <Footer />
       </div>
     </>
   );
