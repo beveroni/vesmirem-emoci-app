@@ -17,7 +17,7 @@ export const GameSadness = ({ onFinish }) => {
 
     const parsedValue = Number(inputValue);
 
-    if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 5) {
+    if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 60) {
       setInputValue('');
       return;
     }
@@ -42,7 +42,7 @@ export const GameSadness = ({ onFinish }) => {
       interval = setInterval(decrementTime, 1000);
     } else if (isRunning && time === 0) {
       setGameFinished(true);
-      setTimeout(onFinish, 5000);
+      setTimeout(onFinish, 60000);
     } else if (time <= 0) {
       clearInterval(interval);
       setIsRunning(false);
@@ -68,7 +68,7 @@ export const GameSadness = ({ onFinish }) => {
                 className="time-input"
                 value={inputValue}
                 onChange={handleInputChange}
-                placeholder="maximálně 5"
+                placeholder="maximálně 60"
                 // title="Zadej maximálně 5 sekund"
               />
               {/* &nbsp;sekund */}
