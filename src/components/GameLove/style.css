@@ -37,7 +37,7 @@
   padding: 0;
   border: none;
   background: none;
-  
+
 }
 
 /* .game__love--btn:hover {
@@ -64,4 +64,83 @@
 .enlarged {
   transform: scale(1.2);
   transition: transform 0.3s ease;
+}
+
+/* MEDIA QUERIES */
+
+/* 1024 */
+
+@media (max-width: 1024px) {
+  .popup__game--love {
+    width: 600px;
+    height: 342px;
+  }
+
+  .game__love--textarea {
+    background-position: 0px 28px;
+    line-height: 38px;
+    font-size: 28px;
+    top: 64px;
+    left: 78px;
+    width: 257px;
+    height: 201px;
+  }
+
+  .game__love--btn {
+    top: 25px;
+    right: 34px;
+    width: 52px;
+  }
+}
+
+/* 768px */
+
+@media (max-width: 768px) {
+  .popup__game--love {
+    width: 100%;
+    height: auto;
+  }
+
+  .game__love--textarea {
+    background-image: none;
+    line-height: 24px;
+    font-size: 20px;
+    top: 20%;
+    left: 13%;
+    width: 42%;
+    height: 60%;
+  }
+
+  .game__love--btn {
+    top: 15%;
+    right: 8%;
+    width: 30%;
+  }
+}
+
+/* 480px */
+
+@media (max-width: 480px) {
+  .popup__game--love {
+    width: 120%;
+    height: auto;
+  }
+
+  .game__love--textarea {
+    line-height: 15px;
+    font-size: 16px;
+    top: 20%;
+    left: 13%;
+    width: 42%;
+    height: 60%;
+  }
+}
+
+/* 375 */
+
+@media (max-width: 375px) {
+  .popup__game--love {
+    width: 150%;
+    height: auto;
+  }
 }

@@ -17,7 +17,7 @@ export const GameSadness = ({ onFinish }) => {
 
     const parsedValue = Number(inputValue);
 
-    if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 5) {
+    if (isNaN(parsedValue) || parsedValue < 0 || parsedValue > 60) {
       setInputValue('');
       return;
     }
@@ -42,7 +42,7 @@ export const GameSadness = ({ onFinish }) => {
       interval = setInterval(decrementTime, 1000);
     } else if (isRunning && time === 0) {
       setGameFinished(true);
-      setTimeout(onFinish, 5000);
+      setTimeout(onFinish, 60000);
     } else if (time <= 0) {
       clearInterval(interval);
       setIsRunning(false);
@@ -61,6 +61,18 @@ export const GameSadness = ({ onFinish }) => {
       <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
+            <p>Zadej počet sekund: </p>
+            <label>
+              <input
+                type="text"
+                className="time-input"
+                value={inputValue}
+                onChange={handleInputChange}
+                placeholder="maximálně 60"
+                // title="Zadej maximálně 5 sekund"
+              />
+              {/* &nbsp;sekund */}
+            </label>
             <button
               type="submit"
               className="btn-stopwatsch"
@@ -68,16 +80,6 @@ export const GameSadness = ({ onFinish }) => {
             >
               Start
             </button>
-            <label>
-              <input
-                type="text"
-                className="time-input"
-                value={inputValue}
-                onChange={handleInputChange}
-                title="Zadej maximálně 5 sekund"
-              />
-              &nbsp;sekund
-            </label>
           </div>
         </div>
       </form>

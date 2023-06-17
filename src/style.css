@@ -62,13 +62,14 @@ h1:hover {
 } */
 
 h2 {
-  color: white;
+  color: yellow;
   font-size: 2em;
   text-align: center;
 }
 
 h3,
 h4 {
+  color: yellow;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
 }

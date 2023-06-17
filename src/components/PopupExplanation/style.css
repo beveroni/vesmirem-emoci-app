@@ -1,5 +1,6 @@
 .explanations-popup {
   color: white;
+  text-align: justify;
   font-size: 1em;
   line-height: 1.5;
   width: 80vw;
@@ -16,19 +17,32 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.explanation-contain {
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* max 768px */
+@media (max-width: 768px) {
+  .explanations-popup {
+    width: 80vw;
+    max-height: 80vh;
+    top: 15vh;
+    left: 10%;
+    padding: 2rem;
+  }
+}
 
 
-@media (max-width: 425px) {
+/* max 840px */
+@media (max-width: 480px) {
   .explanations-popup {
     width: 90vw;
     max-height: 80vh;
     top: 15vh;
     left: 5%;
+    padding: 1.2rem;
   }
-}
-
-
-.explanation-contain {
-  max-height: 100%;
-  overflow: auto;
 }

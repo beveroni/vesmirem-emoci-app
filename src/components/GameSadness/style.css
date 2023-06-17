@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3rem;
 }
 
 .controls {
@@ -14,7 +15,6 @@
   align-items: center;
   gap: 0.4em;
 }
-
 
 input[type='text'] {
   border: none;
@@ -61,8 +61,8 @@ input[type='text'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 13rem;
+  width: 15rem;
+  height: 20rem;
   top: 0rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,6 +85,7 @@ input[type='text'] {
 .stopwatch___seconds {
   font-weight: 100;
 }
+
 
 
 /* ANIMACE KOMETY  */
@@ -112,5 +113,27 @@ input[type='text'] {
   100% {
     transform: translateX(-100vw) translateY(-20%) translateZ(0);
 
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* max 1024px */
+@media (max-width: 1024px) {
+  .popup__game--sadness {
+    gap: 1rem;
+  }
+
+  .stopwatch {
+    width: 10rem;
+    height: 13rem;
+  }
+}
+
+/* max 480px */
+@media (max-width: 480px) {
+  .controls__input--group {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

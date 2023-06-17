@@ -17,9 +17,9 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
         </p>
         <br />
         <p>
-          Hra vznikla jako závěrečný projekt v rekvalifikačním kurzu od
-          organizace Czechitas, Digitální akademie - Web, jaro 2023. Grafiku a
-          animaci vytvářela Veronika.
+          Hra vznikla jako závěrečný projekt rekvalifikačního kurzu organizace
+          Czechitas, Digitální akademie - Web, jaro 2023, pod oborným vedením
+          mentora Jakuba Stejskala. Grafiku a animaci vytvářela Veronika.
         </p>
       </div>
       <div className="popup__about--us">
