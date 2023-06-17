@@ -47,7 +47,7 @@ export const Container = memo(function Container({ onFinish }) {
           },
         }),
       );
-      // console.log(droppedBoxNames.length);
+
       if (droppedBoxNames.length === 6) {
         onFinish();
       }

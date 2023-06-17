@@ -25,10 +25,11 @@
 
 
 .winner__content {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  overflow: auto;
+  align-items: center;
 }
 
 .winner__heading {
@@ -38,6 +39,5 @@
 }
 
 .winner__astronaut {
-  display: flex;
-  justify-content: center;
+  margin-top: 1rem;
 }

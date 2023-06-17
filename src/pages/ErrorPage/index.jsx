@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { AstronautHome } from '../../components/AstronautHome';
 
 export const ErrorPage = () => {
   return (
@@ -15,13 +16,7 @@ export const ErrorPage = () => {
           naše raketka najde správnou cestu zpět do hry. Vesmír je plný
           dobrodružství, takže se brzy vrátíš zpátky k objevování!"
         </p>
-        <Link to="/" className="link__center">
-          <img
-            src="/img/astronaut.svg"
-            alt="obrázek kosmonauta odkazující na domovskou stránku"
-            className="astronaut_errorpage"
-          />
-        </Link>
+        <AstronautHome />
         <div className="errorpage__rocket" />
       </div>
     </div>

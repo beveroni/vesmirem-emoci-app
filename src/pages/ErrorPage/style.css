@@ -7,7 +7,7 @@
   background-position: bottom center;
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
+
 }
 
 .errorpage__container {
@@ -26,6 +26,7 @@
   border-radius: 40px;
   padding: 3rem;
   z-index: 3000;
+  align-items: center;
 }
 
 .erropage__heading {
@@ -44,20 +45,6 @@
   height: 100%;
 }
 
-.astronaut_errorpage {
-  width: 300px;
-  transform: scale(1);
-  transition: transform 0.3s;
-  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8))
-}
-
-
-.astronaut_errorpage:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0px 0px 10px rgba(246, 255, 0, 0.8));
-}
-
-
 .errorpage__rocket {
   position: absolute;
   width: 170px;
@@ -66,9 +53,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  left: -170px;
+  left: 100%;
   top: 3%;
-  transform: translateY(-50%) translateZ(0) rotate(90deg);
+  transform: translateY(-50%) translateZ(0) rotate(270deg);
   opacity: 0;
   animation: rocketAnimation 4s linear forwards;
   animation-delay: 1s;
@@ -76,24 +63,20 @@
 
 @keyframes rocketAnimation {
   0% {
-    transform: translateX(0) translateY(-50%) translateZ(0) rotate(90deg);
+    transform: translateX(0) translateY(-50%) translateZ(0) rotate(270deg);
     opacity: 0;
-
   }
 
   10% {
     opacity: 1;
-
   }
 
   90% {
     opacity: 1;
-
   }
 
   100% {
-    transform: translateX(90vw)translateY(-50%) translateZ(0) rotate(90deg);
-    opacity: 0;
-
+    transform: translateX(-90vw) translateY(-50%) translateZ(0) rotate(270deg);
+    opacity: 0
   }
 }

@@ -10,11 +10,16 @@
   right: 20px;
   background-color: rgba(255, 255, 255, 0.281);
   border-radius: 10px;
+  width: 150px;
+  height: 40px;
 }
 
 
 .container__stars--score {
   transition: transform 0.3s;
+  width: 30px;
+  height: 30px;
+
 }
 
 .container__stars--score:hover {
@@ -22,36 +27,14 @@
 }
 
 
-@media (min-width: 320px) {
+/* @media (min-width: 320px) {}
 
-  .container__stars {
-    width: 181px;
-    height: 30px;
-  }
-
-  .container__stars--score {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (min-width: 425px) {
-
-  .container__stars {
-    width: 268px;
-    height: 40px;
-  }
-
-  .container__stars--score {
-    width: 30px;
-    height: 30px;
-  }
-}
+@media (min-width: 425px) {} */
 
 @media (min-width: 765px) {
 
   .container__stars {
-    width: 350px;
+    width: 202px;
     height: 50px;
   }
 
