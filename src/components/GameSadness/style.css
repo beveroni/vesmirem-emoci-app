@@ -95,7 +95,7 @@ input[type='text'] {
 
 .comet-animation {
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 0;
   transform: translateZ(0);
   animation: fly 4s linear forwards;

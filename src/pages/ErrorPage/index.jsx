@@ -11,9 +11,9 @@ export const ErrorPage = () => {
           temných hlubinách vesmíru
         </h2>
         <p className="erropage__param">
-          "Vypadá to, že se trošku ztrácíme ve vesmíru! Počkejme chvilku, ať nám
+          "Vypadá to, že se trošku ztrácíš ve vesmíru! Počkej chvilku, ať nám
           naše raketka najde správnou cestu zpět do hry. Vesmír je plný
-          dobrodružství, takže se brzy vrátíme zpátky k objevování!"
+          dobrodružství, takže se brzy vrátíš zpátky k objevování!"
         </p>
         <Link to="/" className="link__center">
           <img
