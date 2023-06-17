@@ -1,23 +1,15 @@
 /* OBRÁZKY HRY */
 .game__anger {
   display: flex;
-  position: relative;
-  bottom: 8rem;
 }
 
-.dustbin__container {
+.trash__container {
   display: flex;
-  flex-direction: row;
-}
-
-.popup__game--grouptrash {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .trashbin {
-  width: 100px;
   transition: transform 0.3s;
 
 }
@@ -26,20 +18,7 @@
   transform: scale(1.2);
 }
 
-.popup__game--trash {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.trash__container {
-  display: flex;
-  flex-direction: column;
-}
-
 .trash {
-  width: 50px;
-  margin-bottom: 10px;
   transition: transform 0.3s;
 }
 
@@ -62,4 +41,72 @@
 
 .box-shadow-pet {
   box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+
+@media (min-width: 320px) {
+  .trash {
+    width: 44px;
+    margin-right: 15px;
+  }
+
+  .trashbin {
+    width: 50px;
+  }
+}
+
+@media (min-width: 420px) {
+  .trash {
+    width: 36px;
+    margin-right: 34px;
+  }
+
+  .trashbin {
+    width: 89px;
+  }
+}
+
+@media (min-width: 570px) {
+  .trash {
+    width: 36px;
+    margin-right: 34px;
+  }
+
+  .trashbin {
+    width: 104px;
+  }
+}
+
+@media (min-width: 700px) {
+  .trash {
+    width: 67px;
+    margin-right: 34px;
+  }
+
+  .trashbin {
+    width: 85px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .trash {
+    width: 66px;
+    margin-right: 34px;
+  }
+
+  .trashbin {
+    width: 142px;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .trash {
+    width: 142px;
+    margin-right: 34px;
+  }
+
+  .trashbin {
+    width: 272px;
+  }
 }

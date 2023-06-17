@@ -29,7 +29,7 @@ export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
 
       const buttonTimer = setTimeout(() => {
         setShowButton(true);
-      }, 4000);
+      }, 1000);
 
       return () => {
         clearTimeout(buttonTimer);

@@ -18,10 +18,7 @@
 .rocket__planetspage {
   cursor: pointer;
   rotate: 90deg;
-  width: 140px;
-  position: fixed;
-  bottom: 3rem;
-  left: -20%;
+  position: absolute;
   animation: rocketFly1 4s forwards;
   transition: transform 0.3s;
 }
@@ -47,10 +44,6 @@
 
 /* Planety - container */
 
-/* .planet__joy {
-  position: relative;
-  top: 10rem
-} */
 
 
 
@@ -59,7 +52,7 @@
 .planet__joy--img {
 
   transition: transform 0.2s ease-in-out;
-  width: 150px;
+  width: 200px;
   filter: drop-shadow(1px 1px 1px 1px rgb(247, 251, 122));
 }
 
@@ -110,43 +103,43 @@
 
 /* Efekty po najetí myší  */
 
-.planet__joy:hover {
+.planet__joy--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgb(247, 251, 122));
 }
 
 
-.planet__boredom:hover {
+.planet__boredom--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(129, 88, 0, 0.558));
 }
 
-.planet__sadness:hover {
+.planet__sadness--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(111, 181, 255, 0.576));
 }
 
-.planet__fear:hover {
+.planet__fear--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(218, 218, 218, 0.576));
 }
 
-.planet__anger:hover {
+.planet__anger--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(255, 27, 27, 0.5));
 }
 
-.planet__courage:hover {
+.planet__courage--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(82, 255, 47, 0.5));
 }
 
-.planet__love:hover {
+.planet__love--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(253, 149, 206, 0.531));
 }
 
-.planet__enthusiasm:hover {
+.planet__enthusiasm--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgba(255, 142, 55, 0.5));
 }
@@ -171,12 +164,10 @@ Názvy planet */
 }
 
 
-@media (max-width: 426px) {
+@media (min-width: 320px) {
   .rocket__planetspage {
-    position: fixed;
-    width: 93px;
-    top: 10rem;
-    left: 2rem;
+    width: 72px;
+    top: -12%;
   }
 
   .container__planets {
@@ -191,19 +182,71 @@ Názvy planet */
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .container__planets {
     top: 2rem;
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
   }
 
+  .rocket__planetspage {
+    width: 146px;
+    top: 27rem;
+  }
 
 }
 
+@media (min-width: 768px) {
+  .rocket__planetspage {
+    width: 135px;
+    top: 17rem;
+    left: 2rem;
+  }
+}
 
-@media (max-width: 1024px) {}
+
+@media (min-width: 1024px) {
+  .rocket__planetspage {
+    width: 140px;
+    top: 24rem;
+    left: 2rem;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .rocket__planetspage {
+    width: 150px;
+    top: 140%;
+    left: 2rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .rocket__planetspage {
+    width: 160px;
+    top: 200%;
+    left: 2rem;
+  }
+}
+
+.planet__joy {
+  position: relative;
+  top: 10rem
+}
+
+.planet__sadness {
+
+}
+.planet__love {
+
+}
+
+.planet__anger {
+  
+}
