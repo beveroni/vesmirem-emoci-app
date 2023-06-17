@@ -22,7 +22,7 @@ export const planets = [
     game: GameJoy,
     description:
       'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
-      infoBubble:'',
+    infoBubble: '',
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const planets = [
     game: GameSadness,
     description:
       'Smutek je emoční stav vyjadřující zármutek, ztrátu nebo bolest. Lidé se cítí smutní v reakci na negativní události, jako je ztráta blízkého člověka, selhání nebo rozchod s někým koho mají rádi.',
-      infoBubble:'',
+    infoBubble: '',
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ export const planets = [
     game: GameLove,
     description:
       'Láska je hluboká emoční připoutanost a náklonnost k někomu nebo něčemu. Vyjadřuje péči, soucit, ochranu a důvěru. Láska může být vztahem mezi rodinnými příslušníky, přáteli nebo romantickým partnerstvím.',
-      infoBubble:'',
+    infoBubble: '',
   },
   {
     id: 4,
@@ -82,7 +82,7 @@ export const planets = [
     game: GameAnger,
     description:
       'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
-      infoBubble:'',
+    infoBubble: '',
   },
   // {
   //   id: 5,

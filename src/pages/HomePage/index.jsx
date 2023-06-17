@@ -88,6 +88,8 @@ export const HomePage = () => {
   //   setShowPopupTips(false);
   // };
 
+  console.log(openPopupEmotions);
+
   return (
     <>
       <div className="homepage">
