@@ -8,14 +8,16 @@ export const PopupExplanationTips = ({ onClose, dialogRef }) => {
       <div className="popup__rules--tips">
         <h2>Další tipy na práci s emocemi:</h2>
         <h4>kartičky:</h4>
-        <ul>
+        <ul style={{ listStyleType: "square" }}>
           <li>
             <a href="https://tisictvariradosti.cz/">
               https://tisictvariradosti.cz/
             </a>
           </li>
           <li>
-            <a href="https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/">
+            <a
+              href="https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/"
+                         >
               https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/
             </a>
           </li>

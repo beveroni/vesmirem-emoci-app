@@ -11,11 +11,10 @@
     background-position: right;
     background-size: cover;
     min-height: 100vh;
-
   }
 
   h1 {
-    font-size: 5em;
+    /* font-size: 5em; */
     position: relative;
     top: 10vh;
     left: 6vw;
@@ -58,14 +57,6 @@
     }
   }
 
-
-
-  .main {
-    flex-grow: 1;
-  }
-
-
-
   /* styly pro btn na jednotlivé POP-UP STRÁNKY */
 
   .button__game {
@@ -85,14 +76,9 @@
   }
 
   .button__project {
-    /* position: absolute; */
-    /* top: 5rem;
-  left: 18rem; */
     position: fixed;
     top: 65%;
     left: 55%;
-    /* top: -170px;
-  left: 74px; */
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-size: 2rem;
@@ -102,23 +88,15 @@
     border: none;
     border-radius: 50%;
     padding: 0;
-    /* overflow: hidden; */
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
   }
 
 
   .button__emotions {
-    /* position: relative;
-  bottom: 25rem;
-  right: 10rem; */
     position: fixed;
     top: 15%;
     left: 45%;
-    /* top: -392px;
-  left: 67px; */
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
     font-size: 2rem;
     background: rgb(255, 139, 199);
     width: 9rem;
@@ -126,22 +104,14 @@
     border: none;
     border-radius: 50%;
     padding: 0;
-    /* overflow: hidden; */
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
   }
 
   .button__rules {
-    /* position: relative;
-  bottom: 5rem;
-  right: 30rem; */
     position: fixed;
     top: 40%;
     left: 30%;
-    /* top: 55px;
-  left: -72px; */
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
     font-size: 2rem;
     background: rgb(84, 84, 213);
     width: 12rem;
@@ -149,10 +119,8 @@
     border: none;
     border-radius: 50%;
     padding: 0;
-    /* overflow: hidden; */
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
-    /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); */
   }
 
 
@@ -160,8 +128,6 @@
     position: fixed;
     top: 70%;
     left: 10%;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
     font-size: 2rem;
     background: rgb(10, 134, 105);
     width: 8rem;
@@ -180,23 +146,25 @@
   }
 
   .button__emotions:hover {
-    box-shadow: 0 0 40px 20px rgb(255, 139, 199);
+    box-shadow: 0 0 20px 10px rgb(255, 139, 199);
     transform: scale(1.1);
   }
 
   .button__rules:hover {
-    box-shadow: 0 0 40px 20px rgb(84, 84, 213);
+    box-shadow: 0 0 20px 10px rgb(84, 84, 213);
     transform: scale(1.1);
   }
 
   .button__tips:hover {
-    box-shadow: 0 0 40px 20px rgb(10, 134, 105);
+    box-shadow: 0 0 20px 10px rgb(10, 134, 105);
     transform: scale(1.1);
   }
 
 
   button {
     padding: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
   }
 
   .p1 {
@@ -234,7 +202,7 @@
   @media (max-width: 375px) {
     h1 {
       font-size: 2em;
-      word-wrap: break-word;
+      /* word-wrap: break-word; */
     }
 
     .button__emotions {
@@ -246,11 +214,11 @@
     }
 
     .button__rules {
-      top: 24rem;
+      top: 19.5rem;
       left: 4rem;
-      font-size: 1.4rem;
-      width: 6rem;
-      height: 6rem;
+      font-size: 1.3rem;
+      width: 5.5rem;
+      height: 5.5rem;
     }
 
     .button__project {
@@ -277,16 +245,15 @@
 
     .rocket {
       width: 42px;
-      top: 12%;
+      top: 13%;
     }
   }
 
-  /* @media (max-width: 480px) {
+  @media (max-width: 480px) {
     h1 {
       font-size: 2em;
-      top: 5vh;
     }
-  } */
+  }
 
   @media (max-width: 768px) {
     h1 {
