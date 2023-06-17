@@ -7,6 +7,12 @@ export const PopupExplanationTips = ({ onClose, dialogRef }) => {
     <PopupExplanation onClose={onClose} dialogRef={dialogRef}>
       <div className="popup__rules--tips">
         <h2>Další tipy na práci s emocemi:</h2>
+        <p>
+          {' '}
+          Na trhu je dostupných mnoho různých aktivit zaměřených na práci s
+          emocemi, jak pro velké, tak i pro malé hráče. Níže najdete pár tipů od
+          nás na další zajimavá zpracování témata pocitů.{' '}
+        </p>
         <h4>kartičky:</h4>
         <ul>
           <li>

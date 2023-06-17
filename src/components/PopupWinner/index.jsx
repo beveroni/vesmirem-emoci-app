@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import { AstronautHome } from '../AstronautHome';
 
-export const PopupWinner = () => {
+export const PopupWinner = ({ dialogWinnerRef }) => {
   return (
-    <div className="winner-popup">
+    <dialog className="winner-popup" ref={dialogWinnerRef}>
       <div className="winner__content">
         <h2 className="winner__heading">
           <strong>Gratulujeme!</strong>
@@ -29,6 +29,6 @@ export const PopupWinner = () => {
           <AstronautHome />
         </div>
       </div>
-    </div>
+    </dialog>
   );
 };

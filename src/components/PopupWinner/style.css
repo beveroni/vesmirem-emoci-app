@@ -15,6 +15,10 @@
   z-index: 3000;
 }
 
+.winner-popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 @media (max-width: 425px) {
   .winner-popup {
