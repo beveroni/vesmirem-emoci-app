@@ -1,6 +1,55 @@
 .planet-img {
   width: 330px;
   position: absolute;
-  right: 2.5rem;
+  right: 12.5rem;
   bottom: 0rem;
+}
+
+@media (min-width: 320px) {
+  .planet-img {
+    width: 183px;
+    right: 4.5rem;
+    bottom: 6rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .planet-img {
+    width: 194px;
+    right: 8.5rem;
+    bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .planet-img {
+    width: 208px;
+    right: 4.5rem;
+    bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .planet-img {
+    width: 236px;
+    right: 7.5rem;
+    bottom: 0rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .planet-img {
+    width: 244px;
+    right: 11.5rem;
+    bottom: 0rem;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .planet-img {
+    width: 386px;
+    right: 17.5rem;
+    bottom: 1rem;
+  }
 }
