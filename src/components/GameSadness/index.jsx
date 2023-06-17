@@ -61,6 +61,18 @@ export const GameSadness = ({ onFinish }) => {
       <form className="controls" onSubmit={startStopwatch}>
         <div className="controls__top">
           <div className="controls__input--group">
+            <p>Zadej počet sekund: </p>
+            <label>
+              <input
+                type="text"
+                className="time-input"
+                value={inputValue}
+                onChange={handleInputChange}
+                placeholder="maximálně 5"
+                // title="Zadej maximálně 5 sekund"
+              />
+              {/* &nbsp;sekund */}
+            </label>
             <button
               type="submit"
               className="btn-stopwatsch"
@@ -68,16 +80,6 @@ export const GameSadness = ({ onFinish }) => {
             >
               Start
             </button>
-            <label>
-              <input
-                type="text"
-                className="time-input"
-                value={inputValue}
-                onChange={handleInputChange}
-                title="Zadej maximálně 5 sekund"
-              />
-              &nbsp;sekund
-            </label>
           </div>
         </div>
       </form>
