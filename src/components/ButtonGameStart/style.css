@@ -9,6 +9,7 @@
 
 
 .btn__play-game {
+  color: black;
   background: linear-gradient(to bottom, #fff200 5%, #f5cb0e 100%);
   background-color: #f5cb0e;
   border-radius: 40px;
@@ -18,6 +19,8 @@
   margin-bottom: 2rem;
   cursor: pointer;
   transition: transform 0.5s;
+  outline: none;
+  border: none;
 }
 
 .btn__play-game:hover {

@@ -91,12 +91,11 @@ input[type='text'] {
 /* ANIMACE KOMETY  */
 .comet {
   display: none;
-  /* Skrytí komety */
 }
 
 .comet-animation {
   position: absolute;
-  top: 70%;
+  bottom: 80%;
   right: 0;
   transform: translateZ(0);
   animation: fly 4s linear forwards;
@@ -106,12 +105,15 @@ input[type='text'] {
 @keyframes fly {
   0% {
     transform: translateX(0vw) translateY(0) translateZ(0);
+  }
 
-
+  90% {
+    opacity: 1;
   }
 
   100% {
-    transform: translateX(-100vw) translateY(-20%) translateZ(0);
+    transform: translateX(-68vw) translateY(-20%) translateZ(0);
+    opacity: 0;
 
   }
 }

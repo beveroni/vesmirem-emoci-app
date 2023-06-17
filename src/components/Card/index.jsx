@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './style.css';
 
 export const Card = ({ onClick, name, hidden, selected }) => {
@@ -9,11 +9,6 @@ export const Card = ({ onClick, name, hidden, selected }) => {
       onClick(name);
     }
   };
-
-  const isIncorrectPair =
-    (selected === 'rabbit' && name === 'dummy') ||
-    (selected === 'astronaut' && name === 'carrot') ||
-    (selected === 'baby' && name === 'rocket');
 
   const cardClassName = `game__card${hidden ? ' hidden' : ''}${
     selected ? ' selected' : ''

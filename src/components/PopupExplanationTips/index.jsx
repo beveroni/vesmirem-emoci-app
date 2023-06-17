@@ -14,14 +14,16 @@ export const PopupExplanationTips = ({ onClose, dialogRef }) => {
           nás na další zajimavá zpracování témata pocitů.{' '}
         </p>
         <h4>kartičky:</h4>
-        <ul>
+        <ul style={{ listStyleType: "square" }}>
           <li>
             <a href="https://tisictvariradosti.cz/">
               https://tisictvariradosti.cz/
             </a>
           </li>
           <li>
-            <a href="https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/">
+            <a
+              href="https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/"
+                         >
               https://nenasilnakomunikace.org/stahnete-si-cviceni-s-kartickami-potreb-a-pocitu/
             </a>
           </li>

@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* z-index: 0; */
   color: white;
   background-image: url('/public/img/backround_gamemain.svg');
   background-repeat: no-repeat;
@@ -45,66 +44,64 @@
   }
 }
 
-.container__planets {
-  top: 13rem;
+
+/* Planety - container */
+
+/* .planet__joy {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.5rem;
-  flex-wrap: wrap;
-}
+  top: 10rem
+} */
 
 
 
-/* Planety */
+/* Planety  - img*/
 
-.planet__joy {
+.planet__joy--img {
 
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgb(247, 251, 122));
 }
 
-.planet__boredom {
+.planet__boredom--img {
 
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(129, 88, 0, 0.558));
 }
 
-.planet__sadness {
+.planet__sadness--img {
 
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(111, 181, 255, 0.576));
 }
 
-.planet__fear {
+.planet__fear--img {
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(218, 218, 218, 0.576));
 }
 
-.planet__anger {
+.planet__anger--img {
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(255, 27, 27, 0.5));
 }
 
-.planet__courage {
+.planet__courage--img {
   transition: transform 0.2s ease-in-out;
   width: 200px;
   filter: drop-shadow(1px 1px 1px 1px rgba(82, 255, 47, 0.5));
 }
 
-.planet__love {
+.planet__love--img {
   transition: transform 0.2s ease-in-out;
   width: 200px;
   filter: drop-shadow(1px 1px 1px 1px rgba(253, 149, 206, 0.531));
 }
 
-.planet__enthusiasm {
+.planet__enthusiasm--img {
   transition: transform 0.2s ease-in-out;
   width: 200px;
   filter: drop-shadow(1px 1px 1px 1px rgba(255, 142, 55, 0.5));
@@ -183,6 +180,10 @@ Názvy planet */
   }
 
   .container__planets {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     top: 5rem;
     position: relative;
@@ -190,7 +191,19 @@ Názvy planet */
 
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .container__planets {
+    top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
-  @media (max-width: 1024px) {
- } */
+
+
+}
+
+
+@media (max-width: 1024px) {}

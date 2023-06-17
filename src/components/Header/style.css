@@ -1,7 +1,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: conter;
   /* position: fixed; */
   width: 100%;
   top: 0vh;
