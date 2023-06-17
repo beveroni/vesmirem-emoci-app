@@ -7,7 +7,7 @@
   color: white;
   background-image: url('/public/img/backround_gamemain.svg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: left;
   background-size: cover;
   min-height: 100vh;
   overflow: auto;
@@ -198,55 +198,125 @@ Názvy planet */
     width: 146px;
     top: 27rem;
   }
-
 }
 
-@media (min-width: 768px) {
-  .rocket__planetspage {
-    width: 135px;
-    top: 17rem;
-    left: 2rem;
-  }
-}
-
-
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   .rocket__planetspage {
     width: 140px;
     top: 24rem;
     left: 2rem;
   }
+
+  .planet__joy {
+    position: relative;
+    top: 11rem;
+  }
+
+  .planet__sadness {
+    position: relative;
+    right: 3rem;
+    top: 0rem;
+  }
+
+  .planet__love {
+    position: relative;
+    top: 0rem;
+  }
+
+  .planet__anger {
+    position: relative;
+    left: 7rem;
+    top: 0rem;
+  }
+}
+
+@media (min-width: 794px) {
+  .planet__anger {
+    position: relative;
+    left: -4rem;
+    top: 12rem;
+  }
 }
 
 
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
   .rocket__planetspage {
-    width: 150px;
-    top: 140%;
+    width: 183px;
+    top: 18rem;
     left: 2rem;
   }
+
+
+  .planet__joy {
+    position: relative;
+    top: 6rem;
+    left: 5rem;
+  }
+
+  .planet__sadness {
+    position: relative;
+    top: -4rem;
+    left: 8rem;
+  }
+
+  .planet__love {
+    position: relative;
+    top: 0rem;
+    left: 20%;
+  }
+
+  .planet__anger {
+    position: relative;
+    left: -8rem;
+    top: 16rem;
+  }
+
+  .planet__anger--img {
+    width: 190px;
+  }
+
+  .planet__love--img {
+    width: 190px;
+  }
+
 }
 
 @media (min-width: 1900px) {
   .rocket__planetspage {
-    width: 160px;
-    top: 200%;
+    width: 135px;
+    top: 17rem;
     left: 2rem;
   }
-}
 
-.planet__joy {
-  position: relative;
-  top: 10rem
-}
+  .planet__joy {
+    position: relative;
+    top: 16rem
+  }
 
-.planet__sadness {
+  .planet__sadness {
+    position: relative;
+    top: 0rem
+  }
 
-}
-.planet__love {
+  .planet__love {
+    position: relative;
+    top: 0rem;
+    left: 20%;
+  }
 
-}
+  .planet__anger {
+    position: relative;
+    left: -10rem;
+    top: 20rem
+  }
 
-.planet__anger {
-  
+  .planet__anger--img {
+    width: 200px;
+  }
+
+  .planet__love--img {
+    width: 200px;
+  }
+
+
 }

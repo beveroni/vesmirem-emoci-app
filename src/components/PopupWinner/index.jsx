@@ -9,7 +9,7 @@ export const PopupWinner = ({ dialogWinnerRef }) => {
         <h2 className="winner__heading">
           <strong>Gratulujeme!</strong>
         </h2>
-        <p>
+        <p className="winner__text">
           Skvělá práce! Tvá raketka právě dokončila úžasnou misi a objevila
           všechny planetky ve vesmíru. Bylo to vzrušující dobrodružství plné
           barevných planetek a nádherných emocí. Jsi opravdový/a mistr/ka

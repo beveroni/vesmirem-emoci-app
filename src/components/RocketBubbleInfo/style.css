@@ -1,21 +1,11 @@
 .planetspage__rocket--text {
-  /* display: none; */
-  /* position: absolute;
-  top: 1rem;
-  left: 5rem; */
   color: black;
   text-align: justify;
-  /* width: 30%;
-  padding: 1rem;
-  margin: 2rem;
-  background-color: antiquewhite;
-  border-radius: 20px; */
-  /* display: none; */
 }
 
 .bubbleInfo {
-  top: 17rem;
-  left: -55rem;
+  top: 7rem;
+  left: 28rem;
   position: relative;
   font-size: 13px;
   line-height: 24px;

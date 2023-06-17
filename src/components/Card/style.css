@@ -2,7 +2,7 @@
   /* width: 140px; */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  filter: drop-shadow(-6px -6px 9px rgba(136, 136, 136, 0.797));
+
 }
 
 .game__card:hover {

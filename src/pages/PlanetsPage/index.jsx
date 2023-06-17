@@ -59,20 +59,20 @@ export const PlanetsPage = ({ finishedGames }) => {
                 </Link>
               </div>
             ))}
-            {showRocketBubble && (
-              <>
-                <RocketBubbleInfo />
-                <div onClick={() => setShowRocketBubble(false)} />
-              </>
-            )}
             <img
-            src="img/rocket.svg"
-            alt="raketka"
-            className="rocket__planetspage"
-            onClick={handleRocketClick}
-          />
+              src="img/rocket.svg"
+              alt="raketka"
+              className="rocket__planetspage"
+              onClick={handleRocketClick}
+            />
           </div>
-                  </>
+          {showRocketBubble && (
+            <div className="rocket__bubble">
+              <RocketBubbleInfo />
+              <div onClick={() => setShowRocketBubble(false)} />
+            </div>
+          )}
+        </>
       )}
     </div>
   );
