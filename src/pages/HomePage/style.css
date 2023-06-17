@@ -22,12 +22,7 @@
 
 
   .rocket {
-    rotate: 50deg;
-    width: 170px;
     position: fixed;
-    top: 20%;
-    left: 10%;
-    filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
     animation: flying 2s forwards;
   }
 
@@ -50,10 +45,7 @@
   /* styly pro btn na jednotlivé POP-UP STRÁNKY */
 
   .button__game {
-    width: 439px;
     position: fixed;
-    top: 25%;
-    left: 65%;
     background: none;
     cursor: pointer;
     filter: none;
@@ -67,12 +59,7 @@
 
   .button__project {
     position: fixed;
-    top: 65%;
-    left: 55%;
-    font-size: 1.8rem;
     background: rgb(252, 116, 57);
-    width: 10rem;
-    height: 10rem;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -83,12 +70,7 @@
 
   .button__emotions {
     position: fixed;
-    top: 15%;
-    left: 45%;
-    font-size: 2rem;
     background: rgb(255, 139, 199);
-    width: 9rem;
-    height: 9rem;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -98,12 +80,7 @@
 
   .button__rules {
     position: fixed;
-    top: 40%;
-    left: 30%;
-    font-size: 2rem;
     background: rgb(84, 84, 213);
-    width: 12rem;
-    height: 12rem;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -114,12 +91,7 @@
 
   .button__tips {
     position: fixed;
-    top: 70%;
-    left: 10%;
-    font-size: 2rem;
     background: rgb(10, 134, 105);
-    width: 8rem;
-    height: 8rem;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -187,7 +159,9 @@
     background-color: #b1a8a8;
   }
 
-  @media (max-width: 376px) {
+
+  /* MEDIA QUERY */
+  @media (min-width: 320px) {
 
     .button__emotions {
       top: 65%;
@@ -198,8 +172,8 @@
     }
 
     .button__rules {
-      top: 19.5rem;
-      left: 4rem;
+      top: 47%;
+      left: 12%;
       font-size: 1.3rem;
       width: 5.5rem;
       height: 5.5rem;
@@ -228,19 +202,170 @@
     }
 
     .rocket {
-      width: 42px;
-      top: 13%;
+      width: 75px;
+      top: 6%;
+      filter: drop-shadow(0px 2px 5px rgb(255, 255, 255));
+      rotate: 90deg;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
+    .button__emotions {
+      top: 55%;
+      left: 40%;
+      font-size: 1rem;
+      width: 7.5rem;
+      height: 7.5rem;
+    }
 
+    .button__rules {
+      top: 47%;
+      left: 12%;
+      font-size: 1.5rem;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .button__project {
+      top: 55%;
+      left: 70%;
+      font-size: 1.2rem;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .button__game {
+      width: 264px;
+      top: 25%;
+      left: 40%;
+    }
+
+    .button__tips {
+      top: 75%;
+      left: 20%;
+      font-size: 1.3rem;
+      width: 6.5rem;
+      height: 6.5rem;
+    }
 
     .rocket {
+      rotate: 90deg;
+      width: 90px;
+      top: 6%;
       filter: drop-shadow(0px 2px 5px rgb(255, 255, 255));
+
     }
   }
 
-  @media (max-width: 768px) {}
+  @media (min-width: 700px) {
+    .button__emotions {
+      top: 55%;
+      left: 40%;
+      font-size: 1rem;
+      width: 7.5rem;
+      height: 7.5rem;
+    }
 
-  @media (max-width: 1024px) {}
+    .button__rules {
+      top: 47%;
+      left: 12%;
+      font-size: 1.8rem;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .button__project {
+      top: 55%;
+      left: 65%;
+      font-size: 1.4rem;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .button__game {
+      width: 319px;
+      top: 25%;
+      left: 50%;
+    }
+
+    .button__tips {
+      top: 75%;
+      left: 20%;
+      font-size: 1.2rem;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .rocket {
+      rotate: 90deg;
+      width: 109px;
+      top: 8%;
+      filter: drop-shadow(0px 2px 5px rgb(255, 255, 255));
+
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .button__game {
+      width: 350px;
+      top: 25%;
+      left: 65%;
+    }
+
+    .button__project {
+      top: 65%;
+      left: 55%;
+      font-size: 1.8rem;
+      width: 10rem;
+      height: 10rem;
+    }
+
+
+    .button__emotions {
+      top: 15%;
+      left: 45%;
+      font-size: 2rem;
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .button__rules {
+      top: 40%;
+      left: 30%;
+      font-size: 2rem;
+      width: 12rem;
+      height: 12rem;
+
+    }
+
+    .button__tips {
+      top: 70%;
+      left: 10%;
+      font-size: 2rem;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .rocket {
+      rotate: 50deg;
+      width: 163px;
+      top: 12%;
+      left: 8%;
+      filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+    }
+
+  }
+
+  @media (min-width: 1400px) {
+    .button__game {
+      width: 400px;
+    }
+
+    .rocket {
+      rotate: 50deg;
+      width: 220px;
+      top: 13%;
+      filter: drop-shadow(0px 2px 5px rgb(255, 255, 255));
+
+    }
+  }
