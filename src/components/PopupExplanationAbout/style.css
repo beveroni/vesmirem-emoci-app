@@ -46,12 +46,13 @@
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .popup__about--us {
     flex-wrap: wrap;
   }
 }
 
+/* 
 @media (max-width: 480px) {
   .popup__about--us {
     flex-wrap: wrap;
@@ -60,4 +61,4 @@
 
 @media (max-width: 768px) {}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {} */
