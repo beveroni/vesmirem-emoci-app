@@ -78,3 +78,13 @@
   padding: 1.5rem;
   text-align: center;
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .game__star {
+    width: 60%;
+    height: auto;
+  }
+}
