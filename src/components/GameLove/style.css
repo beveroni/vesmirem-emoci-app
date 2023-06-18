@@ -121,10 +121,7 @@
 /* 480px */
 
 @media (max-width: 480px) {
-  .popup__game--love {
-    width: 120%;
-    height: auto;
-  }
+
 
   .game__love--textarea {
     line-height: 15px;
@@ -133,14 +130,5 @@
     left: 13%;
     width: 42%;
     height: 60%;
-  }
-}
-
-/* 375 */
-
-@media (max-width: 375px) {
-  .popup__game--love {
-    width: 150%;
-    height: auto;
   }
 }
