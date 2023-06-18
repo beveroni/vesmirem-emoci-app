@@ -93,6 +93,7 @@
   }
 }
 
+/* max 768px */
 @media (max-width: 768px) {
   .game__content {
     padding: 1rem;
@@ -121,7 +122,7 @@
 }
 
 
-
+/*max 480px */
 @media (max-width: 480px) {
   .game-popup {
     width: 90%;
@@ -129,7 +130,6 @@
     top: 10vh;
     left: 5vw;
   }
-
 
   .game__content {
     padding: 0.5rem;
@@ -140,6 +140,4 @@
     padding: 0.5rem;
     line-height: 1;
   }
-
-
 }
