@@ -1,12 +1,12 @@
 .conversation__planet--text {
   /* display: none; */
   position: absolute;
-  top: 8rem;
+  top: 11rem;
   right: 5rem;
   color: black;
   text-align: justify;
   width: 30vw;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
   border-radius: 20px;
@@ -45,8 +45,8 @@
 @media (max-width: 1024px) {
   .conversation__planet--text {
     position: absolute;
-    top: 8rem;
-    right: 2rem;
+    top: 13rem;
+    right: 3rem;
     width: 38vw;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -54,28 +54,22 @@
   }
 }
 
-
-
-
 @media (max-width: 768px) {
   .conversation__planet--text {
     position: absolute;
     top: 17rem;
     right: 2rem;
     width: 80vw;
-    margin: 0;
     padding: 1.2rem;
     font-size: 0.8em;
     line-height: 1rem;
   }
 }
 
-
-
 @media (max-width: 375px) {
   .conversation__planet--text {
     position: absolute;
-    top: 20rem;
+    top: 17rem;
     right: 1rem;
     width: 90vw;
     padding: 1rem;

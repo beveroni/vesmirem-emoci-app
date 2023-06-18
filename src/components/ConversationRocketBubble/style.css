@@ -1,28 +1,19 @@
 .conversation__rocket--text {
-  /* display: none; */
-  /* position: absolute;
-  top: 1rem; */
+  position: absolute;
+  top: 8rem;
   left: 5rem;
-  /* color: black; */
+  color: black;
   text-align: justify;
-  /* width: 30%; */
+  width: 30vw;
   padding: 2rem;
-  margin: 2rem;
   background-color: antiquewhite;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   border-radius: 20px;
-  /* display: none; */
 }
 
 .bubble {
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  width: 300px;
-  background: #fff;
-  border-radius: 40px;
-  /* padding: 24px;
-  text-align: center; */
-  color: #000;
+  background-color: #fff;
 }
 
 .bubble-bottom-left:before {
@@ -41,14 +32,33 @@
 @media (max-width: 1024px) {
   .conversation__rocket--text {
     position: absolute;
+    top: 8rem;
     left: 3rem;
+    width: 38vw;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .conversation__rocket--text {
     position: absolute;
+    top: 8rem;
     left: 2rem;
-    width: 400px;
+    width: 80vw;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .conversation__planet--text {
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    width: 90vw;
+    padding: 1rem;
   }
 }
