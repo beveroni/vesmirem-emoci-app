@@ -87,12 +87,14 @@ export const GameSadness = ({ onFinish }) => {
         <div className="stopwatch__minutes"></div>
         <div className="stopwatch__seconds">{time}</div>
       </div>
-      <img
-        src="/img/comet.svg"
-        id="comet"
-        className={gameFinished ? 'comet-animation' : 'comet'}
-        alt="obrázek letící komety"
-      />
+      <div className="comet-space">
+        <img
+          src="/img/comet.svg"
+          id="comet"
+          className={gameFinished ? 'comet-animation' : 'comet'}
+          alt="obrázek letící komety"
+        />
+      </div>
     </div>
   );
 };
