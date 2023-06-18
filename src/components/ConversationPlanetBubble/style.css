@@ -26,6 +26,13 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1419px) {
+  .conversation__planet--text {
+    position: absolute;
+    top: 10rem;
+  }
+}
+
 @media (max-width: 1275px) {
   .conversation__planet--text {
     font-size: 1rem;
