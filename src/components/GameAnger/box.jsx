@@ -34,7 +34,7 @@ export const Box = ({ name, type, isDropped }) => {
   return (
     <div
       ref={drag}
-      style={{ opacity, filter: shadowStyle, display: 'inline-flex'}}
+      style={{ opacity, filter: shadowStyle,flex: 'inline-flex'}}
       className="trash__container"
     >
       {isDropped ? null : (

@@ -6,7 +6,7 @@ import { PopupExplanationAbout } from '../../components/PopupExplanationAbout';
 import { PopupExplanationEmotions } from '../../components/PopupExplanationEmotions';
 import { PopupExplanationRules } from '../../components/PopupExplanationRules';
 import { PopupExplanationTips } from '../../components/PopupExplanationTips';
-// import { useState } from 'react';
+
 
 export const HomePage = () => {
   const aboutDialogRef = useRef(null);
@@ -47,48 +47,6 @@ export const HomePage = () => {
   const closePopupTips = () => {
     tipsDialogRef.current.close();
   };
-
-  // export const HomePage = () => {
-  // const [showPopupAbout, setShowPopupAbout] = useState(false);
-  // const [showPopupEmotions, setShowPopupEmotions] = useState(false);
-  // const [showPopupRules, setShowPopupRules] = useState(false);
-  // const [showPopupTips, setShowPopupTips] = useState(false);
-
-  //   console.log(showPopupRules);
-
-  //   const handlePopupAboutOpen = () => {
-  //     setShowPopupAbout(true);
-  //   };
-
-  //   const handlePopupAboutClose = () => {
-  //     setShowPopupAbout(false);
-  //   };
-
-  // const handlePopupEmotionsOpen = () => {
-  //   setShowPopupEmotions(true);
-  // };
-
-  // const handlePopupEmotionsClose = () => {
-  //   setShowPopupEmotions(false);
-  // };
-
-  // const handlePopupRulesOpen = () => {
-  //   setShowPopupRules(true);
-  // };
-
-  // const handlePopupRulesClose = () => {
-  //   setShowPopupRules(false);
-  // };
-
-  // const handlePopupTipsOpen = () => {
-  //   setShowPopupTips(true);
-  // };
-
-  // const handlePopupTipsClose = () => {
-  //   setShowPopupTips(false);
-  // };
-
-  console.log(openPopupEmotions);
 
   return (
     <>
@@ -149,19 +107,7 @@ export const HomePage = () => {
             dialogRef={tipsDialogRef}
           />
 
-          {/* {showPopupAbout && (
-          <PopupExplanationAbout onClose={handlePopupAboutClose} />
-        )}
-        {showPopupEmotions && (
-          <PopupExplanationEmotions onClose={handlePopupEmotionsClose} />
-        )}
-        {showPopupRules && (
-          <PopupExplanationRules onClose={handlePopupRulesClose} />
-        )}
-        {showPopupTips && (
-          <PopulExplanationTips onClose={handlePopupTipsClose} />
-        )} */}
-        </div>
+         </div>
         </div>
           <Footer />
       </div>

@@ -4,26 +4,26 @@ import { GameLove } from './components/GameLove';
 import { GameSadness } from './components/GameSadness';
 
 export const planets = [
-  // {
-  //   id: 1,
-  //   label: 'Radost',
-  //   name: 'joy',
-  //   avatar: '/img/planet_joy.svg',
-  //   colorText: '#f9f46d',
-  //   colorStar: '#FFF503',
-  //   planetDialog:
-  //     'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. Pomůžeš mi udělat radost i ostatním?',
-  //   rocketDialog:
-  //     'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti...Jsi tak krásně radostná a zářivá tak se u Tebe na chvíli zdržím.',
-  //   backgroundGame: '/img/backround_task_joy.svg',
-  //   task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Klikni na správné obrázky a vyber tak dvojici, která k sobě patří.',
-  //   question:
-  //     'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
-  //   game: GameJoy,
-  //   description:
-  //     'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
-  //   infoBubble: '',
-  // },
+  {
+    id: 1,
+    label: 'Radost',
+    name: 'joy',
+    avatar: '/img/planet_joy.svg',
+    colorText: '#f9f46d',
+    colorStar: '#FFF503',
+    planetDialog:
+      'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. Pomůžeš mi udělat radost i ostatním?',
+    rocketDialog:
+      'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti...Jsi tak krásně radostná a zářivá tak se u Tebe na chvíli zdržím.',
+    backgroundGame: '/img/backround_task_joy.svg',
+    task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Klikni na správné obrázky a vyber tak dvojici, která k sobě patří.',
+    question:
+      'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
+    game: GameJoy,
+    description:
+      'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
+    infoBubble: '',
+  },
   {
     id: 2,
     label: 'Smutek',
@@ -44,46 +44,46 @@ export const planets = [
       'Smutek je emoční stav vyjadřující zármutek, ztrátu nebo bolest. Lidé se cítí smutní v reakci na negativní události, jako je ztráta blízkého člověka, selhání nebo rozchod s někým koho mají rádi.',
     infoBubble: '',
   },
-  // {
-  //   id: 3,
-  //   label: 'Láska',
-  //   name: 'love',
-  //   avatar: '/img/planet_love.svg',
-  //   colorText: '#f891cf',
-  //   colorStar: '#FC68C1',
-  //   planetDialog:
-  //     'Ááách, ahoj, raketko, koukej, dostala jsem dopis od měsíce. Moc krásný. Napsal mi, že se těší, až se zase za měsíc uvidíme... ááách. Akorát nevím, co mu mám odpovědět. Trochu se stydím. Pomůžeš mi s tím?',
-  //   rocketDialog:
-  //     'Ahoj planetko, ty tak krásně růžově záříš po celé oběžné dráze. Pověz mi o tom víc.',
-  //   backgroundGame: '/img/backround_task_love.svg',
-  //   task: 'Pomoz planetce napsat zaláskovaný pohled měsíci:',
-  //   question:
-  //     'Koho máš taky rád/a? A co máš nejraději? Velké objetí s kým právě tohle čteš.',
-  //   game: GameLove,
-  //   description:
-  //     'Láska je hluboká emoční připoutanost a náklonnost k někomu nebo něčemu. Vyjadřuje péči, soucit, ochranu a důvěru. Láska může být vztahem mezi rodinnými příslušníky, přáteli nebo romantickým partnerstvím.',
-  //   infoBubble: '',
-  // },
-  // {
-  //   id: 4,
-  //   name: 'anger',
-  //   label: 'Vztek',
-  //   avatar: '/img/planet_anger.svg',
-  //   colorText: '#f47979',
-  //   colorStar: '#EC1F1F',
-  //   planetDialog:
-  //     'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat! Pomůžeš mi s úklidem?',
-  //   rocketDialog:
-  //     'Ahoj planetko, letím si vesmírem a vidím takovou zajímavou planetku ... tak jsem si řekla, že se tě zaletím zeptat proč jsi tak rudá?',
-  //   backgroundGame: '/img/backround_task_anger.svg',
-  //   task: 'Pomoz planetce a ukliď vesmírný nepořádek do popelnice.',
-  //   question:
-  //     'Co pomáhá Tobě, když se zlobíš? Umíš říct, proč se zlobíš? A kde zlobu cítíš v těle?',
-  //   game: GameAnger,
-  //   description:
-  //     'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
-  //   infoBubble: '',
-  // },
+  {
+    id: 3,
+    label: 'Láska',
+    name: 'love',
+    avatar: '/img/planet_love.svg',
+    colorText: '#f891cf',
+    colorStar: '#FC68C1',
+    planetDialog:
+      'Ááách, ahoj, raketko, koukej, dostala jsem dopis od měsíce. Moc krásný. Napsal mi, že se těší, až se zase za měsíc uvidíme... ááách. Akorát nevím, co mu mám odpovědět. Trochu se stydím. Pomůžeš mi s tím?',
+    rocketDialog:
+      'Ahoj planetko, ty tak krásně růžově záříš po celé oběžné dráze. Pověz mi o tom víc.',
+    backgroundGame: '/img/backround_task_love.svg',
+    task: 'Pomoz planetce napsat zaláskovaný pohled měsíci:',
+    question:
+      'Koho máš taky rád/a? A co máš nejraději? Velké objetí s kým právě tohle čteš.',
+    game: GameLove,
+    description:
+      'Láska je hluboká emoční připoutanost a náklonnost k někomu nebo něčemu. Vyjadřuje péči, soucit, ochranu a důvěru. Láska může být vztahem mezi rodinnými příslušníky, přáteli nebo romantickým partnerstvím.',
+    infoBubble: '',
+  },
+  {
+    id: 4,
+    name: 'anger',
+    label: 'Vztek',
+    avatar: '/img/planet_anger.svg',
+    colorText: '#f47979',
+    colorStar: '#EC1F1F',
+    planetDialog:
+      'Chr....uff... já jim ukážu.. (#)=>{!?//*}... představ si... v klidu si dávám poobědovou siestu a najednou kolem mě prolítne takový nepořádek. Kdo se má na to tady koukat! Pomůžeš mi s úklidem?',
+    rocketDialog:
+      'Ahoj planetko, letím si vesmírem a vidím takovou zajímavou planetku ... tak jsem si řekla, že se tě zaletím zeptat proč jsi tak rudá?',
+    backgroundGame: '/img/backround_task_anger.svg',
+    task: 'Pomoz planetce a ukliď vesmírný nepořádek do popelnice.',
+    question:
+      'Co pomáhá Tobě, když se zlobíš? Umíš říct, proč se zlobíš? A kde zlobu cítíš v těle?',
+    game: GameAnger,
+    description:
+      'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
+    infoBubble: '',
+  },
   // {
   //   id: 5,
   //   label: 'Nadšení',
