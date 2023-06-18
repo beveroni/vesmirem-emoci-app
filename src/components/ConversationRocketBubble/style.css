@@ -31,7 +31,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1275px) {
+@media (max-width: 1295px) {
   .conversation__rocket--text {
     font-size: 1rem;
     line-height: 1.5rem;
