@@ -16,8 +16,16 @@
 @media (min-width: 425px) {
   .planet-img {
     width: 150px;
-    right: 6rem;
-    bottom: 5rem;
+    right: 3rem;
+    bottom: 3rem;
+  }
+}
+
+@media (min-width: 574px) {
+  .planet-img {
+    width: 180px;
+    right: 7rem;
+    bottom: 6rem;
   }
 }
 

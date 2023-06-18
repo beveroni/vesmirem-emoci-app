@@ -78,8 +78,8 @@
   .conversation__planet--text {
     position: absolute;
     top: 17rem;
-    right: 1rem;
-    width: 85vw;
+    right: 25rem;
+    width: 75vw;
     padding: 1rem;
   }
 }

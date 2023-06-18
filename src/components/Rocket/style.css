@@ -16,7 +16,7 @@
   }
 
   100% {
-    left: 15rem;
+    left: 17rem;
     bottom: 5rem;
     transform: scale(1.5) rotate(45deg);
   }
@@ -67,6 +67,27 @@
   }
 }
 
+/* max 574px */
+@media (max-width: 574px) {
+  .rocket__img {
+    width: 70px;
+  }
+
+  @keyframes rocketFly {
+    0% {
+      left: -20%;
+      bottom: -20%;
+      transform: scale(0.8) rotate(35deg);
+    }
+
+    100% {
+      left: 6rem;
+      bottom: 4rem;
+      transform: scale(1.5) rotate(35deg);
+    }
+  }
+}
+
 /* max 480px */
 @media (max-width: 480px) {
   .rocket__img {
@@ -103,8 +124,8 @@
     }
 
     100% {
-      left: 7rem;
-      bottom: 5rem;
+      left: 5rem;
+      bottom: 3rem;
       transform: scale(1.5) rotate(35deg);
     }
   }

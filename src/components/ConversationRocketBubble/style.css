@@ -76,8 +76,8 @@
   .conversation__rocket--text {
     position: absolute;
     top: 5rem;
-    right: 1rem;
-    width: 85vw;
+    left: 3rem;
+    width: 80vw;
     padding: 1rem;
   }
 }
