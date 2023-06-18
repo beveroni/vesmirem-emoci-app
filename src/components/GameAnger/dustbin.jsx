@@ -30,10 +30,13 @@ export const Dustbin = memo(function Dustbin({
     : 'none';
 
   const style = {
+    // display: 'flex',
+    // flexDirection: 'row',
     padding: '1rem',
     textAlign: 'center',
-    float: 'left',
+    // float: 'left',
     backgroundSize: 'contain',
+    display: 'inline-block', // Zobrazení vedle sebe v řádku
   };
 
   return (

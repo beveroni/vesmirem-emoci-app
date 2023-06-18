@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="320"
-   height="240"
-   viewBox="0 0 84.666666 63.499998"
+   width="461"
+   height="470"
+   viewBox="0 0 121.97292 124.35416"
    version="1.1"
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="vesmirne_sklo.svg"
+   sodipodi:docname="odpad_vesmirne_sklo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,16 +25,16 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="0.1767767"
-     inkscape:cx="1688.571"
-     inkscape:cy="1439.6694"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="396.68689"
+     inkscape:cy="347.18942"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="2391"
      inkscape:window-y="594"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"><sodipodi:guide
-       position="173.61828,37.307588"
+       position="173.61828,98.161754"
        orientation="0,-1"
        id="guide22334"
        inkscape:locked="false" /></sodipodi:namedview><defs
@@ -466,7 +466,7 @@
        transform="matrix(0.62589956,0.5872932,-0.3829592,1.0500668,117.16163,-18.236159)"
        style="fill:#d45500;fill-opacity:1" /><g
        id="g36897"
-       transform="matrix(1.7162187,0,0,1.7162187,-39.460886,-139.66813)"><path
+       transform="matrix(2.5695952,0,0,2.5695952,-60.804771,-195.71255)"><path
          d="m 46.92087,93.142149 c -0.73511,-1.23765 -2.1371,-10.06244 -1.67355,-10.53417 1.26807,-1.29044 7.22913,2.4871 7.24044,4.58829 0.004,0.69673 -4.34235,6.35718 -4.88105,6.35718 -0.24286,0 -0.55148,-0.18508 -0.68584,-0.4113 z"
          style="fill:#9fd9f3;fill-opacity:1;stroke-width:0.54362"
          id="path919"

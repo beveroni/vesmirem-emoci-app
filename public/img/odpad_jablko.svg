@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="390"
-   height="530"
-   viewBox="0 0 103.1875 140.22918"
+   width="461"
+   height="470"
+   viewBox="0 0 121.97292 124.35418"
    version="1.1"
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="jablko.svg"
+   sodipodi:docname="odpad_jablko.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,13 +24,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="-275.06454"
-     inkscape:cy="569.22096"
-     inkscape:window-width="2400"
-     inkscape:window-height="1261"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:zoom="0.5"
+     inkscape:cx="-461"
+     inkscape:cy="629"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="2391"
+     inkscape:window-y="594"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" /><defs
      id="defs2"><inkscape:path-effect
@@ -168,7 +168,7 @@
      inkscape:groupmode="layer"
      id="layer1"><g
        id="g22085"
-       transform="matrix(3.6275092,0,0,3.2512041,354.01923,-899.25248)"><path
+       transform="matrix(3.1957866,0,0,2.8642669,325.73296,-792.17075)"><path
          style="fill:#4b2c0b;fill-opacity:1;stroke:#c72682;stroke-width:0.264054;stroke-opacity:0"
          d="m -84.379502,284.87675 c 0.01257,-0.68563 -0.0078,-1.98952 0.216285,-3.17127 0.224084,-1.18175 0.692671,-2.24117 1.151097,-3.03579 0.458425,-0.79462 0.906633,-1.32432 1.314279,-1.48723 0.407645,-0.16291 0.774362,0.0408 1.028948,0.29557 0.254586,0.25474 0.397199,0.56034 0.21375,0.99822 -0.183448,0.43788 -0.692773,1.00833 -1.181754,1.62975 -0.488981,0.62141 -0.957575,1.29375 -1.273365,2.12915 -0.31579,0.83541 -0.478775,1.83369 -0.548518,2.42388 -0.06974,0.59019 -0.04632,0.77216 -0.05539,0.91658 -0.0091,0.14442 -0.05054,0.25143 -0.133467,0.33351 -0.08293,0.0821 -0.207513,0.13944 -0.35357,0.10016 -0.146057,-0.0393 -0.313778,-0.17549 -0.375053,-0.27746 -0.06127,-0.10196 -0.01582,-0.16945 -0.0032,-0.85507 z"
          id="path360"
