@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Container } from './container';
 import { TouchBackend } from 'react-dnd-touch-backend'
 

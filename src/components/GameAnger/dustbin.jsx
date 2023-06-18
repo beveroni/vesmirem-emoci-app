@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { ItemTypes } from './ItemTypes';
 import { useDrop } from 'react-dnd';
-import { NativeTypes } from 'react-dnd-html5-backend';
+
 
 export const Dustbin = memo(function Dustbin({
   accept,
