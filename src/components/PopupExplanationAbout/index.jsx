@@ -19,7 +19,15 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
         <p>
           Hra vznikla jako závěrečný projekt rekvalifikačního kurzu organizace
           Czechitas, Digitální akademie - Web, jaro 2023, pod oborným vedením
-          mentora Jakuba Stejskala. Grafiku a animaci vytvářela Veronika.
+          mentora{` `}
+          <a
+            className="Jakub"
+            href="https://cz.linkedin.com/in/stejskaljakub"
+            target="_blank"
+          >
+            Jakuba Stejskala
+          </a>
+          . Grafiku a animaci vytvářela Veronika.
         </p>
       </div>
       <div className="popup__about--us">
@@ -40,7 +48,7 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
             Single maminka dvou skvělých dětí - 7 let a 4 roky. A rodilá
             Ostravačka (přízvuk mi zůstal i po osmi letech v Praze).
           </p>
-          <a href="https://github.com/beveroni">
+          <a href="https://github.com/beveroni" target="_blank">
             <img
               src="/img/github.png"
               className="github_logo"
@@ -65,7 +73,7 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
             rozhodla zkusit udělat otočku o 180° a zjistit, kam mě tato osobní
             challange zanese a zda se mi podaří stát se frontend vývojářkou 😅.
           </p>
-          <a href="https://github.com/EliKorenc">
+          <a href="https://github.com/EliKorenc" target="_blank">
             <img
               src="/img/github.png"
               className="github_logo"
