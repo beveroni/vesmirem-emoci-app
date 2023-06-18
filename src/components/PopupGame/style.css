@@ -37,6 +37,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
 }
 
+/* Styly pro vykreslení pop-upu po splnění úkolu*/
 .game__star {
   width: 30%;
   height: 30%;
@@ -66,6 +67,7 @@
   justify-content: center;
   position: relative;
   height: auto;
+  text-align: justify;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 1.5rem;
@@ -82,7 +84,18 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1024px) {
+  .game__star {
+    width: 50%;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
+  .game__content {
+    padding: 1rem;
+  }
+
   .game__task--text {
     padding: 1rem;
     border-radius: 15px;
@@ -94,6 +107,7 @@
   }
 
   .game__question {
+    flex-direction: column;
     border-radius: 15px;
     padding: 1rem;
     line-height: 1.2
@@ -107,9 +121,15 @@
 
 
 @media (max-width: 480px) {
+  .game__content {
+    padding: 0.5rem;
+  }
+
   .game__question {
     border-radius: 15px;
     padding: 0.5rem;
     line-height: 1;
   }
+
+
 }
