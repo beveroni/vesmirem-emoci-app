@@ -63,6 +63,7 @@
 
 /* Styly pro závěrečnou otázku */
 .game__question {
+  align-items: center;
   display: flex;
   justify-content: center;
   position: relative;
