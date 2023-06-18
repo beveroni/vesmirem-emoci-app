@@ -4,6 +4,10 @@
   gap: 2rem;
 }
 
+.Jakub {
+  color: yellow;
+}
+
 .about-us__veronika .about-us__eliska {
   display: flex;
   flex-direction: column;
