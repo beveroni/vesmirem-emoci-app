@@ -12,13 +12,13 @@ export const planets = [
     colorText: '#f9f46d',
     colorStar: '#FFF503',
     planetDialog:
-      'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před 846 dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. Pomůžeš mi udělat radost i ostatním?',
+      'Jééé, ahoj raketko, jdeš ke mně na návštěvu? To je ale príma. Před chvílí, asi tak před pár dny jsem se otočila konečně ke Slunci a můžu si s ním zase povídat. To mě totiž děsně baví. A taky chci chytit trochu bronz, jsem celá žlutá jako sýr. Pojď ke mně, ať se můžeš trochu opálit. Pomůžeš mi udělat radost i ostatním?',
     rocketDialog:
       'Ahoj planetko, ty máš ale dobrou náladu, že se tak usmíváš. Já byla vyslaná do vesmíru, abych prozkoumala jeho nekonečné možnosti...Jsi tak krásně radostná a zářivá tak se u Tebe na chvíli zdržím.',
     backgroundGame: '/img/backround_task_joy.svg',
     task: 'Čím uděláš radost králíčkovi, kosmonautovi a mimču? Klikni na správné obrázky a vyber tak dvojici, která k sobě patří.',
     question:
-      'Co dělá radost tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
+      'Co dělá radost Tobě? A co udělá radost někomu blízkému (doplň si koho zrovna chceš).',
     game: GameJoy,
     description:
       'Radost je příjemná a veselá emoce, která vyjadřuje štěstí, potěšení a nadšení. Je spojena s pozitivními událostmi, úspěchy nebo příjemnými zážitky.',
@@ -32,13 +32,13 @@ export const planets = [
     colorText: '#77cdfe',
     colorStar: '#04A5FF',
     planetDialog:
-      'Ahoj, jsem úplně nejvíc smutná, víš... Prolítla tady kolem mě moc pěkná kometa s dlouhým ocasem.. a než jsem se stačila otočit, brek brek, byla pryč. Nestihla jsem si nic přát, brek brek. Pomůžeš mi, abych ji mohla vidět znova?',
+      'Ahoj, jsem úplně nejvíc smutná, víš... Prolítla tady kolem mě moc pěkná kometa s dlouhým ocasem... a než jsem se stačila otočit, brek brek, byla pryč. Nestihla jsem si nic přát, brek brek. Pomůžeš mi, abych ji mohla vidět znova?',
     rocketDialog:
       'Ahoj planetko, proč pláčeš? Co se stalo, že si taková smutná? Můžu ti nějak pomoct?',
     backgroundGame: '/img/backround_task_sadness.svg',
     task: 'Pusť si stopky a počkej s planetkou na další letící kometu.',
     question:
-      'Taky se ti stalo, že si něco prošvihl/a? Co umí rozesmutnit Tebe? Komu se svěřuješ, když je Ti smutno?',
+      'Taky se Ti stalo, že si něco prošvihl/a? Co umí rozesmutnit Tebe? Komu se svěřuješ, když je Ti smutno?',
     game: GameSadness,
     description:
       'Smutek je emoční stav vyjadřující zármutek, ztrátu nebo bolest. Lidé se cítí smutní v reakci na negativní události, jako je ztráta blízkého člověka, selhání nebo rozchod s někým koho mají rádi.',
@@ -81,7 +81,7 @@ export const planets = [
       'Co pomáhá Tobě, když se zlobíš? Umíš říct, proč se zlobíš? A kde zlobu cítíš v těle?',
     game: GameAnger,
     description:
-      'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
+      'Vztek je silná negativní emoce, která vyjadřuje hněv, frustraci a nevoli. Je spojen s překročením osobní hranice, s pocitem nespravedlnosti, zklamání nebo nepříjemnými situacemi, které vyvolávají impuls k projevu nespokojenosti.',
     infoBubble: '',
   },
   // {
