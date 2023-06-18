@@ -6,7 +6,7 @@
   color: black;
   text-align: justify;
   width: 30%;
-  padding: 1rem;
+  padding: 2rem;
   margin: 2rem;
   background-color: violet;
   border: 1px solid black;
@@ -45,6 +45,7 @@
 @media (max-width: 1024px) {
   .conversation__planet--text {
     position: absolute;
+    top: 5rem;
     right: 3rem;
   }
 }
@@ -52,7 +53,7 @@
 @media (max-width: 768px) {
   .conversation__planet--text {
     position: absolute;
-    top: 30rem;
+    top: 9rem;
     right: 2rem;
     width: 400px;
   }
