@@ -69,9 +69,8 @@ export const GameSadness = ({ onFinish }) => {
                 value={inputValue}
                 onChange={handleInputChange}
                 placeholder="maximálně 60"
-                // title="Zadej maximálně 5 sekund"
-              />
-              {/* &nbsp;sekund */}
+                             />
+             
             </label>
             <button
               type="submit"

@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import { planets } from '../../planet-database';
-import { useState, useEffect } from 'react';
 
 export const ConversationPlanetBubble = ({ colorText, dialog }) => {
   const planetDialog = planets.find(

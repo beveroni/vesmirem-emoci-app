@@ -14,19 +14,8 @@ export const PopupGame = ({
   colorStar,
   gameFinished,
 }) => {
-  // const { planetTask, planetQuestion, planetBackground } = useParams();
-  // const planet = planets.find((planet) => planet.task === planetTask);
-  // console.log(planet);
-  // const planetQuestions = planets.find(
-  //   (planet) => planet.question === planetQuestion,
-  // );
-  const Game = game;
+   const Game = game;
 
-  // const backgroundImage = planets.find(
-  //   (planet) => planet.backgroundGame === planetBackground,
-  // );
-
-  //e.
   const [gameFinish, setGameFinish] = useState(false);
   const handleShowStar = () => {
     setGameFinish(true);

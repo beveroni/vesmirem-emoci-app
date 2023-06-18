@@ -25,23 +25,14 @@ export const GameLove = ({ onFinish }) => {
       setAnimationStarted(false);
     }
   };
-  // const animationDuration = `${2 + message.length * 0.001}s`;
-
+ 
   const enlargedImageStyles = {
     transition: 'all 0.3s',
     transform: `scale(${1 + message.length * 0.01})`,
     filter: 'drop-shadow(2px 2px 4px rgb(255, 255, 0))',
   };
 
-  // const enlargedImageStyles = {
-  //   transition: 'all 0.3s',
-  //   animationName: 'enlarging-reducing',
-  //   animationDuration: animationDuration,
-  //   animationFillMode: 'forwards',
-  //   animationIterationCount: 30,
-  // };
-
-  return (
+   return (
     <div className="popup__game--love">
       <form className="game__love--form" onSubmit={handleSubmit}>
         <textarea

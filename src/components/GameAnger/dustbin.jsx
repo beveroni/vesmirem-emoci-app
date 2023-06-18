@@ -31,7 +31,7 @@ export const Dustbin = memo(function Dustbin({
   const style = {
     padding: '1rem',
     textAlign: 'center',
-    backgroundSize: 'contain',
+    // backgroundSize: 'contain',
     display: 'inline-block',
   };
 

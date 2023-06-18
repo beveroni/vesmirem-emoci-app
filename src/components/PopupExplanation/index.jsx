@@ -6,8 +6,7 @@ export const PopupExplanation = ({
   children,
   onClose,
   dialogRef,
-  // allGamesFinished,
-}) => {
+  }) => {
   return (
     <div>
       <dialog className="explanations-popup" ref={dialogRef}>
@@ -18,11 +17,3 @@ export const PopupExplanation = ({
   );
 };
 
-// export const PopupExplanation = ({ children, onClose, allGamesFinished}) => {
-//   return (
-//     <div className="explanations-popup">
-//       <div className="explanation-contain">{children}</div>
-//       <Cross onClick={onClose} />
-//     </div>
-//   );
-// };
