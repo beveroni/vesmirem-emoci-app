@@ -4,12 +4,8 @@
 }
 
 .bubbleInfo {
-  top: 7rem;
-  left: 28rem;
   position: relative;
-  font-size: 13px;
   line-height: 24px;
-  width: 200px;
   background: #fff;
   border-radius: 40px;
   padding: 24px;
@@ -19,8 +15,6 @@
 
 .bubbleInfo-bottom-left:before {
   content: "";
-  width: 0px;
-  height: 0px;
   position: absolute;
   border-left: 24px solid #fff;
   border-right: 12px solid transparent;
@@ -28,4 +22,45 @@
   border-bottom: 20px solid transparent;
   left: 32px;
   bottom: -24px;
+}
+
+
+@media (min-width: 320px) {
+  .bubbleInfo {
+    top: -59rem;
+    left: 1rem;
+    font-size: 10px;
+    width: 91px;
+
+  }
+}
+
+@media (min-width: 500px) {
+  .bubbleInfo {
+    top: -1rem;
+    left: 29rem;
+    font-size: 10px;
+    width: 91px;
+  }
+}
+
+@media (min-width: 700px) {
+  .bubbleInfo {
+    top: 2rem;
+    left: 28rem;
+    font-size: 10px;
+    width: 194px;
+
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .bubbleInfo {
+    top: 9rem;
+    left: 32rem;
+    font-size: 13px;
+    line-height: 24px;
+    width: 209px;
+  }
 }
