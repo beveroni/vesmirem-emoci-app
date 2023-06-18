@@ -1,5 +1,5 @@
 /* OBRÁZKY HRY */
-/* .game__anger {
+.game__anger {
   display: flex;
 }
 
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* .trashbin {
 
@@ -28,7 +28,7 @@
 } */
 
 
-.box-shadow-food {
+/* .box-shadow-food {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
@@ -42,7 +42,7 @@
 
 .box-shadow-pet {
   box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
-}
+} */
 
 @media (min-width: 320px) {
   .trash {

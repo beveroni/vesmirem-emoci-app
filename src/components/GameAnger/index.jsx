@@ -9,6 +9,9 @@ export const GameAnger = ({ onFinish }) => {
   const opts = {
     enableMouseEvents: true,
     enableTouchEvents: true,
+    // enableHoverOutsideTarget: true, 
+    // delayTouchStart: 100,
+    // delayMouseStart: 0, 
              
       };
 
@@ -21,3 +24,4 @@ export const GameAnger = ({ onFinish }) => {
   );
 };
 
+ 

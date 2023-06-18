@@ -2,7 +2,6 @@ import React, { memo } from 'react';
 import { ItemTypes } from './ItemTypes';
 import { useDrop } from 'react-dnd';
 
-
 export const Dustbin = memo(function Dustbin({
   accept,
   lastDroppedItem,
@@ -30,13 +29,10 @@ export const Dustbin = memo(function Dustbin({
     : 'none';
 
   const style = {
-    // display: 'flex',
-    // flexDirection: 'row',
     padding: '1rem',
     textAlign: 'center',
-    // float: 'left',
     backgroundSize: 'contain',
-    display: 'inline-block', // Zobrazení vedle sebe v řádku
+    display: 'inline-block',
   };
 
   return (
@@ -46,8 +42,9 @@ export const Dustbin = memo(function Dustbin({
       style={{ ...style, backgroundColor, pointerEvents: isActive ? 'none' : 'auto' }}
       data-testid="dustbin"
     >
-      <img src={`/img/popelnice_${accept}.svg`} alt="" className="trashbin" />
       {isActive && <p>✅</p>}
-    </div>
+      <img src={`/img/popelnice_${accept}.svg`} alt="" className="trashbin" />
+     
+      </div>
   );
 });
