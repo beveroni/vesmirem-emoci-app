@@ -61,8 +61,8 @@ input[type='text'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  height: 20rem;
+  width: 13rem;
+  height: 22rem;
   top: 0rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -129,50 +129,49 @@ input[type='text'] {
 /* max 1024px */
 @media (max-width: 1024px) {
   .stopwatch {
-    width: 10rem;
-    height: 13rem;
+    width: 9rem;
+    height: 15rem;
+  }
+
+  .stopwatch__seconds {
+    position: absolute;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .comet-animation {
+    width: 400px;
   }
 }
+
+/*max 768px */
+@media (min-width: 768px) {
+  .comet-animation {
+    width: 300px;
+  }
+}
+
 
 /* max 480px */
 @media (max-width: 480px) {
   .controls__input--group {
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
   }
 
   .comet-animation {
     width: 200px;
-    /* bottom: 85%; */
+  }
+
+  .stopwatch {
+    width: 11rem;
+    height: 19rem;
   }
 }
 
+/*max 375px */
 @media (min-width: 375px) {
   .comet-animation {
     width: 150px;
-    /* bottom: 90%; */
-  }
-}
-
-/* @media (min-width: 480px) {
-  .comet-animation {
-    width: 200px;
-    bottom: 85%;
-  }
-} */
-
-@media (min-width: 768px) {
-  .comet-animation {
-    width: 300px;
-    /* bottom: 80%; */
-  }
-}
-
-@media (min-width: 1024px) {
-  .comet-animation {
-    width: 400px;
-    /* bottom: 80%; */
-
   }
 }
