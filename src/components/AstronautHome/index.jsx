@@ -1,15 +1,17 @@
 import React from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
 
 export const AstronautHome = () => {
+  const refreshApp = () => {
+    window.location.href = '/';
+  };
+
   return (
-    <Link to="/">
-      <img
-        src="/img/astronaut.svg"
-        alt="obrázek kosmonauta odkazující na domovskou stránku"
-        className="astronaut_winer"
-      />
-    </Link>
+    <img
+      src="/img/astronaut.svg"
+      alt="obrázek kosmonauta odkazující na domovskou stránku"
+      className="astronaut_winer"
+      onClick={refreshApp}
+    />
   );
 };
