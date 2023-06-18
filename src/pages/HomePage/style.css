@@ -19,8 +19,6 @@
     position: relative;
   }
 
-
-
   .rocket {
     position: fixed;
     animation: flying 2s forwards;
@@ -31,19 +29,16 @@
       left: -20%;
       bottom: -0%;
       transform: scale(0.8);
-
     }
 
     100% {
       left: 10rem;
       bottom: 3rem;
       transform: scale(1.1);
-
     }
   }
 
-  /* styly pro btn na jednotlivé POP-UP STRÁNKY */
-
+  /* Styly pro btn na jednotlivé POP-UP STRÁNKY */
   .button__game {
     position: fixed;
     background: none;
@@ -121,48 +116,10 @@
   }
 
 
-  button {
-    padding: 3rem;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-  }
+  /* MEDIA QUERIES */
 
-  .p1 {
-    background-color: #f6fc5b;
-  }
-
-  .p2 {
-    background-color: #7fbaf9;
-  }
-
-  .p3 {
-    background-color: #f97bc0;
-  }
-
-  .p4 {
-    background-color: #fd6363;
-  }
-
-  .p5 {
-    background-color: #eeab53;
-  }
-
-  .p6 {
-    background-color: #b27140;
-  }
-
-  .p7 {
-    background-color: #6fd25b;
-  }
-
-  .p8 {
-    background-color: #b1a8a8;
-  }
-
-
-  /* MEDIA QUERY */
+  /* min 320px */
   @media (min-width: 320px) {
-
     .button__emotions {
       top: 65%;
       left: 20%;
@@ -209,6 +166,7 @@
     }
   }
 
+  /*min 480px */
   @media (min-width: 480px) {
     .button__emotions {
       top: 55%;
@@ -257,6 +215,7 @@
     }
   }
 
+  /* min 700px */
   @media (min-width: 700px) {
     .button__emotions {
       top: 55%;
@@ -305,6 +264,7 @@
     }
   }
 
+  /* min 1024px */
   @media (min-width: 1024px) {
     .button__game {
       width: 350px;
@@ -320,7 +280,6 @@
       height: 10rem;
     }
 
-
     .button__emotions {
       top: 17%;
       left: 45%;
@@ -335,7 +294,6 @@
       font-size: 2rem;
       width: 12rem;
       height: 12rem;
-
     }
 
     .button__tips {
@@ -356,6 +314,7 @@
 
   }
 
+  /* min 1400px */
   @media (min-width: 1400px) {
     .button__game {
       width: 400px;
@@ -366,6 +325,5 @@
       width: 220px;
       top: 13%;
       filter: drop-shadow(0px 2px 5px rgb(255, 255, 255));
-
     }
   }

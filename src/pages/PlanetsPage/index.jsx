@@ -26,6 +26,8 @@ export const PlanetsPage = ({ finishedGames }) => {
     }
   }, [finishedGames]);
 
+  console.log('Ahoj zvědavče!');
+
   useEffect(() => {
     if (allGamesFinished === true) {
       openPopupWinner();
@@ -77,4 +79,3 @@ export const PlanetsPage = ({ finishedGames }) => {
     </div>
   );
 };
-

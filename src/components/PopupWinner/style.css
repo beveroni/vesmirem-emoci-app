@@ -27,7 +27,6 @@
   }
 }
 
-
 .winner__content {
   justify-content: center;
   display: flex;
@@ -39,13 +38,11 @@
 .winner__heading {
   color: yellow;
   margin: 2rem;
-
 }
 
 .winner__astronaut {
   margin-top: 1rem;
 }
-
 
 .winner__text {
   color: white;

@@ -21,7 +21,7 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
           Czechitas, Digitální akademie - Web, jaro 2023, pod oborným vedením
           mentora{` `}
           <a
-            className="Jakub"
+            className="jakub"
             href="https://cz.linkedin.com/in/stejskaljakub"
             target="_blank"
           >
@@ -31,7 +31,6 @@ export const PopupExplanationAbout = ({ onClose, dialogRef }) => {
         </p>
       </div>
       <div className="popup__about--us">
-        {/* <h3>O nás</h3>  */}
         <div className="about-us__veronika">
           <div className="about-us__img">
             <img

@@ -11,7 +11,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { HeaderGame } from '../../components/HeaderGame';
 
-export const GamePage = ({ dialogRef, finishedGames, gameFinished }) => {
+export const GamePage = ({ finishedGames, gameFinished }) => {
   const { planetId } = useParams();
   const planet = planets.find((planet) => planet.name === planetId);
   const [showPopup, setShowPopup] = useState(false);

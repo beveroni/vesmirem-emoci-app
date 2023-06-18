@@ -9,11 +9,8 @@
 
 - Simple ReactJS Project
 
-### Live Apllication URL
-
-https://vesmirem-emoci.netlify.app/
-
 ### How to start
 
 - install: `npm install`
+
 - start: `npm start`

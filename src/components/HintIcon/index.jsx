@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import './style.css';
 import { PopupExplanationRules } from '../PopupExplanationRules';
-// import { useState } from 'react';
 
 export const HintIcon = () => {
   const hintDialogRef = useRef(null);
@@ -29,4 +28,3 @@ export const HintIcon = () => {
     </div>
   );
 };
-

@@ -9,25 +9,6 @@
   align-items: center;
 }
 
-/* .trashbin {
-
-  transition: transform 0.3s;
-
-}
-
-.trashbin:hover {
-  transform: scale(1.2);
-}
-
-.trash {
-  transition: transform 0.3s;
-}
-
-.trash:hover {
-  transform: scale(1.2);
-} */
-
-
 .box-shadow-food {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }

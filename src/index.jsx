@@ -1,17 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { useState } from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Link,
-  Outlet,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { PlanetsPage } from './pages/PlanetsPage';
 import { GamePage } from './pages/GamePage';
 import { ErrorPage } from './pages/ErrorPage';
 import './style.css';
+
 const App = () => {
   const [finishedGames, setFinishedGames] = useState([]);
   const handleGameFinished = (game) => {

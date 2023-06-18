@@ -13,8 +13,7 @@
   overflow: auto;
 }
 
-/* Div pro obrázkový kontejner */
-
+/* Styly pro pro obrázkový kontejner */
 .rocket__planetspage {
   cursor: pointer;
   rotate: 90deg;
@@ -37,28 +36,23 @@
   100% {
     bottom: 1rem;
     left: 12rem;
-
   }
 }
 
-/* Planety  - img*/
-
+/* Styly pro planety img */
 .planet__joy--img {
-
   transition: transform 0.2s ease-in-out;
   width: 200px;
   filter: drop-shadow(1px 1px 1px 1px rgb(247, 251, 122));
 }
 
 .planet__boredom--img {
-
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(129, 88, 0, 0.558));
 }
 
 .planet__sadness--img {
-
   transition: transform 0.2s ease-in-out;
   width: 150px;
   filter: drop-shadow(1px 1px 1px 1px rgba(111, 181, 255, 0.576));
@@ -96,12 +90,10 @@
 
 
 /* Efekty po najetí myší  */
-
 .planet__joy--img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px rgb(247, 251, 122));
 }
-
 
 .planet__boredom--img:hover {
   transform: scale(1.1);
@@ -138,8 +130,7 @@
   filter: drop-shadow(10px 10px 10px rgba(255, 142, 55, 0.5));
 }
 
-/* 
-Názvy planet */
+/* Styly pro názvy planet */
 .link {
   display: block;
   text-align: center;
@@ -158,6 +149,9 @@ Názvy planet */
 }
 
 
+/*MEDIA QUERIES */
+
+/* min 320px */
 @media (min-width: 320px) {
   .rocket__planetspage {
     width: 72px;
@@ -173,9 +167,9 @@ Názvy planet */
     top: 5rem;
     position: relative;
   }
-
 }
 
+/* min 480px */
 @media (min-width: 480px) {
   .container__planets {
     top: 2rem;
@@ -194,6 +188,7 @@ Názvy planet */
   }
 }
 
+/* min 700px */
 @media (min-width: 700px) {
   .rocket__planetspage {
     width: 140px;
@@ -224,6 +219,7 @@ Názvy planet */
   }
 }
 
+/* min 794px */
 @media (min-width: 794px) {
   .planet__anger {
     position: relative;
@@ -232,14 +228,13 @@ Názvy planet */
   }
 }
 
-
+/* min 1000px */
 @media (min-width: 1000px) {
   .rocket__planetspage {
     width: 183px;
     top: 14rem;
     left: 2rem;
   }
-
 
   .planet__joy {
     position: relative;
@@ -272,9 +267,9 @@ Názvy planet */
   .planet__love--img {
     width: 190px;
   }
-
 }
 
+/*min 1900px */
 @media (min-width: 1900px) {
   .rocket__planetspage {
     width: 135px;
@@ -311,6 +306,4 @@ Názvy planet */
   .planet__love--img {
     width: 200px;
   }
-
-
 }

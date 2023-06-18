@@ -24,6 +24,7 @@
   bottom: -24px;
 }
 
+/* MEDIA QUERIES */
 
 @media (min-width: 320px) {
   .bubbleInfo {
@@ -31,7 +32,6 @@
     left: 1rem;
     font-size: 10px;
     width: 91px;
-
   }
 }
 
@@ -50,7 +50,6 @@
     left: 28rem;
     font-size: 10px;
     width: 194px;
-
   }
 }
 
