@@ -20,3 +20,4 @@ export const GameAnger = ({ onFinish }) => {
     </div>
   );
 };
+
