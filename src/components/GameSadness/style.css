@@ -139,3 +139,33 @@ input[type='text'] {
     justify-content: center;
   }
 }
+
+@media (min-width: 320px) {
+  .comet-animation {
+    width: 150px;
+    bottom: 90%;
+  }
+}
+
+@media (min-width: 400px) {
+  .comet-animation {
+    width: 200px;
+    bottom: 85%;
+  }
+}
+
+@media (min-width: 700px) {
+  .comet-animation {
+    width: 300px;
+    bottom: 80%;
+
+  }
+}
+
+@media (min-width: 1000px) {
+  .comet-animation {
+    width: 400px;
+    bottom: 80%;
+
+  }
+}
