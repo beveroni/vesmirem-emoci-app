@@ -54,7 +54,7 @@
   background-size: contain;
   background-position: center;
   left: 100%;
-  top: 3%;
+  top: -5rem;
   transform: translateY(-50%) translateZ(0) rotate(270deg);
   opacity: 0;
   animation: rocketAnimation 4s linear forwards;
